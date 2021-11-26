@@ -97,7 +97,8 @@ public class dataAccess {
         try {
 
             System.out.println(mc2.getActiv1_equip()+ " " + mc2.getNat_intern_reseau());
-            PreparedStatement ps = JavaConnect.getPreparedStatement("insert into p2demandeurcollectif (idDC, activ1_equip, activ_equip_region, activ_equip_depart, activ_equip_commune, activ_equip_qtr, a_activ_equip, a2_activ_equip, a2_activ_equip_lieu, activ_economique, activ_eco_second, activ_etrang, a1_equip_etrang, a1_equip_etrang, a1_equip_etrang_lieu, mont_cap_social, nbre_empl_perman, nbre_empl_tempor, mont_eparg_mob, mont_endettement, mont_sub_recu, fonctionnalite, prise_decision, charte_relationnelle, plan_developpement, manuel_procedure, part_princ_technique, part_princ_financier, app_reseau, nature_reseau, localite_reseau, departement_reseau, nat_intern_reseau, formulaire_id ) values (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            PreparedStatement ps = JavaConnect.getPreparedStatement("insert into p2demandeurcollectif (idDC, formulaire_id, activ1_equip, activ_equip_region, activ_equip_depart, activ_equip_commune, activ_equip_qtr,"
+                    + " a_activ_equip, a2_activ_equip, a2_activ_equip_lieu, activ_economique, activ_eco_second,  activ_equip_etrang, a1_equip_etrang, a1_equip_etrang_lieu, mont_cap_social, nbre_empl_perman,  nbre_empl_tempor, mont_eparg_mob, mont_endettement,  mont_sub_recu, fonctionnalite, prise_decision, charte_relationnelle, plan_developpement,  manuel_procedure, part_princ_technique, part_princ_financier, app_reseau, nature_reseau, localite_reseau, departement_reseau,  nat_intern_reseau ) values (NULL,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
                                                                                                  
            
             ps.setString(1, mc2.getFormulaire_id());
@@ -110,8 +111,8 @@ public class dataAccess {
             ps.setString(8, mc2.getA2_activ_equip());
             ps.setString(9, mc2.getA2_activ_equip_lieu());
             ps.setString(10, mc2.getActiv_economique());
-            ps.setString(11, mc2.getActiv_eco_second());
-            ps.setString(12, mc2.getActiv_etrang());
+            ps.setString(11, mc2.getActiv_eco_second()); 
+            ps.setString(12, mc2.getActiv_equip_etrang());
             ps.setString(13, mc2.getA1_equip_etrang());
             ps.setString(14, mc2.getA1_equip_etrang_lieu());
             ps.setString(15, mc2.getMont_cap_social());
@@ -133,9 +134,9 @@ public class dataAccess {
             ps.setString(31, mc2.getDepartement_reseau());
             ps.setString(32, mc2.getNat_intern_reseau());
             
-
-            ps.executeUpdate();
-            System.out.println("Tout est ok" + mc2.getActiv1_equip());
+             ps.executeUpdate();
+             
+              System.out.println("Tout est ok" + mc2.getActiv1_equip());
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -287,48 +288,78 @@ public class dataAccess {
             Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    // Inscrir JDET
+    public void InscrireJdet(ModJdet mj){
+        try {
+            System.out.println(mj.getPrenom()+ " " + mj.getCommune());
+             PreparedStatement ps = JavaConnect.getPreparedStatement ("insert into jdet (iD,prenom,nom,sexe,tranche_age,adresse,email,tel1,tel2,dernier_diplome,domaine1_etude,diplome_encours,domaine_etude_encours,domaine2_etude, region, departement, commune)values(null,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+                //     ps.setString(1, mj.getDemande_id());
+                     ps.setString(1, mj.getPrenom());
+                     ps.setString(2, mj.getNom());
+                     ps.setString(3, mj.getSexe());
+                     ps.setString(4, mj.getTranche_age());
+                     ps.setString(5, mj.getEmail());
+                     ps.setString(6, mj.getAdresse());
+                     ps.setString(7, mj.getTel1());
+                     ps.setString(8, mj.getTel2());
+                     ps.setString(9, mj.getDernier_diplome());
+                     ps.setString(10, mj.getDomaine1_etude());
+                     ps.setString(11, mj.getDiplome_encours());
+                     ps.setString(12, mj.getDomaine_etude_encours());
+                     ps.setString(13, mj.getDomaine2_etude());
+                     ps.setString(14, mj.getRegion());
+                     ps.setString(15, mj.getDepartement());
+                     ps.setString(16, mj.getCommune());
+            
+        }catch(SQLException | ClassNotFoundException ex) {
+            Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+    }
+    
+    
 
     // Updates Formulaire Individuelle
     public void updateInd1(ModInd1 mi1){
 
         try {
-            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p1demandeurindividuel set prenom = ?, nom = ?, tel1 = ?, tel2 = ?, commune_rattach = ?, quartier_rattach = ?, commune_actuelle = ?, quartier_actuel = ?, sexe = ?, tranche_age = ?, etude = ?, niveau_etude = ?, formation_prof = ?, sejour = ?, pays_sejourne = ?, motif_sejour = ?, experience_prof = ?, domaine_exp_prof = ?, duree_exp_prof = ?, statut_exp_prof = ?, region_exp_prof = ?, departement_exp_prof = ?, commune_exp_prof = ?, quartier_exp_prof = ?, autre_region_exp_prof = ?, hors_senegal = ?, situation_prof = ?, soutien_immediat = ?, titre_accompagnement = ? where formulaire_id like ?");
+            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p1demandeurindividuel set prenom = ?, nom = ?, tel1 = ?, tel2 = ?, commune_rattach = ?, quartier_rattach = ?, commune_actuelle = ?, quartier_actuel = ?, sexe = ?, tranche_age = ?, etude = ?, niveau_etude = ?, formation_prof = ?, sejour = ?, pays_sejourne = ?, motif_sejour = ?, experience_prof = ?, domaine_exp_prof = ?, duree_exp_prof = ?, statut_exp_prof = ?, region_exp_prof = ?, departement_exp_prof = ?, commune_exp_prof = ?, quartier_exp_prof = ?, autre_region_exp_prof = ?, hors_senegal = ?, situation_prof = ?, soutien_immediat = ?, titre_accompagnement = ?, inscritPar = ?  where formulaire_id like ?");
 
-            ps.setString(1, mi1.getFormulaire_id());
-            ps.setString(2, mi1.getPrenom());
-            ps.setString(3, mi1.getNom());
-            ps.setString(4, mi1.getTel1());
-            ps.setString(5, mi1.getTel2());
-            ps.setString(6, mi1.getCommune_rattach());
+            ps.setString(31, mi1.getFormulaire_id());
+            ps.setString(1, mi1.getPrenom());
+            ps.setString(2, mi1.getNom());
+            ps.setString(3, mi1.getTel1());
+            ps.setString(4, mi1.getTel2());
+            ps.setString(5, mi1.getCommune_rattach());
             ps.setString(6, mi1.getQuartier_rattach());
             ps.setString(7, mi1.getCommune_actuelle());
-            ps.setString(6, mi1.getQuartier_actuel());
-            ps.setString(8, mi1.getSexe());
-            ps.setString(9, mi1.getTranche_age());
-            ps.setString(10, mi1.getEtude());
-            ps.setString(11, mi1.getNiveau_etude());
-            ps.setString(12, mi1.getFormation_prof());
-            ps.setString(13, mi1.getSejour());
-            ps.setString(14, mi1.getPays_sejourne());
-            ps.setString(15, mi1.getMotif_sejour());
-            ps.setString(16, mi1.getExperience_prof());
-            ps.setString(17, mi1.getDomaine_exp_prof());
-            ps.setString(18, mi1.getDuree_exp_prof());
-            ps.setString(19, mi1.getStatut_exp_prof());
-            ps.setString(20, mi1.getRegion_exp_prof());
-            ps.setString(21, mi1.getDepartement_exp_prof());
-            ps.setString(22, mi1.getCommune_exp_prof());
-            ps.setString(23, mi1.getQuartier_exp_prof());
-            ps.setString(24, mi1.getAutre_region_exp_prof());
-            ps.setString(25, mi1.getHors_senegal());
-            ps.setString(26, mi1.getAutre_region_exp_prof());
-            ps.setString(27, mi1.getHors_senegal());
-            ps.setString(28, mi1.getSituation_prof());
+            ps.setString(8, mi1.getQuartier_actuel());
+            ps.setString(9, mi1.getSexe());
+            ps.setString(10, mi1.getTranche_age());
+            ps.setString(11, mi1.getEtude());
+            ps.setString(12, mi1.getNiveau_etude());
+            ps.setString(13, mi1.getFormation_prof());
+            ps.setString(14, mi1.getSejour());
+            ps.setString(15, mi1.getPays_sejourne());
+            ps.setString(16, mi1.getMotif_sejour());
+            ps.setString(17, mi1.getExperience_prof());
+            ps.setString(18, mi1.getDomaine_exp_prof());
+            ps.setString(19, mi1.getDuree_exp_prof());
+            ps.setString(20, mi1.getStatut_exp_prof());
+            ps.setString(21, mi1.getRegion_exp_prof());
+            ps.setString(22, mi1.getDepartement_exp_prof());
+            ps.setString(23, mi1.getCommune_exp_prof());
+            ps.setString(24, mi1.getQuartier_exp_prof());
+            ps.setString(25, mi1.getAutre_region_exp_prof());
+            ps.setString(26, mi1.getHors_senegal());
+            ps.setString(27, mi1.getSituation_prof());
+            ps.setString(28, mi1.getSoutien_immediat());
             ps.setString(29, mi1.getTitre_accompagnement());
             ps.setString(30, mi1.getInscritPar());
             
             ps.executeUpdate();
-            System.out.println("Tout est ok" + mi1.getPays_sejourne());
+            System.out.println("Tout est ok" + mi1.getInscritPar());
 
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
@@ -361,24 +392,26 @@ public class dataAccess {
     public void updateInd3(ModInd3 mi3){
         try {
             System.out.println(mi3.getRegi_commerce() + " " + mi3.getPays_partenaire());
-            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p3demandeurindividuel set regi_commerce  = ?, numero_regi_comm  = ?, ninea  = ?, numero_ninea  = ?, reference_prof  = ?, numero_reference_prof  = ?, compte_bancaire_sfd  = ?, nom_banque_sfd  = ?, numero_compte_banque_sfd  = ?, soutien_partenaire  = ?, ville_partenaire  = ?, pays_partenaire  = ?  where formulaire_id like ? ");
+            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p3demandeurindividuel set regi_commerce  = ?, numero_regi_comm  = ?, ninea  = ?, numero_ninea  = ?,"
+                    + " reference_prof  = ?, numero_reference_prof  = ?, compte_bancaire_sfd  = ?, nom_banque_sfd  = ?, numero_compte_banque_sfd  = ?, soutien_partenaire  = ?, "
+                    + "ville_partenaire  = ?, pays_partenaire  = ?  where formulaire_id like ? ");
 
-            ps.setString(1, mi3.getFormulaire_id());
-            ps.setString(2, mi3.getRegi_commerce());
-            ps.setString(3, mi3.getNumero_regi_comm());
-            ps.setString(4, mi3.getNinea());
-            ps.setString(5, mi3.getNumero_ninea());
-            ps.setString(6, mi3.getReference_prof());
-            ps.setString(7, mi3.getNumero_reference_prof());
-            ps.setString(8, mi3.getCompte_bancaire_sfd());
-            ps.setString(9, mi3.getNom_banque_sfd());
-            ps.setString(10, mi3.getNumero_compte_banque_sfd());
-            ps.setString(11, mi3.getSoutien_partenaire());
-            ps.setString(12, mi3.getVille_partenaire());
-            ps.setString(13, mi3.getPays_partenaire());
+            ps.setString(13, mi3.getFormulaire_id());
+            ps.setString(1, mi3.getRegi_commerce());
+            ps.setString(2, mi3.getNumero_regi_comm());
+            ps.setString(3, mi3.getNinea());
+            ps.setString(4, mi3.getNumero_ninea());
+            ps.setString(5, mi3.getReference_prof());
+            ps.setString(6, mi3.getNumero_reference_prof());
+            ps.setString(7, mi3.getCompte_bancaire_sfd());
+            ps.setString(8, mi3.getNom_banque_sfd());
+            ps.setString(9, mi3.getNumero_compte_banque_sfd());
+            ps.setString(10, mi3.getSoutien_partenaire());
+            ps.setString(11, mi3.getVille_partenaire());
+            ps.setString(12, mi3.getPays_partenaire());
 
             ps.executeUpdate();
-            System.out.println("Tout est ok" + mi3.getRegi_commerce());
+            System.out.println("Tout est ok" + mi3.getPays_partenaire());
 
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
@@ -391,34 +424,37 @@ public class dataAccess {
         try {
 
             System.out.println("h1 " +mc1.getPrenom_representant());
-            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p1demandeurcollectif set prenom_representant = ?, nom_representant = ?, sexe_representant = ?, adresse_representant = ?, contact1_representant = ?, contact2_representant = ?, titre = ?, nat_juridique = ?, denomination = ?, reconnaisance_juridique = ?, lieu_Collectif = ?, pays_exterieur = ?, region_exterieure = ?, departement_exterieur = ?, commune_exterieure = ?, Qtr_Village_exterieur = ?, region_interieure = ?, departement_interieur = ?, commune_interieure = ?, Qtr_Village_interieur = ?, date_creation = ?, total_membre = ?, total_homme = ?, total_femme = ?, inscritPar = ? where formulaire_id like ? ");
+            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p1demandeurcollectif set prenom_representant = ?, nom_representant = ?, sexe_representant = ?, adresse_representant = ?, "
+                    + "contact1_representant = ?, contact2_representant = ?, titre = ?, nat_juridique = ?, denomination = ?, reconnaisance_juridique = ?, "
+                    + "lieu_Collectif = ?, pays_exterieur = ?, region_exterieure = ?, departement_exterieur = ?, commune_exterieure = ?, Qtr_Village_exterieur = ?,"
+                    + " region_interieure = ?, departement_interieur = ?, commune_interieure = ?, Qtr_Village_interieur = ?, date_creation = ?, total_membre = ?, total_homme = ?, total_femme = ?, inscritPar = ? where formulaire_id like ? ");
             
-            ps.setString(1, mc1.getFormulaire_id());
-            ps.setString(2, mc1.getPrenom_representant());
-            ps.setString(3, mc1.getNom_representant());
-            ps.setString(4, mc1.getSexe_representant());
-            ps.setString(5, mc1.getAdresse_representant());
-            ps.setString(6, mc1.getContact1_representant());
-            ps.setString(7, mc1.getContact2_representant());
-            ps.setString(8, mc1.getTitre());
-            ps.setString(9, mc1.getNat_juridique());
-            ps.setString(10, mc1.getDenomination());
-            ps.setString(11, mc1.getReconnaisance_juridique());
-            ps.setString(12, mc1.getLieu_Collectif());
-            ps.setString(13, mc1.getPays_exterieur());
-            ps.setString(14, mc1.getRegion_exterieure());
-            ps.setString(15, mc1.getDepartement_exterieur());
-            ps.setString(16, mc1.getCommune_exterieure());
-            ps.setString(17, mc1.getQtr_Village_exterieur());
-            ps.setString(18, mc1.getRegion_interieure());
-            ps.setString(19, mc1.getDepartement_exterieur());
-            ps.setString(20, mc1.getCommune_interieure());
-            ps.setString(21, mc1.getQtr_Village_interieur());
-            ps.setString(22, mc1.getDate_creation());
-            ps.setString(23, mc1.getTotal_membre());
-            ps.setString(24, mc1.getTotal_homme());
-            ps.setString(25, mc1.getTotal_femme());
-            ps.setString(26, mc1.getInscritPar());
+            ps.setString(26, mc1.getFormulaire_id());
+            ps.setString(1, mc1.getPrenom_representant());
+            ps.setString(2, mc1.getNom_representant());
+            ps.setString(3, mc1.getSexe_representant());
+            ps.setString(4, mc1.getAdresse_representant());
+            ps.setString(5, mc1.getContact1_representant());
+            ps.setString(6, mc1.getContact2_representant());
+            ps.setString(7, mc1.getTitre());
+            ps.setString(8, mc1.getNat_juridique());
+            ps.setString(9, mc1.getDenomination());
+            ps.setString(10, mc1.getReconnaisance_juridique());
+            ps.setString(11, mc1.getLieu_Collectif());
+            ps.setString(12, mc1.getPays_exterieur());
+            ps.setString(13, mc1.getRegion_exterieure());
+            ps.setString(14, mc1.getDepartement_exterieur());
+            ps.setString(15, mc1.getCommune_exterieure());
+            ps.setString(16, mc1.getQtr_Village_exterieur());
+            ps.setString(17, mc1.getRegion_interieure());
+            ps.setString(18, mc1.getDepartement_exterieur());
+            ps.setString(19, mc1.getCommune_interieure());
+            ps.setString(20, mc1.getQtr_Village_interieur());
+            ps.setString(21, mc1.getDate_creation());
+            ps.setString(22, mc1.getTotal_membre());
+            ps.setString(23, mc1.getTotal_homme());
+            ps.setString(24, mc1.getTotal_femme());
+            ps.setString(25, mc1.getInscritPar());
 
             ps.executeUpdate();
             System.out.println("Tout est ok" + mc1.getPrenom_representant());
@@ -430,7 +466,10 @@ public class dataAccess {
         try {
 
             System.out.println(mc2.getActiv1_equip() + " " + mc2.getNat_intern_reseau());
-            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p2demandeurcollectif set activ1_equip = ?, activ_equip_region = ?, activ_equip_depart = ?, activ_equip_commune = ?, activ_equip_qtr = ?, a_activ_equip = ?, a2_activ_equip = ?, a2_activ_equip_lieu = ?, activ_economique = ?, activ_eco_second = ?, activ_etrang = ?, a1_equip_etrang = ?, a1_equip_etrang = ?, a1_equip_etrang_lieu = ?, mont_cap_social = ?, nbre_empl_perman = ?, nbre_empl_tempor = ?, mont_eparg_mob = ?, mont_endettement = ?, mont_sub_recu = ?, fonctionnalite = ?, prise_decision = ?, charte_relationnelle = ?, plan_developpement = ?, manuel_procedure = ?, part_princ_technique = ?, part_princ_financier = ?, app_reseau = ?, nature_reseau = ?, localite_reseau = ?, departement_reseau = ?, nat_intern_reseau = ? where formulaire_id like ? ");
+            PreparedStatement ps = JavaConnect.getPreparedStatement("UPDATE p2demandeurcollectif set activ1_equip = ?, activ_equip_region = ?, activ_equip_depart = ?, activ_equip_commune = ?, activ_equip_qtr = ?, "
+                    + "a_activ_equip = ?, a2_activ_equip = ?, a2_activ_equip_lieu = ?, activ_economique = ?, activ_eco_second = ?, activ_equip_etrang = ?, a1_equip_etrang = ?, a1_equip_etrang_lieu = ?, "
+                    + "mont_cap_social = ?, nbre_empl_perman = ?, nbre_empl_tempor = ?, mont_eparg_mob = ?, mont_endettement = ?, mont_sub_recu = ?, fonctionnalite = ?, prise_decision = ?, charte_relationnelle = ?, "
+                    + "plan_developpement = ?, manuel_procedure = ?, part_princ_technique = ?, part_princ_financier = ?, app_reseau = ?, nature_reseau = ?, localite_reseau = ?, departement_reseau = ?, nat_intern_reseau = ? where formulaire_id like ? ");
 
            ps.setString(1, mc2.getActiv1_equip());
             ps.setString(2, mc2.getActiv_equip_region());
@@ -442,7 +481,7 @@ public class dataAccess {
             ps.setString(8, mc2.getA2_activ_equip_lieu ());
             ps.setString(9, mc2.getActiv_economique());
             ps.setString(10, mc2.getActiv_eco_second());
-            ps.setString(11, mc2.getActiv_etrang ());
+            ps.setString(11, mc2.getActiv_equip_etrang ());
             ps.setString(12, mc2.getA1_equip_etrang ());
             ps.setString(13, mc2.getA1_equip_etrang_lieu ());
             ps.setString(14, mc2.getMont_cap_social());

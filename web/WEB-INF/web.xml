@@ -52,6 +52,15 @@
         <servlet-name>Delete</servlet-name>
         <servlet-class>servlet.Delete</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ServJdet</servlet-name>
+        <servlet-class>servlet.ServJdet</servlet-class>
+    </servlet>
+   
+    <servlet>
+        <servlet-name>FileUploadServInd</servlet-name>
+        <servlet-class>servlet.FileUploadServInd</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>IndividVerif</servlet-name>
         <url-pattern>/IndividVerif</url-pattern>
@@ -103,6 +112,14 @@
     <servlet-mapping>
         <servlet-name>Delete</servlet-name>
         <url-pattern>/Delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServJdet</servlet-name>
+        <url-pattern>/ServJdet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FileUploadServInd</servlet-name>
+        <url-pattern>/FileUploadServInd</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

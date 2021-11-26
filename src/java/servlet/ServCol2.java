@@ -34,7 +34,7 @@ public class ServCol2 extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=ISO-8859-1");
 
-        String activ1_equip  = (String) request.getParameter("activ1_equip ");
+        String activ1_equip  = (String) request.getParameter("activ1_equip");
         String activ_equip_region = (String) request.getParameter("activ_equip_region");
         String activ_equip_depart = (String) request.getParameter("activ_equip_depart");
         String activ_equip_commune = (String) request.getParameter("activ_equip_commune");
@@ -43,8 +43,8 @@ public class ServCol2 extends HttpServlet {
         String a2_activ_equip = (String) request.getParameter("a2_activ_equip");
         String a2_activ_equip_lieu = (String) request.getParameter("a2_activ_equip_lieu");
         String activ_economique = (String) request.getParameter("activ_economique"); 
-        String activ_eco_second = (String) request.getParameter("activ_eco_second");    
-        String activ_eco_etrang = (String) request.getParameter("activ_eco_etrang");
+        String activ_eco_second = (String) request.getParameter("activ_eco_second");  
+        String activ_equip_etrang = (String) request.getParameter("activ_equip_etrang");
         String a1_equip_etrang  = (String) request.getParameter("a1_equip_etrang");
         String a1_equip_etrang_lieu  = (String) request.getParameter("a1_equip_etrang_lieu");
         String mont_cap_social = (String) request.getParameter("mont_cap_social");
@@ -52,7 +52,7 @@ public class ServCol2 extends HttpServlet {
         String nbre_empl_tempor = (String) request.getParameter("nbre_empl_tempor");
         String mont_eparg_mob = (String) request.getParameter("mont_eparg_mob");
         String mont_endettement = (String) request.getParameter("mont_endettement");
-        String mont_sub_recu = (String) request.getParameter("mont_sub_recu");        
+        String mont_sub_recu = (String) request.getParameter("mont_sub_recu");  
         String fonctionnalite = (String) request.getParameter("fonctionnalite");
         String prise_decision = (String) request.getParameter("prise_decision");
         String charte_relationnelle = (String) request.getParameter("charte_relationnelle");
@@ -65,14 +65,13 @@ public class ServCol2 extends HttpServlet {
         String localite_reseau = (String) request.getParameter("localite_reseau");
         String departement_reseau = (String) request.getParameter("departement_reseau");
         String nat_intern_reseau = (String) request.getParameter("nat_intern_reseau");
-        
         String formulaire_id = (String) request.getParameter("formulaire_id");
 
-        ModCol2 mc2 = new ModCol2( formulaire_id,  activ1_equip,  activ_equip_region,  activ_equip_depart,  activ_equip_commune,  activ_equip_qtr,  a_activ_equip,  a2_activ_equip,  a2_activ_equip_lieu,  activ_economique,  activ_eco_second,  activ_eco_etrang,  a1_equip_etrang,  a1_equip_etrang_lieu,  mont_cap_social,  nbre_empl_perman,  nbre_empl_tempor,  mont_eparg_mob,  mont_endettement,  mont_sub_recu,  fonctionnalite,  prise_decision,  charte_relationnelle,  plan_developpement,  manuel_procedure,  part_princ_technique,  part_princ_financier,  app_reseau,  nature_reseau,  localite_reseau,  departement_reseau,  nat_intern_reseau);
+        ModCol2 mc2 = new ModCol2( formulaire_id,  activ1_equip,  activ_equip_region,  activ_equip_depart,  activ_equip_commune,  activ_equip_qtr,  a_activ_equip,  a2_activ_equip,  a2_activ_equip_lieu,  activ_economique,  activ_eco_second,  activ_equip_etrang,  a1_equip_etrang,  a1_equip_etrang_lieu,  mont_cap_social,  nbre_empl_perman,  nbre_empl_tempor,  mont_eparg_mob,  mont_endettement,  mont_sub_recu,  fonctionnalite,  prise_decision,  charte_relationnelle,  plan_developpement,  manuel_procedure,  part_princ_technique,  part_princ_financier,  app_reseau,  nature_reseau,  localite_reseau,  departement_reseau,  nat_intern_reseau);
         dataAccess da = new dataAccess();
         da.addModCol2(mc2);
    
-         String idx = (String) request.getParameter("id");
+        String idx = (String) request.getParameter("id");
         request.setAttribute("idx", idx);
         request.setAttribute("formulaire_id", formulaire_id);
         RequestDispatcher rd = request.getRequestDispatcher("Principal.jsp");

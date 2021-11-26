@@ -168,8 +168,9 @@
                     //int compte = 1;
                     String remplir = " Remplir ";
                     String remplir2 = " Remplir ";
-                    String remplir3 = " Remplir ";
+                    String remplir3 = " Remplir "; 
                     
+                 //   String location1 = "inscriptionIndividuelle1";
                     String location2 = "inscriptionIndividuelle2";
                     String location3 = "inscriptionIndividuelle3";
 
@@ -248,6 +249,7 @@
                             formIn31 = rs1.getString(31);
                             formIn32 = rs1.getString(32);
                             remplir = " Modifier ";
+                            //     location1 = "updateInd1";
                         }
                     } catch (SQLException ex) {
                         System.out.println("Erreur recup ind1 " + ex);
@@ -326,7 +328,7 @@
                             form3In12 = rs1.getString(12);
                             form3In13 = rs1.getString(13);
                             form3In14 = rs1.getString(14);
-                            //form3In15 = rs1.getString(15);
+                            form3In15 = rs1.getString(15);
                             remplir3 = " Modifier ";
                             location3 = "updateInd3";
 
@@ -340,7 +342,7 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Dossier de <%=formIn3%> <%=formIn4%></h1>
+                        <h1 style="text-align: center;">Dossier de <%=formIn4%>&nbsp;<%=formIn5%> <br />Id: <%=formIn3%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -494,8 +496,8 @@
                                                         <th>Nom_Banque_ou_SFD</th>
                                                         <th>N°_Compte_Banque_ou_SFD</th>
                                                         <th>Soutien_d'un_Partenaire</th>
-                                                        <th>Ville_du_Parent</th>
-                                                        <th>Pays_du_Parent</th>
+                                                        <th>Ville_du_Partenaire</th>
+                                                        <th>Pays_du_Partenaire</th>
                                                     </tr>
                                                     </tr>
                                                 </thead>
@@ -559,6 +561,12 @@
                 String formCon20 = "";
                 String formCon21 = "";
                 String formCon22 = "";
+                String formCon23 = "";
+                String formCon24 = "";
+                String formCon25 = "";
+                String formCon26 = "";
+                String formCon27 = "";
+                
 
                 try {
 
@@ -584,7 +592,18 @@
                         formCon13 = rs1.getString(13);
                         formCon14 = rs1.getString(14);
                         formCon15 = rs1.getString(15);
+                        formCon16 = rs1.getString(16);
+                        formCon17 = rs1.getString(17);
                         formCon18 = rs1.getString(18);
+                        formCon19 = rs1.getString(19);
+                        formCon20 = rs1.getString(20);
+                        formCon21 = rs1.getString(21);
+                        formCon22 = rs1.getString(22);
+                        formCon23 = rs1.getString(23);
+                        formCon24 = rs1.getString(24);
+                        formCon25 = rs1.getString(25);
+                        formCon26 = rs1.getString(26);
+                        formCon27 = rs1.getString(27);
                         remplir = " Modifier ";
 
                     }
@@ -620,6 +639,14 @@
                 String form2Con24 = "";
                 String form2Con25 = "";
                 String form2Con26 = "";
+                String form2Con27 = "";
+                String form2Con28 = "";
+                String form2Con29 = "";
+                String form2Con30 = "";
+                String form2Con31 = "";
+                String form2Con32 = "";
+                String form2Con33 = "";
+                
 
                 try {
 
@@ -657,6 +684,13 @@
                         form2Con24 = rs1.getString(24);
                         form2Con25 = rs1.getString(25);
                         form2Con26 = rs1.getString(26);
+                        form2Con27 = rs1.getString(27);
+                        form2Con28 = rs1.getString(28);
+                        form2Con29 = rs1.getString(29);
+                        form2Con30 = rs1.getString(30);
+                        form2Con31 = rs1.getString(31);
+                        form2Con32 = rs1.getString(32);
+                        form2Con33 = rs1.getString(33);
                         remplir2 = " Modifier ";
                         location2 = "updateCol2";
 
@@ -672,7 +706,7 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Dossier de <%=formCon5%></h1>
+                        <h1 style="text-align: center;">Dossier de <%=formCon3%>&nbsp;<%=formCon4%> <br /> Id:<%=formCon2%> </h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -685,8 +719,7 @@
                                                     <tr>
                                                         <th>Option</th>
                                                         <th>Inscrit_Par</th>
-                                                        <th>N°</th>
-                                                        <th>Formulaire</th>
+                                                        <th>id Formulaire</th>
                                                         <th>Prénom Représentant</th>
                                                         <th>Nom Représentant</th>
                                                         <th>Sexe Réprésentant</th>
@@ -718,8 +751,8 @@
 
                                                     <tr>
                                                         <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir%>" onclick="location.href = 'updateCol1.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&form=p1col'"/><input style="background-color: red; color: white" type="button" value="  Effacer " onclick="location.href ='delete.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&table=p1demandeurcollectif'"/></td>
-                                                        <td><%=formCon18%></td>                                                        
-                                                        <td><%=formCon1%></td>
+                                                        <td><%=formCon27%></td>                                                       
+                                                        
                                                         <td><%=formCon2%></td>
                                                         <td><%=formCon3%></td>
                                                         <td><%=formCon4%></td>
@@ -734,6 +767,18 @@
                                                         <td><%=formCon13%></td>
                                                         <td><%=formCon14%></td>
                                                         <td><%=formCon15%></td>
+                                                        <td><%=formCon16%></td>
+                                                        <td><%=formCon17%></td>
+                                                        <td><%=formCon18%></td>
+                                                        <td><%=formCon19%></td>
+                                                        <td><%=formCon20%></td>
+                                                        <td><%=formCon21%></td>
+                                                        <td><%=formCon22%></td>
+                                                        <td><%=formCon23%></td>
+                                                        <td><%=formCon24%></td>
+                                                        <td><%=formCon25%></td>
+                                                        <td><%=formCon26%></td>
+                                                        
                                                     </tr>
 
                                                 </tbody>
@@ -755,31 +800,38 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Option</th>
-                                                        <th>N°</th>
+                                                        <th>id Formulaire</th>
                                                         <th>Activités_ou_Equipements</th>
-                                                        <th>Département</th>
                                                         <th>Région</th>
-                                                        <th>Autre_Région</th>
-                                                        <th>Hors_Sénégal</th>
-                                                        <th>Activités_Economiques</th>
-                                                        <th>Fonctionnalités</th>
-                                                        <th>Prise_de_Décision</th>
-                                                        <th>Charte_des_Membres</th>
-                                                        <th>Plan_de_Développement</th>
-                                                        <th>Manuel_de_Procédure</th>
-                                                        <th>Partenaire_Principal_Technique</th>
-                                                        <th>Partenaire_Principal_Financier</th>
-                                                        <th>Réseau_d'Appartenance</th>
-                                                        <th>Nature_du_Réseau</th>
-                                                        <th>Localité_du_Réseau</th>
-                                                        <th>Département_du_Réseau</th>
-                                                        <th>Réseau_International</th>
+                                                        <th>Département</th>
+                                                        <th>Commune</th>
+                                                        <th>Quartier_Village</th>
+                                                        <th>Autres_Activités</th>
+                                                        <th>Activités_Secondaires</th>
+                                                        <th>Lieux_Secondaires</th>
+                                                        <th>Activité_Economique_Primaire</th>
+                                                        <th>Activité_Economique_Secondaire</th>
+                                                        <th>Activités_Equip_Autre_Pays</th>
+                                                        <th>Activité_Economique_Autre_Pays</th>
+                                                        <th>Activités_Equip_Autre_Pays</th>
                                                         <th>Montant_Capital_Social</th>
                                                         <th>Nombre_d'Employés_Permanants</th>
                                                         <th>Nombre_d'Employés_Temporaires</th>
                                                         <th>Montant_Epargne_Mobilisé</th>
                                                         <th>Montant_Endettement</th>
                                                         <th>Montant_Subvention_Reçu</th>
+                                                        <th>Fonctionnalité_Organes</th>
+                                                        <th>Mode_Prise_Décision</th>
+                                                        <th>Disponibilté_Charte</th>
+                                                        <th>Disponibilté_Plan_Développement</th>
+                                                        <th>Disponibilté_Manuel_Procédure</th>
+                                                        <th>Partenaire_Principal_Technique</th>
+                                                        <th>Partenaire_Principal_Financier</th>
+                                                        <th>Appartenance_Réseau</th>
+                                                        <th>Nature_Réseau</th>
+                                                        <th>Localité_Réseau</th>
+                                                        <th>Département_Réseau</th>
+                                                        <th>Internation_National</th>
                                                     </tr>
                                                     </tr>
                                                 </thead>
@@ -788,7 +840,7 @@
                                                     <tr>
                                                         <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir2%>" onclick="location.href = '<%=location2%>.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&form=p2col'"/></td>
 
-                                                        <td><%=form2Con2%></td>
+                                                       <td><%=form2Con2%></td> 
                                                         <td><%=form2Con3%></td>
                                                         <td><%=form2Con4%></td>
                                                         <td><%=form2Con5%></td>
@@ -813,6 +865,14 @@
                                                         <td><%=form2Con24%></td>
                                                         <td><%=form2Con25%></td>
                                                         <td><%=form2Con26%></td>
+                                                        <td><%=form2Con27%></td>
+                                                        <td><%=form2Con28%></td>
+                                                        <td><%=form2Con29%></td>
+                                                        <td><%=form2Con30%></td>
+                                                        <td><%=form2Con31%></td>
+                                                        <td><%=form2Con32%></td>
+                                                        <td><%=form2Con33%></td>
+                                                       
                                                     </tr>
 
                                                 </tbody>

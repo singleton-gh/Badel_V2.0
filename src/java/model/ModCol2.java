@@ -19,13 +19,12 @@ public class ModCol2 {
     private String activ_equip_depart;
     private String activ_equip_commune ;
     private String activ_equip_qtr ;
-    
     private String a_activ_equip ;    
     private String a2_activ_equip ; //Champs ajouté
     private String a2_activ_equip_lieu ; //Champs ajouté
     private String activ_economique; //Champs ajouté    
-    private String activ_eco_second ;      
-    private String activ_etrang;
+    private String activ_eco_second ;   
+    private String activ_equip_etrang ;
     private String a1_equip_etrang;
     private String a1_equip_etrang_lieu;            
     private String mont_cap_social;
@@ -50,8 +49,7 @@ public class ModCol2 {
 
     // Importation Constructeur avec Paramètres 
 
-    
-    public ModCol2(String formulaire_id, String activ1_equip, String activ_equip_region, String activ_equip_depart, String activ_equip_commune, String activ_equip_qtr, String a_activ_equip, String a2_activ_equip, String a2_activ_equip_lieu, String activ_economique, String activ_eco_second, String activ_etrang, String a1_equip_etrang, String a1_equip_etrang_lieu, String mont_cap_social, String nbre_empl_perman, String nbre_empl_tempor, String mont_eparg_mob, String mont_endettement, String mont_sub_recu, String fonctionnalite, String prise_decision, String charte_relationnelle, String plan_developpement, String manuel_procedure, String part_princ_technique, String part_princ_financier, String app_reseau, String nature_reseau, String localite_reseau, String departement_reseau, String nat_intern_reseau) {
+    public ModCol2(String formulaire_id, String activ1_equip, String activ_equip_region, String activ_equip_depart, String activ_equip_commune, String activ_equip_qtr, String a_activ_equip, String a2_activ_equip, String a2_activ_equip_lieu, String activ_economique, String activ_eco_second, String activ_equip_etrang, String a1_equip_etrang, String a1_equip_etrang_lieu, String mont_cap_social, String nbre_empl_perman, String nbre_empl_tempor, String mont_eparg_mob, String mont_endettement, String mont_sub_recu, String fonctionnalite, String prise_decision, String charte_relationnelle, String plan_developpement, String manuel_procedure, String part_princ_technique, String part_princ_financier, String app_reseau, String nature_reseau, String localite_reseau, String departement_reseau, String nat_intern_reseau) {
         this.formulaire_id = formulaire_id;
         this.activ1_equip = activ1_equip;
         this.activ_equip_region = activ_equip_region;
@@ -63,7 +61,7 @@ public class ModCol2 {
         this.a2_activ_equip_lieu = a2_activ_equip_lieu;
         this.activ_economique = activ_economique;
         this.activ_eco_second = activ_eco_second;
-        this.activ_etrang = activ_etrang;
+        this.activ_equip_etrang = activ_equip_etrang;
         this.a1_equip_etrang = a1_equip_etrang;
         this.a1_equip_etrang_lieu = a1_equip_etrang_lieu;
         this.mont_cap_social = mont_cap_social;
@@ -85,8 +83,8 @@ public class ModCol2 {
         this.departement_reseau = departement_reseau;
         this.nat_intern_reseau = nat_intern_reseau;
     }
-
     
+   
     
     // Importation Getteurs & setteurs
 
@@ -178,12 +176,12 @@ public class ModCol2 {
         this.activ_eco_second = activ_eco_second;
     }
 
-    public String getActiv_etrang() {
-        return activ_etrang;
+    public String getActiv_equip_etrang() {
+        return activ_equip_etrang;
     }
 
-    public void setActiv_etrang(String activ_etrang) {
-        this.activ_etrang = activ_etrang;
+    public void setActiv_equip_etrang(String activ_equip_etrang) {
+        this.activ_equip_etrang = activ_equip_etrang;
     }
 
     public String getA1_equip_etrang() {
@@ -347,8 +345,5 @@ public class ModCol2 {
     }
 
     
-    
-    
-    
-
+ 
 }

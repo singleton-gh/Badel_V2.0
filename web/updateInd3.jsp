@@ -153,9 +153,9 @@
             <%
                 /* Récupération des données de p3demandind */
                 //int compte1 = 1;
-            //    String form3In1 = "";
-            //    String form3In2 = "";
-             //   String form3In3 = "";
+               String form3In1 = "";
+                String form3In2 = "";
+               String form3In3 = "";
                 String form3In4 = "";
                 String form3In5 = "";
                 String form3In6 = "";
@@ -167,7 +167,7 @@
                 String form3In12 = "";
                 String form3In13 = "";
                 String form3In14 = "";
-                String form3In15 = "";
+                //  String form3In15 = "";
 
                 try {
 
@@ -178,9 +178,9 @@
 
                     while (rs1.next()) {
 
-                        //  form3In1 = rs1.getString(1);
-                        // form3In2 = rs1.getString(2);
-                        // form3In3 = rs1.getString(3);
+                        form3In1 = rs1.getString(1);
+                        form3In2 = rs1.getString(2);
+                        form3In3 = rs1.getString(3);
                         form3In4 = rs1.getString(4);
                         form3In5 = rs1.getString(5);
                         form3In6 = rs1.getString(6);
@@ -192,7 +192,7 @@
                         form3In12 = rs1.getString(12);
                         form3In13 = rs1.getString(13);
                         form3In14 = rs1.getString(14);
-                        form3In15 = rs1.getString(15);
+                    //    form3In15 = rs1.getString(15);
 
                     }
                 } catch (SQLException ex) {
@@ -237,36 +237,60 @@
                                                 
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="regi_commerce" id="demo-category">
-                                                            <option value="<%=form3In4%>">- Avez-vous un Régi de Commerce : -</option>
+                                                        <select class="form-control" name="regi_commerce" onchange="changeStatus0()" id="demo-category">
+                                                            <option value="<%=form3In3%>">- Avez-vous un Régi de Commerce : -</option>
                                                             <option value="oui">OUI</option>
                                                             <option value="non">NON</option>
                                                         </select> 
                                                     </div>
                                                 </div>
+                                                            
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="numero_regi_comm" value="<%=form3In5%>" class="form-control" placeholder=" Et quelle est le numéro du REGI DE COMMERCE ?">
+                                                        <input type="text" name="numero_regi_comm" value="<%=form3In4%>" class="form-control" placeholder=" Et quelle est le numéro du REGI DE COMMERCE ?">
                                                     </div>
                                                 </div>
+                                                    <script>
+                                                        function changeStatus0(){
+                                                            var rcd = document.getElementById("regi_commerce");
+                                                            var nrcd = document.getElementById("numero_regi_comm");
+                                                            if(rcd.value=="NON"){
+                                                                nrcd.disabled=true;
+                                                            }else{
+                                                                nrcd.disabled=false;
+                                                            }
+                                                        }
+                                                    </script>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="ninea" id="demo-category">
-                                                            <option value="<%=form3In6%>">- Avez-vous votre NINEA : -</option>
+                                                        <select class="form-control" name="ninea" onchange="changeStatus1" id="demo-category">
+                                                            <option value="<%=form3In5%>">- Avez-vous votre NINEA : -</option>
                                                             <option value="oui">OUI</option>
                                                             <option value="non">NON</option>
                                                         </select>   
                                                     </div>
                                                 </div>
+                                                           
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="numero_ninea" value="<%=form3In7%>" class="form-control" placeholder=" Et quelle est le numéro du NINEA ?">
+                                                        <input type="text" name="numero_ninea" value="<%=form3In6%>" class="form-control" placeholder=" Et quelle est le numéro du NINEA ?">
                                                     </div>
                                                 </div>
+                                                     <script>
+                                                        function changeStatus1(){
+                                                            var ninead = document.getElementById("ninea");
+                                                            var nnd = document.getElementById("numero_ninea");
+                                                            if(ninead.value=="NON"){
+                                                                nnd.disabled=true;
+                                                            }else{
+                                                                nnd.disabled=false;
+                                                            }
+                                                        }
+                                                    </script>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
                                                         <select class="form-control" name="reference_prof" id="demo-category">
-                                                            <option value="<%=form3In8%>">- Avez-vous d'autres références professionnelles ? -</option>
+                                                            <option value="<%=form3In7%>">- Avez-vous d'autres références professionnelles ? -</option>
                                                             <option value="carte_artisanat">Carte Artisanat</option>
                                                             <option value="agrement">Agrément</option>
                                                             <option value="licence">Licence</option>
@@ -278,13 +302,13 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="numero_reference_prof" value="<%=form3In9%>" class="form-control" placeholder=" Et quelle est le numéro du Référence ?">
+                                                        <input type="text" name="numero_reference_prof" value="<%=form3In8%>" class="form-control" placeholder=" Et quelle est le numéro du Référence ?">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
                                                         <select class="form-control" name="compte_bancaire_sfd" id="demo-category">
-                                                            <option value="<%=form3In10%>">- Disposez-vous d'un compte ? -</option>
+                                                            <option value="<%=form3In9%>">- Disposez-vous d'un compte ? -</option>
                                                             <option value="oui_banque">OUI dans une Banque</option>
                                                             <option value="oui_sfd">OUI dans une SFD</option>
                                                             <option value="non">NON</option>
@@ -293,18 +317,18 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nom_banque_sfd" value="<%=form3In11%>" class="form-control" placeholder="Si OUI dans quelle banque ou SFD ? ( - Ne pas remplir si NON - )">
+                                                        <input type="text" name="nom_banque_sfd" value="<%=form3In10%>" class="form-control" placeholder="Si OUI dans quelle banque ou SFD ? ">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="numero_compte_banque_sfd" value="<%=form3In12%>" class="form-control" placeholder=" Et quelle est le numéro du Compte ? ( - Ne pas remplir si NON - )">
+                                                        <input type="text" name="numero_compte_banque_sfd" value="<%=form3In11%>" class="form-control" placeholder=" Et quelle est le numéro du Compte ? ">
                                                     </div>
                                                 </div>    
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="soutien_parent" id="demo-category">
-                                                            <option value="<%=form3In13%>">- Pour mener à bien votre projet avez-vous le soutien d'un parent ? -</option>
+                                                        <select class="form-control" name="soutien_partenaire" id="demo-category">
+                                                            <option value="<%=form3In12%>">- Pour mener à bien votre projet avez-vous le soutien d'un partenaire ? -</option>
                                                             <option value="oui">OUI</option>
                                                             <option value="non">NON</option>
                                                         </select>
@@ -312,19 +336,19 @@
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="ville_parent" value="<%=form3In14%>" class="form-control" placeholder="Si OUI dans quelle ville réside-t-il ?      ( - Ne pas remplir si NON - )">
+                                                        <input type="text" name="ville_partenaire" value="<%=form3In13%>" class="form-control" placeholder="Si OUI dans quelle ville réside-t-il ? ">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="pays_parent" value="<%=form3In15%>" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ?     ( - Ne pas remplir si NON - )">
+                                                        <input type="text" name="pays_partenaire" value="<%=form3In14%>" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ? ">
                                                     </div>
                                                 </div>
                                                 <input type="hidden" value="<%=idx%>" name="id">  
                                                 <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">           
                                             </fieldset>                                      
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
+                                                <center><button type="submit" name="type1" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
                                             </div>
 
                                         </form>

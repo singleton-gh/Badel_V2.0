@@ -43,8 +43,8 @@ public class UpdateCol2 extends HttpServlet {
         String a2_activ_equip = (String) request.getParameter("a2_activ_equip");
         String a2_activ_equip_lieu = (String) request.getParameter("a2_activ_equip_lieu");
         String activ_economique = (String) request.getParameter("activ_economique"); 
-        String activ_second = (String) request.getParameter("activ_second");    
-        String activ_etrang = (String) request.getParameter("activ_etrang");
+        String activ_eco_second = (String) request.getParameter("activ_eco_second");    
+        String activ_equip_etrang = (String) request.getParameter("activ_equip_etrang");
         String a1_equip_etrang  = (String) request.getParameter("a1_equip_etrang");
         String a1_equip_etrang_lieu  = (String) request.getParameter("a1_equip_etrang_lieu");
         String mont_cap_social = (String) request.getParameter("mont_cap_social");
@@ -68,7 +68,7 @@ public class UpdateCol2 extends HttpServlet {
         String formulaire_id = (String) request.getParameter("formulaire_id");
         
         System.out.println("FormID from Serv = " +formulaire_id);
-        ModCol2 mc2 = new ModCol2(formulaire_id,  activ1_equip,  activ_equip_region,  activ_equip_depart,  activ_equip_commune,  activ_equip_qtr,  a_activ_equip,  a2_activ_equip,  a2_activ_equip_lieu,  activ_economique,  activ_second,  activ_etrang,  a1_equip_etrang,  a1_equip_etrang_lieu,  mont_cap_social,  nbre_empl_perman,  nbre_empl_tempor,  mont_eparg_mob,  mont_endettement,  mont_sub_recu,  fonctionnalite,  prise_decision,  charte_relationnelle,  plan_developpement,  manuel_procedure,  part_princ_technique,  part_princ_financier,  app_reseau,  nature_reseau,  localite_reseau,  departement_reseau,  nat_intern_reseau);
+        ModCol2 mc2 = new ModCol2(formulaire_id,  activ1_equip,  activ_equip_region,  activ_equip_depart,  activ_equip_commune,  activ_equip_qtr, a_activ_equip,  a2_activ_equip,  a2_activ_equip_lieu,  activ_economique,  activ_eco_second,  activ_equip_etrang,  a1_equip_etrang,  a1_equip_etrang_lieu,  mont_cap_social,  nbre_empl_perman,  nbre_empl_tempor,  mont_eparg_mob,  mont_endettement,  mont_sub_recu,  fonctionnalite,  prise_decision,  charte_relationnelle,  plan_developpement,  manuel_procedure,  part_princ_technique,  part_princ_financier,  app_reseau,  nature_reseau,  localite_reseau,  departement_reseau,  nat_intern_reseau);
         dataAccess da = new dataAccess();
         da.updateCol2(mc2);
 

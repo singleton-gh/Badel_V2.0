@@ -11,6 +11,7 @@
 <%@page import="java.sql.*"%>
 <%@page import="java.util.LinkedList"%>
 <%@page import="java.util.List"%>
+<%@page import="com.oreilly.servlet.MultipartRequest" %>
 <%@page contentType="text/html" pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 
@@ -151,12 +152,12 @@
             <div class="clearfix"></div>
             <section class="at-sectionspace at-haslayout">
                 <div class="container">
-                    <h1 style="text-align: center;">Inscription Individuelle 3 form = <%=formulaire_id%></h1>
+                   <h1 style="text-align: center;">Inscription Individuelle 3 form = <%=formulaire_id%></h1>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="at-content">
                                 <div class="at-contactusvone">
-                                    <form class="at-formtheme at-formcontacus" action="ServInd3" method="post" >
+                                    <form class="at-formtheme at-formcontacus" name =" main" action="ServInd3" method="post"  >
                                      <!--   <fieldset>
                                             <div class="row">
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
@@ -354,11 +355,15 @@
                                         <input type="text" name="pays_partenaire" id="pays_partenaire" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ? ">
                                     </div>
                                </div>
+                              </fieldset> 
+                                        
+                                        
+                                        
                                             <input type="hidden" value="<%=idx%>" name="id">  
                                             <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">           
-                                        </fieldset>                                      
+                                                                              
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" class="at-btn">AJOUTER PIECES JOINTES</button>&nbsp;<button type="submit" class="at-btn">ENREGISTRER & RETOURNER</button></center>
+                                                <center><button onclick="window.open('FileUploadInd.jsp')" class="at-btn">AJOUTER PIECES JOINTES</button><br/><button type="submit" class="at-btn">ENREGISTRER & RETOURNER</button></center>
                                             </div>
                                     
                                     </form>

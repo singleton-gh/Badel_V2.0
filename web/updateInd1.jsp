@@ -64,7 +64,7 @@
                 ResultSet rs = pst.executeQuery();
 
                 while (rs.next()) {
-                    System.out.println("hello 4");
+                    System.out.println("hello 4.0");
                     String id = rs.getString(1);
                     String Prenom = rs.getString(2);
                     String nom = rs.getString(3);
@@ -183,6 +183,9 @@
                 String formIn27 = "";
                 String formIn28 = "";
                 String formIn29 = "";
+                String formIn30 = "";
+                String formIn31 = "";
+              //  String formIn32 = "";
 
                 try {
 
@@ -222,6 +225,9 @@
                         formIn27 = rs1.getString(27);
                         formIn28 = rs1.getString(28);
                         formIn29 = rs1.getString(29);
+                        formIn30 = rs1.getString(30);
+                        formIn31 = rs1.getString(31);
+                        // formIn32 = rs1.getString(32);
                     }
                 } catch (SQLException ex) {
                     System.out.println("Erreur recup ind1 " + ex);
@@ -272,43 +278,43 @@
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="prenom" value="<%=formIn1%>" class="form-control" placeholder="1- Prénom**" required>
+                                                            <input type="text" name="prenom" value="<%=formIn4%>" class="form-control" placeholder="1- Prénom**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="nom" value="<%=formIn2%>" class="form-control" placeholder="2- Nom**" required>
+                                                            <input type="text" name="nom" value="<%=formIn5%>" class="form-control" placeholder="2- Nom**" required>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="tel1" value="<%=formIn3%>" class="form-control" placeholder="3- Numéro de Téléphone 1**" required>
+                                                            <input type="text" name="tel1" value="<%=formIn6%>" class="form-control" placeholder="3- Numéro de Téléphone 1**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="tel2" value="<%=formIn4%>" class="form-control" placeholder="4- Numéro de Téléphone 2" >
+                                                            <input type="text" name="tel2" value="<%=formIn7%>" class="form-control" placeholder="4- Numéro de Téléphone 2" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="commune_rattach" value="<%=formIn5%>" class="form-control" placeholder="5- Commune de Rattachement**" required>
+                                                            <input type="text" name="commune_rattach" value="<%=formIn8%>" class="form-control" placeholder="5- Commune de Rattachement**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="quartier_rattach" value="<%=formIn6%>" class="form-control" placeholder="6- Quartier de Rattachement**" required>
+                                                            <input type="text" name="quartier_rattach" value="<%=formIn9%>" class="form-control" placeholder="6- Quartier de Rattachement**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="commune_actuelle" value="<%=formIn7%>" class="form-control" placeholder="7- Commune Actuelle**" required>
+                                                            <input type="text" name="commune_actuelle" value="<%=formIn10%>" class="form-control" placeholder="7- Commune Actuelle**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="quartier_actuel" value="<%=formIn8%>" class="form-control" placeholder="8- Quartier Actuel**" required>
+                                                            <input type="text" name="quartier_actuel" value="<%=formIn11%>" class="form-control" placeholder="8- Quartier Actuel**" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -323,7 +329,7 @@
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn9%>" name="sexe" id="demo-category" required>
+                                                            <select class="form-control" value="<%=formIn12%>" name="sexe" id="demo-category" required>
                                                                 <option value="">1- Sexe :** -</option>                                                     
                                                                 <option value="masculin">Masculin</option>
                                                                 <option value="feminin">Féminin</option>  
@@ -333,7 +339,7 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn10%>" name="tranche_age" id="demo-category" required>
+                                                            <select class="form-control" value="<%=formIn13%>" name="tranche_age" id="demo-category" required>
                                                                 <option value="">2- Tranche d'âge:** -</option>
                                                                 <option value="15-25 ans">14 &agrave; 25 ans</option>
                                                                 <option value="26-35 ans">26 &agrave; 35 ans</option>
@@ -346,20 +352,20 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn11%>" name="etude" id="etude" required>
+                                                            <select class="form-control" value="<%=formIn14%>" name="etude" id="etude" required>
                                                                 <option value="">3- Avez vous fait des &eacute;tudes ?** -</option>
                                                                 <option value="Ecole_Francaise" id="EF">Ecole Française</option>
                                                                 <option value="Ecole_Arabe" id="EA">Ecole Arabe</option>
                                                                 <option value="Ecole_Coranique" id="EC">Ecole Coranique</option>
                                                                 <option value="Ecole_Alphabétisation" id="AL">Alphabétisation</option>
                                                                 <option value="Illetre" id="il">Illétré</option>
-                                                                <option value="NON">Non</option>
+                                                                <option value="NON">NON</option>
                                                             </select>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group" id="niveau">
-                                                            <select class="form-control" value="<%=formIn12%>" name="niveau_etude" id="niveau_etude">
+                                                            <select class="form-control" value="<%=formIn15%>" name="niveau_etude" id="niveau_etude">
                                                                 <option value="">4- Niveau d'&eacute;tudes: -</option>
                                                             </select>
                                                         </div>
@@ -391,7 +397,7 @@
                                                      </script>
                                                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn13%>" name="formation_prof" id="demo-category" required>
+                                                            <select class="form-control" value="<%=formIn16%>" name="formation_prof" id="demo-category" required>
                                                                 <option value="">5- Avez-vous fait une Formation Technique Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -400,7 +406,7 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn14%>" name="sejour" onchange="changeStatus();"  id="sejour" required>
+                                                            <select class="form-control" value="<%=formIn17%>" name="sejour" onchange="changeStatus();"  id="sejour" required>
                                                                 <option value="">6- Avez-vous s&eacute;journé dans un pays &eacute;trangers ?**-</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -409,12 +415,12 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="pays_sejourne" value="<%=formIn15%>" id="pays_sejourne"  class="form-control" placeholder="7- SI OUI dans quel pays ?">
+                                                            <input type="text" name="pays_sejourne" value="<%=formIn18%>" id="pays_sejourne"  class="form-control" placeholder="7- SI OUI dans quel pays ?">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="motif_sejour" value="<%=formIn16%>" id="motif_sejour" class="form-control" placeholder="8- Et quel est le motif du s&eacute;jour ?">
+                                                            <input type="text" name="motif_sejour" value="<%=formIn19%>" id="motif_sejour" class="form-control" placeholder="8- Et quel est le motif du s&eacute;jour ?">
                                                         </div>
                                                     </div>
                                                     <script>
@@ -434,7 +440,7 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn17%>" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" required>
+                                                            <select class="form-control" value="<%=formIn20%>" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" required>
                                                                 <option value="">9- Avez-vous une Exp&eacute;rience Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -443,7 +449,7 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn18%>" name="domaine_exp_prof" id="demo-category" required>
+                                                            <select class="form-control" value="<%=formIn21%>" name="domaine_exp_prof" id="demo-category" required>
                                                                 <option value="">10- Quelle est votre Domaine d'activit&eacute; ?** -</option>
                                                                 <option value="Production">Production</option>                                                       
                                                                 <option value="Transformation">Transformation</option>
@@ -458,7 +464,7 @@
                                               <!---->      
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn19%>" name="duree_exp_prof" id="duree_exp_prof" required> 
+                                                            <select class="form-control" value="<%=formIn22%>" name="duree_exp_prof" id="duree_exp_prof" required> 
                                                                 <option value="">11- Quelle est la Dur&eacute;e d'Exp&eacute;rience Professionnelle ?** -</option> 
                                                                 <option value="3mois-1an">3mois &agrave; 1an</option>                                                       
                                                                 <option value="+1an-3ans">+1an &agrave; 3ans</option>
@@ -483,7 +489,7 @@
                                                     
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn20%>" name="statut_exp_prof" id="demo-category" required>
+                                                            <select class="form-control" value="<%=formIn23%>" name="statut_exp_prof" id="demo-category" required>
                                                                 <option value="">12- Quelle est votre Statut ?** -</option>
                                                               <!--  <option value="Chomeur">Ch&ocirc;meur</option>           -->                                                                                                             
                                                                 <option value="Apprenti">Apprenti</option>
@@ -498,7 +504,7 @@
                                                      <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" value="<%=formIn21%>" name="region_exp_prof" id="region" required="Champ Obligatoire"> 
+                                                        <select class="form-control" value="<%=formIn24%>" name="region_exp_prof" id="region" required="Champ Obligatoire"> 
                                                         <option value="">- 13- Dans quelle r&eacute;gion avez-vous vos activit&eacute;s ?** -</option>
                                                
                                                         </select>
@@ -507,7 +513,7 @@
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control"  value="<%=formIn22%>" name="departement_exp_prof" id="departement"  required="Champ Obligatoire"> 
+                                                        <select class="form-control"  value="<%=formIn25%>" name="departement_exp_prof" id="departement"  required="Champ Obligatoire"> 
                                                         <option value="">- 14- Dans quel d&eacute;partement avez-vous vos activit&eacute;s ?** -</option>
                                                                                                           
                                                         </select>
@@ -516,7 +522,7 @@
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                       <select class="form-control" value="<%=formIn23%>" name="commune_exp_prof" id="commune" required="Champ Obligatoire"> 
+                                                       <select class="form-control" value="<%=formIn26%>" name="commune_exp_prof" id="commune" required="Champ Obligatoire"> 
                                                         <option value="">- 15- Dans quelle commune avez-vous vos activit&eacute;s ?** -</option>
                                                       </select>
                                                     </div>
@@ -606,7 +612,7 @@
                                               
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" value="<%=formIn24%>" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" required>
+                                                            <input type="text" value="<%=formIn27%>" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" required>
                                                         </div>
                                                     </div>
                                                <script>
@@ -635,17 +641,17 @@
                                             </fieldset>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="autre_region_exp_prof" value="<%=formIn25%>" class="form-control" placeholder="17- Autre R&eacute;gion d'activité :">
+                                                            <input type="text" name="autre_region_exp_prof" value="<%=formIn28%>" class="form-control" placeholder="17- Autre R&eacute;gion d'activité :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="hors_senegal" value="<%=formIn26%>" class="form-control" placeholder="18- Activit&eacute; hors S&eacute;n&eacute;gal :">
+                                                            <input type="text" name="hors_senegal" value="<%=formIn29%>" class="form-control" placeholder="18- Activit&eacute; hors S&eacute;n&eacute;gal :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="situation_prof" value="<%=formIn27%>" id="demo-category" required>
+                                                            <select class="form-control" name="situation_prof" value="<%=formIn30%>" id="demo-category" required>
                                                                 <option value="">19- Quelle est votre situation professionnelle actuelle ?** -</option>
                                                                 <option value="Elève - Etudiant">El&egrave;ve/Etudiant</option>                                                       
                                                                 <option value="En Chomage">En Ch&ocirc;mage</option>
@@ -664,7 +670,7 @@
                                                 <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="soutien_immediat" value="<%=formIn28%>" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" required>
+                                                    <input type="text" name="soutien_immediat" value="<%=formIn31%>" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" required>
                                                 </div>
                                                     </div>
                                             <fieldset>
@@ -677,7 +683,7 @@
                                                             <hr/>
                                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                                 <div class="form-group">
-                                                                    <select class="form-control" value="<%=formIn29%>" name="titre_accompagnement" id="demo-category" required>
+                                                                    <select class="form-control" value="<%=formIn3%>" name="titre_accompagnement" id="demo-category" required>
                                                                         <option value="">- 21- Titre Accompagnement :** -</option>
                                                                         <option value="Personnel">Personnel</option>
                                                                         <option value="Collectif">Collectif</option>

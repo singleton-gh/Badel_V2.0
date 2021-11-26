@@ -82,6 +82,7 @@
                     String Prenom = rs.getString(2);
                     String nom = rs.getString(3);
                     String Civilite = rs.getString(4);
+                    int Role = rs.getInt(7);
         %>    <!--************************************
                             Loader Start
             *************************************-->
@@ -157,7 +158,8 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
                                     <h3>Rechercher par :</h3> <br/>
-                                    <input id="myInput" onkeyup="myFunction()" placeholder="ID Formulaire"  type="text" name="" value="" />
+                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="Agent"  type="text" name="" value="" />
+                                    <input id="myInput" onkeyup="myFunction()" placeholder="Id Formulaire"  type="text" name="" value="" />
                                     <input id="myInput1" onkeyup="myFunction1()" placeholder="Prenom" type="text" name="" value="" />
                                     <input id="myInput2" onkeyup="myFunction2()" placeholder="Nom" type="text" name="" value="" />
 
@@ -203,11 +205,19 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    
+                                                       
+                                                    
+                                                    
                                                     <%
-
-                                                        String sql1 = "SELECT * FROM p1demandeurindividuel where supp = 0";
+                                                       
                                                         try {
-
+                                                  String sql1="";
+                                                                 if(Role == 1){
+                                                                  sql1 = "SELECT * FROM p1demandeurindividuel where supp = 0";
+                                                               }else{
+                                                                  sql1 = "SELECT * FROM p1demandeurindividuel where supp = 0 and inscritPar =" + idx;                                                            
+                                                               }
                                                             // String idx = "0";
                                                             pst = con.prepareStatement(sql1);
                                                             ResultSet rs1 = pst.executeQuery();
@@ -317,14 +327,31 @@
                             *************************************-->
                         <script>
 
-                            function myFunction() {
+                            function myFunction0() {
+                                var input, filter, table, tr, td, i;
+                                input = document.getElementById("myInput0");
+                                filter = input.value.toUpperCase();
+                                table = document.getElementById("myTable");
+                                tr = table.getElementsByTagName("tr");
+                                for (i = 0; i < tr.length; i++) {
+                                    td = tr[i].getElementsByTagName("td")[2];
+                                    if (td) {
+                                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                            tr[i].style.display = "";
+                                        } else {
+                                            tr[i].style.display = "none";
+                                        }
+                                    }
+                                }
+                            }
+                             function myFunction() {
                                 var input, filter, table, tr, td, i;
                                 input = document.getElementById("myInput");
                                 filter = input.value.toUpperCase();
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[3];
+                                    td = tr[i].getElementsByTagName("td")[6];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";

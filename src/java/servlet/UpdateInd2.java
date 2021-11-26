@@ -52,6 +52,7 @@ public class UpdateInd2 extends HttpServlet {
         String idx = (String) request.getParameter("id");
         request.setAttribute("idx", idx);
         request.setAttribute("formulaire_id", formulaire_id);
+        
         if(typeAction != null){
         RequestDispatcher rd = request.getRequestDispatcher("inscriptionIndividuelle3.jsp");
         rd.forward(request, response);

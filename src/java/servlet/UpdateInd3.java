@@ -33,6 +33,8 @@ public class UpdateInd3 extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=ISO-8859-1");
+        
+        String typeAction = (String) request.getParameter("type1");
 
         String regi_commerce = (String) request.getParameter("regi_commerce");
         String numero_regi_comm = (String) request.getParameter("numero_regi_comm");
