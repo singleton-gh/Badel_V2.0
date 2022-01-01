@@ -363,7 +363,7 @@
                                             <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">           
                                                                               
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button onclick="window.open('FileUploadInd.jsp')" class="at-btn">AJOUTER PIECES JOINTES</button><br/><button type="submit" class="at-btn">ENREGISTRER & RETOURNER</button></center>
+                                                <center><button onclick="window.open('FileUploadIndiv.jsp')" class="at-btn">AJOUTER PIECES JOINTES</button><br/><button type="submit" class="at-btn">ENREGISTRER & RETOURNER</button></center>
                                             </div>
                                     
                                     </form>

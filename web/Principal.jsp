@@ -191,16 +191,16 @@ Main Start
                                     <div class="at-contactusvone">
                                         <div id="myDIV" class="row">
                                             <br>  
-                                            <br>
+                                          &nbsp;<hr />
                                             <center><button style="width: 300px; height: 70px" onclick="myFunction()" type="submit" class="at-btn" >Afficher les Inscriptions</button></center>
 
-                                            <br>
+                                            &nbsp;<hr />
                                                 <center><button style="width: 300px; height: 70px" onclick="myFunction1()" type="submit" class="at-btn">Faire une Inscription</button></center>
                                           
-                                            <br>
+                                            <br><hr />
                                             <form action="connection.html" method="post">
                                                 <center><button style="width: 300px; height: 70px" type="submit" class="at-btn">Se Déconnecter</button></center>
-                                            </form>
+                                            </form>&nbsp;<hr />
 
 
                                         </div>

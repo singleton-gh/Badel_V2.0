@@ -56,10 +56,9 @@
         <servlet-name>ServJdet</servlet-name>
         <servlet-class>servlet.ServJdet</servlet-class>
     </servlet>
-   
     <servlet>
-        <servlet-name>FileUploadServInd</servlet-name>
-        <servlet-class>servlet.FileUploadServInd</servlet-class>
+        <servlet-name>FileUploadInd</servlet-name>
+        <servlet-class>servlet.FileUploadInd</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>IndividVerif</servlet-name>
@@ -118,8 +117,8 @@
         <url-pattern>/ServJdet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>FileUploadServInd</servlet-name>
-        <url-pattern>/FileUploadServInd</url-pattern>
+        <servlet-name>FileUploadInd</servlet-name>
+        <url-pattern>/FileUploadInd</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

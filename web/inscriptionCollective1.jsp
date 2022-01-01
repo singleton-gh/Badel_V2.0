@@ -469,21 +469,46 @@
                                     <h3><center>Combien de membres compte le Collectif ? </center></h3>  
                                 <hr/>
                                 
+                                            Total: <input type="text" id="total"  name="total_membre" value=""> &nbsp;&nbsp;&nbsp;
+                                            Homme: <input type="text" id="homme"  name="total_homme"  value="" onblur="myFunction1()">&nbsp;&nbsp;&nbsp;
+                                            Femme: <input type="text" id="femme"  name="total_femme"  value="" onblur="myFunction2()">
+
+                                       <script>
+                                           function myFunction1() {
+                                               var total = document.getElementById("total").value;
+                                               var homme = document.getElementById("homme").value;
+                                               var femme = document.getElementById("femme").value;
+                                               femme = total - homme;
+                                               document.getElementById("femme").value = femme;
+                                               document.getElementById("homme").value = homme;
+                                           }
+
+                                           function myFunction2() {
+                                               var total = document.getElementById("total").value;
+                                               var homme = document.getElementById("homme").value;
+                                               var femme = document.getElementById("femme").value;
+                                               homme = total - femme;
+                                               document.getElementById("femme").value = femme;
+                                               document.getElementById("homme").value = homme;
+                                           }
+                                       </script>
+
+                                
+                                             <!--   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
+                                                    <div class="form-group">
+                                                        <input type="text" name="total"  id="total_membre" class="form-control" placeholder="1- Combien de membres compte le Collectif ?**" required="Champ Obligatoire">
+                                                    </div>
+                                                </div> 
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="total_membre"  id="total_membre" class="form-control" placeholder="1- Combien de membres compte le Collectif ?**" required="Champ Obligatoire">
+                                                        <input type="text" name="total"  id="total_homme" class="form-control" placeholder="2- Combien d'hommes dans le Collectif ?" required="">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="total_homme"  id="total_homme" class="form-control" placeholder="2- Combien d'hommes dans le Collectif ?" required="">
+                                                        <input type="text" name="total"   id="tf"  class="form-control" placeholder="3- Combien de femmes dans le Collectif ?">
                                                     </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                    <div class="form-group">
-                                                        <input type="text" name="total_femme"   id="tf"  class="form-control" placeholder="3- Combien de femmes dans le Collectif ?">
-                                                    </div>
-                                                </div>
+                                                </div> -->
                                             </fieldset>
                                     
                                         

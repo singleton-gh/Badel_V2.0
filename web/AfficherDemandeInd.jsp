@@ -227,7 +227,9 @@
                                                     <tr>
                                                         <td><input style="background-color: #09b83e; color: white" type="button" value=" Ouvrir Dossier " onclick="location.href = 'dossierComplet.jsp?idform=<%=rs1.getString(3)%>&type=ind&id=<%=ix%>'"/> </td>
                                                         <td><%=compte%> </td>
-                                                        <td>User <%=rs1.getString(2)%></td>
+                                                        
+                                                        <td>AER <%=rs1.getString(2)%></td>
+                                                 <!--<td>User <%=rs1.getString(2)%></td> -->
                                                         <td><%=rs1.getString(3)%></td>
                                                         <td><%=rs1.getString(4)%></td>
                                                         <td><%=rs1.getString(5)%></td>

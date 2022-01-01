@@ -394,7 +394,7 @@
                                                         <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir%>" onclick="location.href = 'updateInd1.jsp?formulaire_id=<%=formIn3%>&id=<%=idx%>&form=p1ind'"/><input style="background-color: red; color: white" type="button" value="  Effacer " onclick="location.href ='delete.jsp?formulaire_id=<%=formIn3%>&id=<%=idx%>&table=p1demandeurindividuel'"/></td>
                                                                                                            
                                                         <td><%=formIn2%></td>
-                                                        <td><%=formIn3%></td>
+                                                        <td>AER<%=formIn3%></td>
                                                         <td><%=formIn4%></td>
                                                         <td><%=formIn5%></td>
                                                         <td><%=formIn6%></td>
@@ -754,7 +754,7 @@
                                                         <td><%=formCon27%></td>                                                       
                                                         
                                                         <td><%=formCon2%></td>
-                                                        <td><%=formCon3%></td>
+                                                        <td>AER<%=formCon3%></td>
                                                         <td><%=formCon4%></td>
                                                         <td><%=formCon5%></td>
                                                         <td><%=formCon6%></td>
