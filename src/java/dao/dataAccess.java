@@ -143,7 +143,7 @@ public class dataAccess {
     }
 
     // Add Login
-    public void addLogin(ModLogin ModLogin) {
+  /*  public void addLogin(ModLogin ModLogin) {
         try {
 
             PreparedStatement ps = JavaConnect.getPreparedStatement("insert into login (Id, Prenom, Nom, Civilite, Login, Pass, Role) values (NULL,?,?,?,?,?,?)");
@@ -159,14 +159,14 @@ public class dataAccess {
         } catch (SQLException | ClassNotFoundException ex) {
             Logger.getLogger(dataAccess.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    } */
 
     //Login
-    public String IdentAdmin(ModConClient modConClient) {
+   public String IdentAdmin(ModConClient modConClient) {
         Connection con = new dbutil.JavaConnect().createConnection();
 
         System.out.println("La Methode de connexion 0 marche");
-        String sql = "SELECT * FROM loginadmin where Pseudo=? and Password=?";
+        String sql = "SELECT * FROM loginadmin where login=? and pass=?";
         try {
             pst = con.prepareStatement(sql);
             pst.setString(1, modConClient.getLogin());
@@ -187,6 +187,7 @@ public class dataAccess {
         return val;
 
     }
+
 
     // Add Inscription Individuelle1
     public void addModInd1(ModInd1 mi1) {

@@ -90,50 +90,46 @@
         <!--************************************
 				Header Start
 		*************************************-->
-        <header id="at-header" class="at-header at-headervthree">
-            <div class="container-fluid">
-                <div class="row">
-                    <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
-                    <div class="at-navigationarea">
-                        <nav id="at-nav" class="at-nav">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-                            </div>
-                            <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                                <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Accueil</a>
-                                    </li>
+         <header id="at-header" class="at-header at-headervthree">
+                <div class="container-fluid">
+                    <div class="row">
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
+                        <div class="at-navigationarea">
+                            <nav id="at-nav" class="at-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                                    <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="connection.html">Se déconnecter</a>
-                                    </li>
+                                       
+                                    </ul>
+                                </div>
+                            </nav>
+                          <!--   <div class="at-contactsocial">
+                                <span class="at-contactnumber">
+                                    <i class="icon-telephone114"></i>
+                                    <em>+00221 33 837 80 09</em>
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
-                        </nav>
-                        <div class="at-contactsocial">
-                            <span class="at-contactnumber">
-								<i class="icon-telephone114"></i>
-								<em>+00221 33 837 80 09</em>
-							</span>
-                         <!--   <ul class="at-socialicons">
-                                <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
-                                <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
-                                <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
-                            </ul>
-                         -->
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <!--************************************
 				Header End
 		*************************************-->
@@ -161,26 +157,28 @@
                                         
                                         <div class="at-sectiontitleborder">
                                             <br>
-                                            <h2><center>Veuillez remplir ce formulaire : <strong>&eacute;tape 1</strong> </center></h2>
+                                            <h2><center>Veuillez remplir ce formulaire de <strong>Niveau 1 ?</strong> </center></h2>
                                         </div>
                                         
-                                         <fieldset>
+                                        
+                            <fieldset>  
+                                
                                 <hr/>
                                     <h3><center>Identité du Représentant du Collectif </center></h3>  
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                    <div class="form-group">
-                                                        <input type="text" name="prenom_representant" class="form-control" placeholder="1- Prénom du représentant du Collectif ?**" required="Champ Obligatoire"> <!-- Champ ajouté -->
+                                                    <div class="form-group" >
+                                                        <input type="text"  name="prenom_representant" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="1- Prénom du représentant du Collectif ?**" required="Champ Obligatoire"> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nom_representant" class="form-control" placeholder="2- Nom du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="nom_representant" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="2- Nom du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="sexe_representant" id="demo-category" required> <!-- Champ ajouté -->
+                                                            <select class="form-control" name="sexe_representant" style="border:2px solid black; font-family: sans-serif" id="demo-category" required> <!-- Champ ajouté -->
                                                                 <option value="">3- Sexe :** -</option>                                                     
                                                                 <option value="masculin">Masculin</option>
                                                                 <option value="feminin">Féminin</option>  
@@ -190,28 +188,29 @@
                                                  
                                                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="adresse_representant" class="form-control" placeholder="4- Adresse du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="adresse_representant" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="4- Adresse du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="contact1_representant" class="form-control" placeholder="5- Téléphone 1 du représentant du Collectif**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="contact1_representant" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="5- Téléphone 1 du représentant du Collectif**" required=""> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="contact2_representant" class="form-control" placeholder="6- Téléphone 2 du représentant du Collectif ?"> <!-- Champ ajouté -->
+                                                        <input type="text" name="contact2_representant" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="6- Téléphone 2 du représentant du Collectif ?"> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
-                                            </fieldset>
-                                        <fieldset>
+                                
+                            </fieldset><br>
+                             <fieldset>
                                             <div class="row">
                                             <hr/>
                                                 <h3><center>Quel est votre titre dans le Collectif ? </center></h3>  
                                             <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="titre" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="titre" style="border:2px solid black; font-family: sans-serif" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value="">- Quel est votre titre dans le Collectif ?** -</option>
                                                         <option value="responsable_morale">Responsable Moral</option>
                                                         <option value="responsable_delegue">Responsable d&eacute;l&eacute;gu&eacute;</option>
@@ -221,14 +220,14 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                        </fieldset>
-                                        <fieldset>
+                              </fieldset>
+                              <fieldset>
                                     <hr/>
                                       <h3><center>Quel est la nature juridique du Collectif ? </center></h3>  
                                     <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="nat_juridique" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="nat_juridique" style="border:2px solid black; font-family: sans-serif" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value="">- Nature Juridique** -</option>
                                                         <option value="gpf">GPF</option>
                                                         <option value="association">Association</option>
@@ -238,24 +237,24 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                         </fieldset>
-                                         <fieldset>
+                    </fieldset>
+                    <fieldset>
                                 <hr/>
                                      <h3><center>Quelle est la d&eacute;nomination du Collectif ? </center></h3>  
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="denomination" class="form-control" placeholder="D&eacute;nomination**" required="Champ Obligatoire">
+                                                        <input type="text" name="denomination" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="D&eacute;nomination**" required="Champ Obligatoire">
                                                     </div>
                                                 </div>
-                                            </fieldset>
-                                            <fieldset>  
+                </fieldset>
+                <fieldset>  
                                 <hr/>
                                     <h3><center>La reconnaissance juridique du Collectif ? </center></h3>  
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="reconnaisance_juridique" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="reconnaisance_juridique" style="border:2px solid black; font-family: sans-serif" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value="">- Avez-vous une reconnaissance juridique** -</option>
                                                         <option value="oui">OUI</option>
                                                         <option value="non">NON</option>
@@ -276,7 +275,7 @@
                                 <fieldset>  
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                          <div class="form-group">
-                                                             <select class="form-control" name="lieu_Collectif"  onchange="changeStatus00()" id="lieu_Collectif" required> <!-- Champ ajouté -->
+                                                             <select class="form-control" name="lieu_Collectif" style="border:2px solid black; font-family: sans-serif" onchange="changeStatus00()" id="lieu_Collectif" required> <!-- Champ ajouté -->
                                                                 <option value="">1- Le Collectif se situe-t-il au Senegal?** -</option>                                                     
                                                                 <option value="OUI">OUI</option>
                                                                 <option value="NON">NON</option>  
@@ -285,27 +284,27 @@
                                                     </div>
                                               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="pays_exterieur" id="pe" class="form-control" placeholder="2- Dans quel pays extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="pays_exterieur" id="pe" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="2- Dans quel pays extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
                                                     </div>
                                               </div> 
                                              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="region_exterieure"  id="re" class="form-control" placeholder="3- Dans quelle region extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="region_exterieure"  id="re" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="3- Dans quelle region extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
                                                     </div>
                                               </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="departement_exterieur" id="de" class="form-control" placeholder="4- Dans quelle departement extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="departement_exterieur" id="de" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="4- Dans quelle departement extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
                                                     </div>
                                               </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="commune_exterieure" id="ce" class="form-control" placeholder="5- Dans quelle commune extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="commune_exterieure" id="ce" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="5- Dans quelle commune extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
                                                     </div>
                                               </div>
-                                           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="Qtr_Village_exterieur" class="form-control" id="qve" placeholder="6- Dans quel quartier ou village extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="Qtr_Village_exterieur" class="form-control" id="qve" style="border:2px solid black; font-family: sans-serif" placeholder="6- Dans quel quartier ou village extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
                                                     </div>
                                               </div>
                                              
@@ -318,7 +317,7 @@
                                <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="region_interieure" id="region" required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="region_interieure" style="border:2px solid black; font-family: sans-serif" id="region" required="Champ Obligatoire"> 
                                                         <option value="">- 1- Dans quelle r&eacute;gion se trouve le Collectif ?** -</option>
                                                
                                                         </select>
@@ -327,7 +326,7 @@
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="departement_interieur" id="departement"  required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="departement_interieur" id="departement" style="border:2px solid black; font-family: sans-serif" required="Champ Obligatoire"> 
                                                         <option value="">- 2- Dans quel d&eacute;partement se trouve le Collectif ?** -</option>
                                                                                                           
                                                         </select>
@@ -336,7 +335,7 @@
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="commune_interieure" id="commune" required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="commune_interieure" id="commune" style="border:2px solid black; font-family: sans-serif" required="Champ Obligatoire"> 
                                                         <option value="">- 3- Dans quelle commune se trouve le Collectif ?** -</option>
                                                                    </select>
                                                     </div>
@@ -424,7 +423,7 @@
 </script>        
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="Qtr_Village_interieur" class="form-control" id="qtr_village" placeholder="5- Dans quel quartier ou village se trouve le Collectif ?**" required>
+                                                            <input type="text" name="Qtr_Village_interieur" class="form-control" style="border:2px solid black; font-family: sans-serif" id="qtr_village" placeholder="5- Dans quel quartier ou village se trouve le Collectif ?**" required>
                                                         </div>
                                                     </div>
                                                <script>
@@ -460,7 +459,7 @@
                                 <hr/>   
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <input type="date" name="date_creation" class="form-control" placeholder="Date de cr&eacute;ation du Collectif. (JJ/MM/AAAA)**" required="Champ Obligatoire" pattern=(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}>
+                                                        <input type="date" name="date_creation" class="form-control" style="border:2px solid black; font-family: sans-serif" placeholder="Date de cr&eacute;ation du Collectif. (JJ/MM/AAAA)**" required="Champ Obligatoire" pattern=(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}>
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -468,11 +467,11 @@
                                 <hr/>
                                     <h3><center>Combien de membres compte le Collectif ? </center></h3>  
                                 <hr/>
-                                
-                                            Total: <input type="text" id="total"  name="total_membre" value=""> &nbsp;&nbsp;&nbsp;
-                                            Homme: <input type="text" id="homme"  name="total_homme"  value="" onblur="myFunction1()">&nbsp;&nbsp;&nbsp;
-                                            Femme: <input type="text" id="femme"  name="total_femme"  value="" onblur="myFunction2()">
-
+                                <div><center>
+                                            Total: <input type="text" id="total" style="border:2px solid black; font-family: sans-serif" name="total_membre" value=""> &nbsp;&nbsp;&nbsp;
+                                            Homme: <input type="text" id="homme" style="border:2px solid black; font-family: sans-serif" name="total_homme"  value="" onblur="myFunction1()">&nbsp;&nbsp;&nbsp;
+                                            Femme: <input type="text" id="femme" style="border:2px solid black; font-family: sans-serif" name="total_femme"  value="" onblur="myFunction2()">
+                                       </center> </div> <br/> <hr/>  <br/>
                                        <script>
                                            function myFunction1() {
                                                var total = document.getElementById("total").value;
@@ -510,11 +509,11 @@
                                                     </div>
                                                 </div> -->
                                             </fieldset>
-                                    
+                                                       <br/> <hr/>  <br/>
                                         
                                             <input type="hidden" value="<%=idx%>" name="id">  
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                    <center><button type="submit" name="type2" class="at-btn">ENREGISTRER & RETOURNER...</button>&nbsp;<button type="submit" name="type1" class="at-btn">ENREGISTRER & SUIVRE...</button></center>
+                                                    <center><button type="submit" name="type2" style="width: 490px; height: 80px; border:3px solid purple; font-size: 25px" class="at-btn">ENREGISTRER & RETOURNER...</button>&nbsp;&nbsp;<button type="submit" style="width: 490px; height: 80px; border:3px solid red; font-size: 25px" name="type1" class="at-btn">ENREGISTRER & SUIVRE...</button></center>
                                                 </div>
                                             </div>
                                     </form>
@@ -594,10 +593,10 @@
                                 </div>
                             </div>  -->
                         </div>
-                       <div class="at-copyright">
-                            <p>Adresse: ZAC MBAO villa N?3 4i?me Etage Cit? Socidak 1 en face Brioche Dor?e, Rufisque Ouvert de 09H ? 17H</p>
-                            <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
-                        </div>
+                      <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
+                            </div>
                     </div>
                 </div>
             </div>

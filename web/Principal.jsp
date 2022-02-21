@@ -24,7 +24,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Se connecter</title>
+        <title>MENU PRINCIPAL</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.ico">
@@ -104,7 +104,8 @@ Header Start
             <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -115,14 +116,14 @@ Header Start
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <!-- <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
                                             <a href="index.html">Accueil</a>
                                         </li>
                                         <li class="menu-item-has-children">
                                             <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                        </li> 
                                     </ul>
                                 </div>
                             </nav>
@@ -130,12 +131,13 @@ Header Start
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
                                     <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -184,39 +186,79 @@ Main Start
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Bonjour <%=Civilite%> <%=nom%></h1>
+                        <h1 style="text-align: center;">Bonjour <%=Prenom%> <%=nom%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
                                     <div class="at-contactusvone">
                                         <div id="myDIV" class="row">
                                             <br>  
-                                          &nbsp;<hr />
-                                            <center><button style="width: 300px; height: 70px" onclick="myFunction()" type="submit" class="at-btn" >Afficher les Inscriptions</button></center>
+                                            <br>
+                                          <!--  <center><button style="width: 300px; height: 70px" onclick="myFunction()" type="submit" class="at-btn" >Afficher les Inscriptions</button></center>
 
-                                            &nbsp;<hr />
+                                            <br>
                                                 <center><button style="width: 300px; height: 70px" onclick="myFunction1()" type="submit" class="at-btn">Faire une Inscription</button></center>
                                           
-                                            <br><hr />
+                                            <br> -->
+                                          
+                                         
+                                         <fieldset>
+                                             <h2 style="font-family: sans-serif; font-size: 20px"><center>Consulter ou Editer les dossiers des demandeurs.</center></h2><br/>
+                                                  <form action="AfficherDemandeInd.jsp" id="formAffind" method="post">
+                                                      <input type="hidden" value="<%=idx%>" name="id"> 
+                                                  </form>
+                                                  <form action="AfficherDemandeCol.jsp" id="formAffcoll"  method="post">
+                                                      <input type="hidden" value="<%=idx%>" name="id">  
+                                                 </form>
+                                                 <div>
+                                                        <center>
+                                                           <button style="width: 490px; height: 80px; color: wheat; border:3px solid black; font-size: 20px " form="formAffind" type="submit" class="at-btn"> AFFICHER INSCRIPTIONS INDIVIDUELLES</button>&nbsp;&nbsp;&nbsp;&nbsp;                                                      
+                                                           <button style="width: 490px; height: 80px; color: wheat; border:3px solid black; font-size: 20px " form="formAffcoll" type="submit" class="at-btn" > AFFICHER INSCRIPTIONS COLLECTIVES</button>
+                                                        </center>
+                                                 </div><br/>
+                                                 
+                                         
+                                                                 <br/><hr/><br/>
+                                                    
+                                          
+                                              <h2 style="font-family: sans-serif; font-size: 20px"><center>Faire une inscription individuelle ou collective.</center></h2><br/>
+                                                 <form  action="inscriptionIndividuelle1.jsp" id="formInsInd" method="post">
+                                                        <input type="hidden" value="<%=idx%>" name="id">  
+                                                 </form>
+                                                                                     
+                                                 <form action="inscriptionCollective1.jsp" id="formInsCol" method="post">
+                                                        <input type="hidden" value="<%=idx%>" name="id">
+                                                </form>
+                                                <div>
+                                                    <center>
+                                                        <button style="width: 490px; height: 80px; color: yellow; border:3px solid purple; font-size: 20px " form="formInsInd" type="submit" class="at-btn" >INSCRIPTION INDIVIDUELLE</button>&nbsp;&nbsp;&nbsp;&nbsp; 
+                                                        <button style="width: 490px; height: 80px; color: yellow; border:3px solid purple; font-size: 20px " form="formInsCol" type="submit" class="at-btn">INSCRIPTION COLLECTIVE</button>
+                                                    </center> 
+                                               </div>
+                                          
+                                                                <br/><hr/> <br/>
+                                                
+                                          
                                             <form action="connection.html" method="post">
-                                                <center><button style="width: 300px; height: 70px" type="submit" class="at-btn">Se Déconnecter</button></center>
-                                            </form>&nbsp;<hr />
+                                                <center><button style="width: 350px; height: 70px; border:3px solid red; font-size: 25px" type="submit" class="at-btn">SE DECONNECTER</button></center>
+                                            </form><br/>
+                                         </fieldset>
 
-
-                                        </div>
-                                        <div id="myAff" class="row" style="display: none">
+                                  <!--     </div>
+                                      
+                                         <div id="myAff" class="row" style="display: none">
                                             <br>  
                                             <br>
-                                            <center><button style="width: 320px; height: 70px" onclick="myFunction()" type="submit" class="at-btn" >Menu Pricipal</button></center>
+                                           <center><button style="width: 320px; height: 70px" onclick="myFunction()" type="submit" class="at-btn" >Menu Pricipal</button></center> 
 
                                             <br>
                                             <form  action="AfficherDemandeInd.jsp" method="post">
-                                                <input type="hidden" value="<%=idx%>" name="id">  
+                                                <input type="hidden" value="" name="id">  
                                                 <center><button style="width: 320px; height: 70px" type="submit" class="at-btn" > Afficher Inscription Individuelle</button></center>
                                             </form>
                                             <br>
                                             <form action="AfficherDemandeCol.jsp" method="post">
-                                                <input type="hidden" value="<%=idx%>" name="id">
+                                                <input type="hidden" value="" name="id">
                                                 <center><button style="width: 320px; height: 70px" type="submit" class="at-btn">Afficher Inscription Collective</button></center>
                                             </form>
                                         </div>
@@ -224,18 +266,18 @@ Main Start
                                         <div id="myDIVIns" class="row" style="display: none">
                                             <br>  
                                             <br>
-                                            <center><button style="width: 300px; height: 70px" onclick="myFunction1()" type="submit" class="at-btn" >Menu Pricipal</button></center>
+                                           <center><button style="width: 300px; height: 70px" onclick="myFunction1()" type="submit" class="at-btn" >Menu Pricipal</button></center> 
 
                                             <br>
                                             <form  action="inscriptionIndividuelle1.jsp" method="post">
-                                                <input type="hidden" value="<%=idx%>" name="id">  
+                                                <input type="hidden" value="" name="id">  
                                                 <center><button style="width: 300px; height: 70px" type="submit" class="at-btn" >Inscription Individuelle</button></center>
                                             </form>
                                             <br>
                                             <form action="inscriptionCollective1.jsp" method="post">
-                                                <input type="hidden" value="<%=idx%>" name="id">
+                                                <input type="hidden" value="" name="id">
                                                 <center><button style="width: 300px; height: 70px" type="submit" class="at-btn">Inscription Collective</button></center>
-                                            </form>
+                                            </form> -->
 
 
                                         </div>
@@ -284,7 +326,7 @@ Footer Start
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
+                          <!--  <div class="at-emailsubscribearea">
                                 <p>Recevez nos dernières informations</p>
                                 <form class="at-formtheme at-formnewsletter">
                                     <fieldset>
@@ -292,19 +334,21 @@ Footer Start
                                         <button class="at-btn" type="submit">Souscrire</button>
                                     </fieldset>
                                 </form>
-                            </div>
-                            <div class="at-threecolumns">
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
                                 <div class="at-fcolumn">
                                     <div class="at-widget at-widgettext">
                                         <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
-<p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-</div> -->
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
                                         <ul class="at-socialicons">
                                             <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                             <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
                                         </ul>
+                                       
                                     </div>
                                 </div>
                                 <div class="at-fcolumn">
@@ -314,10 +358,6 @@ Footer Start
                                         </div>
                                         <div class="at-widgetcontent">
                                             <ul>
-                                                <li> ix = <%=ix%> </li>
-                                                <li> idx = <%=idx%> </li>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
                                                 <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
                                                 <li><a href="https://www.taataan.sn">Taataan</a></li>
                                                 <li>
@@ -326,30 +366,30 @@ Footer Start
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="at-fcolumn">
+                                </div> 
+                              <div class="at-fcolumn">
                                     <div class="at-widget">
                                         <div class="at-fwidgettitle">
                                             <h3>Recent News</h3>
                                         </div>
                                         <div class="at-widgetcontent">
-                                            <ul>
+                                          <ul>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2018-01-12">January 28, 2018</time>
                                                 </li>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2020-24-11">Novembre 24, 2020</time>
                                                 </li>
-                                            </ul>
+                                            </ul> 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                           <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>
@@ -357,7 +397,7 @@ Footer Start
             </footer>
             <!--************************************
 Footer End
-*************************************-->
+*************************************--> 
         </div>
         <!--************************************
 Wrapper End

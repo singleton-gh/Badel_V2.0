@@ -91,7 +91,8 @@
             <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -102,31 +103,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                                 <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Accueil</a>
-                                    </li>
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                                    <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="connection.html">Se déconnecter</a>
-                                    </li>
-                                </ul>
+                                       
+                                    </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                              <!--  <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="at-instagram"><a href="https://www.instagram.com/badel"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
-                              -->
+                             -->
                             </div>
                         </div>
                     </div>
@@ -175,7 +171,7 @@
                                                 <br/>
                                                 <hr/>
                                                 <h2>
-                                                    <center>Veuillez remplir ce formulaire : <strong>Étape 1</strong> </center>
+                                                    <center>Veuillez remplir ce formulaire de <strong>Niveau 1 ?</strong> </center>
                                                 </h2>
                                                 <hr/>
                                             </div>
@@ -190,43 +186,43 @@
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="prenom" class="form-control" placeholder="1- Prénom**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="prenom" class="form-control" placeholder="1- Prénom**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="nom" class="form-control" placeholder="2- Nom**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="nom" class="form-control" placeholder="2- Nom**" required>
                                                         </div>
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="tel1" class="form-control" placeholder="3- Numéro de Téléphone 1**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="tel1" class="form-control" placeholder="3- Numéro de Téléphone 1**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="tel2" class="form-control" placeholder="4- Numéro de Téléphone 2" >
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="tel2" class="form-control" placeholder="4- Numéro de Téléphone 2" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="commune_rattach" class="form-control" placeholder="5- Commune de Rattachement**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="commune_rattach" class="form-control" placeholder="5- Commune de Rattachement**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="quartier_rattach" class="form-control" placeholder="6- Quartier de Rattachement**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="quartier_rattach" class="form-control" placeholder="6- Quartier de Rattachement**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="commune_actuelle" class="form-control" placeholder="7- Commune Actuelle**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="commune_actuelle" class="form-control" placeholder="7- Commune Actuelle**" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="quartier_actuel" class="form-control" placeholder="8- Quartier Actuel**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="quartier_actuel" class="form-control" placeholder="8- Quartier Actuel**" required>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -241,7 +237,7 @@
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="sexe" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="sexe" id="demo-category" required>
                                                                 <option value="">1- Sexe :** -</option>                                                     
                                                                 <option value="masculin">Masculin</option>
                                                                 <option value="feminin">Féminin</option>  
@@ -251,7 +247,7 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="tranche_age" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="tranche_age" id="demo-category" required>
                                                                 <option value="">2- Tranche d'âge:** -</option>
                                                                 <option value="15-25 ans">14 &agrave; 25 ans</option>
                                                                 <option value="26-35 ans">26 &agrave; 35 ans</option>
@@ -264,7 +260,7 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="etude" id="etude" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="etude" id="etude" required>
                                                                 <option value="">3- Avez vous fait des &eacute;tudes ?** -</option>
                                                                 <option value="Ecole_Francaise" id="EF">Ecole Française</option>
                                                                 <option value="Ecole_Arabe" id="EA">Ecole Arabe</option>
@@ -277,7 +273,7 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group" id="niveau">
-                                                            <select class="form-control" name="niveau_etude" id="niveau_etude">
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="niveau_etude" id="niveau_etude">
                                                                 <option value="">4- Niveau d'&eacute;tudes: -</option>
                                                             </select>
                                                         </div>
@@ -309,7 +305,7 @@
                                                      </script>
                                                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="formation_prof" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="formation_prof" id="demo-category" required>
                                                                 <option value="">5- Avez-vous fait une Formation Technique Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -318,7 +314,7 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="sejour" onchange="changeStatus();"  id="sejour" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="sejour" onchange="changeStatus();"  id="sejour" required>
                                                                 <option value="">6- Avez-vous s&eacute;journé dans un pays &eacute;trangers ?**-</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -327,12 +323,12 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="pays_sejourne" id="pays_sejourne"  class="form-control" placeholder="7- SI OUI dans quel pays ?">
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="pays_sejourne" id="pays_sejourne"  class="form-control" placeholder="7- SI OUI dans quel pays ?">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="motif_sejour" id="motif_sejour" class="form-control" placeholder="8- Et quel est le motif du s&eacute;jour ?">
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="motif_sejour" id="motif_sejour" class="form-control" placeholder="8- Et quel est le motif du s&eacute;jour ?">
                                                         </div>
                                                     </div>
                                                     <script>
@@ -352,7 +348,7 @@
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" required>
                                                                 <option value="">9- Avez-vous une Exp&eacute;rience Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -361,7 +357,7 @@
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="domaine_exp_prof" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="domaine_exp_prof" id="demo-category" required>
                                                                 <option value="">10- Quelle est votre Domaine d'activit&eacute; ?** -</option>
                                                                 <option value="Production">Production</option>                                                       
                                                                 <option value="Transformation">Transformation</option>
@@ -376,7 +372,7 @@
                                               <!---->      
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="duree_exp_prof" id="duree_exp_prof" required> 
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="duree_exp_prof" id="duree_exp_prof" required> 
                                                                 <option value="">11- Quelle est la Dur&eacute;e d'Exp&eacute;rience Professionnelle ?** -</option> 
                                                                 <option value="3mois-1an">3mois &agrave; 1an</option>                                                       
                                                                 <option value="+1an-3ans">+1an &agrave; 3ans</option>
@@ -401,7 +397,7 @@
                                                     
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="statut_exp_prof" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="statut_exp_prof" id="demo-category" required>
                                                                 <option value="">12- Quelle est votre Statut ?** -</option>
                                                               <!--  <option value="Chomeur">Ch&ocirc;meur</option>           -->                                                                                                             
                                                                 <option value="Apprenti">Apprenti</option>
@@ -416,7 +412,7 @@
                                                      <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="region_exp_prof" id="region" required="Champ Obligatoire"> 
+                                                        <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="region_exp_prof" id="region" required="Champ Obligatoire"> 
                                                         <option value="">- 13- Dans quelle r&eacute;gion avez-vous vos activit&eacute;s ?** -</option>
                                                
                                                         </select>
@@ -425,7 +421,7 @@
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="departement_exp_prof" id="departement"  required="Champ Obligatoire"> 
+                                                        <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="departement_exp_prof" id="departement"  required="Champ Obligatoire"> 
                                                         <option value="">- 14- Dans quel d&eacute;partement avez-vous vos activit&eacute;s ?** -</option>
                                                                                                           
                                                         </select>
@@ -434,7 +430,7 @@
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                       <select class="form-control" name="commune_exp_prof" id="commune" required="Champ Obligatoire"> 
+                                                       <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="commune_exp_prof" id="commune" required="Champ Obligatoire"> 
                                                         <option value="">- 15- Dans quelle commune avez-vous vos activit&eacute;s ?** -</option>
                                                       </select>
                                                     </div>
@@ -524,7 +520,7 @@
                                               
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" required>
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" required>
                                                         </div>
                                                     </div>
                                                <script>
@@ -553,17 +549,17 @@
                                             </fieldset>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="autre_region_exp_prof" class="form-control" placeholder="17- Autre R&eacute;gion d'activité :">
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="autre_region_exp_prof" class="form-control" placeholder="17- Autre R&eacute;gion d'activité :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <input type="text" name="hors_senegal" class="form-control" placeholder="18- Activit&eacute; hors S&eacute;n&eacute;gal :">
+                                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="hors_senegal" class="form-control" placeholder="18- Activit&eacute; hors S&eacute;n&eacute;gal :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="situation_prof" id="demo-category" required>
+                                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="situation_prof" id="demo-category" required>
                                                                 <option value="">19- Quelle est votre situation professionnelle actuelle ?** -</option>
                                                                 <option value="Elève - Etudiant">El&egrave;ve/Etudiant</option>                                                       
                                                                 <option value="En Chomage">En Ch&ocirc;mage</option>
@@ -582,7 +578,7 @@
                                                 <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="soutien_immediat" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" required>
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="soutien_immediat" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" required>
                                                 </div>
                                                     </div>
                                             <fieldset>
@@ -595,7 +591,7 @@
                                                             <hr/>
                                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                                 <div class="form-group">
-                                                                    <select class="form-control" name="titre_accompagnement" id="demo-category" required>
+                                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="titre_accompagnement" id="demo-category" required>
                                                                         <option value="">- 21- Titre Accompagnement :** -</option>
                                                                         <option value="Personnel">Personnel</option>
                                                                         <option value="Collectif">Collectif</option>
@@ -611,7 +607,7 @@
 
                                             <input type="hidden" value="<%=idx%>" name="id">  
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" name="type2" class="at-btn">ENREGISTRER & RETOURNER...</button>&nbsp;<button type="submit" name="type1" class="at-btn">ENREGISTRER & POURSUIVRE...</button></center>
+                                                <center><button type="submit" name="type2" style="width: 490px; height: 80px; border:3px solid purple; font-size: 25px" class="at-btn">ENREGISTRER & RETOURNER...</button>&nbsp;<button type="submit" style="width: 490px; height: 80px; border:3px solid red; font-size: 25px" name="type1" class="at-btn">ENREGISTRER & POURSUIVRE...</button></center>
                                             </div>
                                     </div>
                                     </fieldset>
@@ -695,8 +691,8 @@
                                 </div>
                             </div>
                             <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

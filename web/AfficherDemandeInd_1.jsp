@@ -21,7 +21,7 @@
     <head>
         <meta charset="ISO-8859-1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Afficher les Demandes Collectives </title>
+        <title>Afficher les Demandes Individuelles </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="favicon.ico">
@@ -77,7 +77,7 @@
                 ResultSet rs = pst.executeQuery();
 
                 while (rs.next()) {
-                    System.out.println("hello 5");
+                    System.out.println("hello 4");
                     String id = rs.getString(1);
                     String Prenom = rs.getString(2);
                     String nom = rs.getString(3);
@@ -106,7 +106,7 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+           <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
                         <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
@@ -154,76 +154,83 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Liste des Demandes Collectives</h1>
+                        <h1 style="text-align: center;">Liste des Demandes Individuelles</h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
                                     <h3>Rechercher par :</h3> <br/>
-                                    <input id="myInput" onkeyup="myFunction()" placeholder="Id Formulaire"  type="text" name="" value="" />
-                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="NOM DU COLLECTIF"  type="text" name="" value="" />
-                                    <input id="myInput1" onkeyup="myFunction1()" placeholder="TEL. DU REPRESENTANT"  type="text" name="" value="" />
-                                    
-                                    </br> </br>
+                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="Id Formulaire"  type="text" name="" value="" />
+                                   <input id="myInput" onkeyup="myFunction()" placeholder="Télephone1"  type="text" name="" value="" /> 
+                                   <!--  <input id="myInput1" onkeyup="myFunction1()" placeholder="Prenom" type="text" name="" value="" />
+                                    <input id="myInput2" onkeyup="myFunction2()" placeholder="Nom" type="text" name="" value="" /> -->
+
+                                    <br/> <br/>
                                     <div class="at-contactusvone">
                                         <div style="overflow-x:auto;">
-                                            <table id="myTable">
+                                            <table id="myTable" >
                                                 <thead>
                                                     <tr>
-                                                       <th>Option</th>
+                                                        <th>Option</th>
                                                         <th>N°</th>
+                                                      <!--  <th>Inscrit_Par</th> -->
                                                         <th>Id_Formulaire</th>
-                                                        <th>Prénom_Représentant</th>
-                                                        <th>Nom_Représentant</th>
-                                                        <th>Sexe_Réprésentant</th>
-                                                        <th>Adresse_Représentant</th>
-                                                        <th>Contact1_Représentant</th>
-                                                        <th>Contact2_Représentant</th>
-                                                        <th>Titre</th>
-                                                        <th>Nature_Juridique</th>
-                                                        <th>Dénomination_:__Nom_du_Collectif</th>
-                                                        <th>Reconn._Juridique</th>
-                                                        <th>Lieu_Collectif</th>
-                                                        <th>Pays_Extérieur</th>
-                                                        <th>Région_Extérieure</th>
-                                                        <th>Départ._Extérieur</th>
-                                                        <th>Commune_Extérieure</th>
-                                                        <th>Quart._Village_Extérieur</th>
-                                                        <th>Région_Intérieure</th>
-                                                        <th>Départ._Intérieur</th>
-                                                        <th>Commune_Intérieure</th>
-                                                        <th>Quartier_Village_Intérieur</th>                                                        
-                                                        <th>Date_Creation</th>
-                                                        <th>Tot._Membre</th>
-                                                        <th>Tot._Homme</th>
-                                                        <th>Tot._Femme</th>
+                                                        <th>Prenom</th>
+                                                        <th>Nom</th>
+                                                        <th>Téléphone_1</th>
+                                                        <th>Téléphone_2</th>
+                                                        <th>Commune de Rattachement</th>
+                                                        <th>Quartier de Rattachement</th>
+                                                        <th>Commune Actuelle</th>
+                                                        <th>Quartier Actuel</th>
+                                                        <th>Sexe</th>
+                                                        <th>Tranche d'Age</th>
+                                                        <th>Etude</th>
+                                                        <th>Niveau_d'Etude</th>
+                                                        <th>Formation Professionnelle</th>
+                                                        <th>Séjour</th>
+                                                        <th>Pays Séjourné</th>
+                                                        <th>Motif Séjour</th>
+                                                        <th>Expérience Professionnelle</th>
+                                                        <th>Domaine Expérience Professionnelle</th>
+                                                        <th>Durée Expérience Professionnelle</th>
+                                                        <th>Statut Expérience Professionnelle</th>
+                                                        <th>Région Expérience Professionnelle</th>
+                                                        <th>Département Expérience Professionnelle</th> 
+                                                        <th>Commune Expérience Professionnelle</th>
+                                                        <th>Quartier Expérience Professionnelle</th>
+                                                        <th>Autre Quartier Expérience Professionnelle</th>
+                                                        <th>Hors Sénégal</th>
+                                                        <th>Situation Professionnelle</th>
+                                                        <th>Soutien Immédiat</th>
+                                                        <th>Titre Accompagnement</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+                                                    
+                                                       
+                                                    
+                                                    
                                                     <%
-
-                                                        
+                                                       
                                                         try {
- 
-                                                            String sql1="";
+                                                  String sql1="";
                                                                  if(Role == 1){
-                                                                  sql1 = "SELECT * FROM p1demandeurcollectif where supp = 0";
+                                                                  sql1 = "SELECT * FROM p1demandeurindividuel where supp = 0";
                                                                }else{
-                                                                  sql1 = "SELECT * FROM p1demandeurcollectif where supp = 0 and inscritPar = " + idx;                                                            
+                                                                  sql1 = "SELECT * FROM p1demandeurindividuel where supp = 0 and inscritPar =" + idx;                                                            
                                                                }
                                                             // String idx = "0";
                                                             pst = con.prepareStatement(sql1);
                                                             ResultSet rs1 = pst.executeQuery();
-
                                                             int compte = 1;
                                                             while (rs1.next()) {
                                                     %>         
                                                     <tr>
-                                                        <td><input style="background-color: #09b83e; color: white" type="button" value=" DETAILS " onclick="location.href = 'dossierComplet.jsp?idform=<%=rs1.getString(2)%>&type=col&id=<%=ix%>'"/> </td>
+                                                        <td><input style="background-color: #09b83e; color: white" type="button" value=" DETAILS" onclick="location.href = 'dossierComplet.jsp?idform=<%=rs1.getString(3)%>&type=ind&id=<%=ix%>'"/> </td>
                                                         <td><%=compte%> </td>
                                                         
-                                                       
-                                                        <!-- <td>User <%=rs1.getString(27)%></td> -->
-                                                        <td><%=rs1.getString(2)%></td>
+                                                     <!--   <td><%=Prenom%>&nbsp;<%=nom%></td>
+                                                 <td>User <%=rs1.getString(2)%></td> -->
                                                         <td><%=rs1.getString(3)%></td>
                                                         <td><%=rs1.getString(4)%></td>
                                                         <td><%=rs1.getString(5)%></td>
@@ -248,6 +255,12 @@
                                                         <td><%=rs1.getString(24)%></td>
                                                         <td><%=rs1.getString(25)%></td>
                                                         <td><%=rs1.getString(26)%></td>
+                                                        <td><%=rs1.getString(27)%></td>
+                                                        <td><%=rs1.getString(28)%></td>
+                                                        <td><%=rs1.getString(29)%></td>
+                                                        <td><%=rs1.getString(30)%></td>
+                                                        <td><%=rs1.getString(31)%></td>
+                                                        <td><%=rs1.getString(32)%></td>
                                                         <%
                                                                     compte++;
                                                                 }
@@ -270,7 +283,7 @@
                             <!--************************************
                                                     Footer Start
                                     *************************************-->
-                            <footer id="at-footer" class="at-footer at-haslayout">
+              <footer id="at-footer" class="at-footer at-haslayout">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -312,7 +325,7 @@
                                     </div>
                                 </div>
                             </div> -->
-                            <div class="at-copyright">
+                          <div class="at-copyright">
                                 <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
                                 <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
@@ -350,12 +363,10 @@
                                 System.out.println("Connection Closed");
                             %>
                         </div>
-                        
                         <!--************************************
                                             Wrapper End
                             *************************************-->
-                   
-                           <script>
+                        <script>
 
                             function myFunction0() {
                                 var input, filter, table, tr, td, i;
@@ -364,7 +375,7 @@
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[11];
+                                    td = tr[i].getElementsByTagName("td")[2];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";
@@ -381,7 +392,7 @@
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[2];
+                                    td = tr[i].getElementsByTagName("td")[5];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";
@@ -399,7 +410,7 @@
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[6];
+                                    td = tr[i].getElementsByTagName("td")[4];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";
@@ -427,7 +438,6 @@
                                 }
                             }
                         </script>
-                        
                         <script src="js/vendor/jquery-library.js"></script>
                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcvAXp35fi4q7HXm7vcG9JMtzQbMzjRe8"></script>
                         <script src="js/vendor/jquery-migrate.js"></script>

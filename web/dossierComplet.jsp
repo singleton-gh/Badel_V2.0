@@ -116,10 +116,11 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+             <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -130,30 +131,28 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="" class="collapse navbar-collapse at-navigation">
                                     <ul>
-                                        <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                        <li>
+                                       <a href="AfficherDemandeCol.jsp?id=<%=ix%>" class="" style="border:2px solid black; background-color: #fc9393; font-family: sans-serif" role="button">AFFICHER INSCRIPTION COLLECTIVE</a>
+                                       </li>
+                                        <li>
+                                       <a href="AfficherDemandeInd.jsp?id=<%=ix%>" class="" style="border:2px solid black; background-color: #f2d274; font-family: sans-serif" role="button">AFFICHER INSCRIPTION INDIVIDUELLE</a>
+                                       </li>
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
                                     <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -342,7 +341,7 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Dossier de <%=formIn4%>&nbsp;<%=formIn5%> <br />Id: <%=formIn3%></h1>
+                        <h1 style="text-align: center;">Dossier de <strong><%=formIn4%>&nbsp;<%=formIn5%> </strong> <br />Id: <%=formIn3%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -360,31 +359,31 @@
                                                         <th>Nom</th>
                                                         <th>Téléphone_1</th>
                                                         <th>Téléphone_2</th>
-                                                        <th>Commune de Rattachement</th>
-                                                        <th>Quarier de Rattachement</th>
-                                                        <th>Commune Actuelle</th>
-                                                        <th>Quartier Actuel</th>
+                                                        <th>Comm._de_Rattachement</th>
+                                                        <th>Quart._de_Rattachement</th>
+                                                        <th>Comm._Actuelle</th>
+                                                        <th>Quart._Actuel</th>
                                                         <th>Sexe</th>
-                                                        <th>Tranche d'Age</th>
+                                                        <th>Tranche_d'Age</th>
                                                         <th>Etude</th>
-                                                        <th>Niveau d'Etude</th>
-                                                        <th>Formation Professionnelle</th>
+                                                        <th>Niveau_d'Etude</th>
+                                                        <th>Format._Professionnelle</th>
                                                         <th>Séjour</th>
-                                                        <th>Pays Séjourné</th>
-                                                        <th>Motif Séjour</th>
-                                                        <th>Expérience Professionnelle</th>
-                                                        <th>Domaine Expérience Professionnelle</th>
-                                                        <th>Durée Expérience Professionnelle</th>
-                                                        <th>Statut Expérience Professionnelle</th>
-                                                        <th>Région Expérience Professionnelle</th>
-                                                        <th>Département Expérience Professionnelle</th> 
-                                                        <th>Commune Expérience Professionnelle</th>
-                                                        <th>Quartier Expérience Professionnelle</th>
-                                                        <th>Autre Quartier Expérience Professionnelle</th>
-                                                        <th>Hors Sénégal</th>
-                                                        <th>Situation Professionnelle</th>
-                                                        <th>Soutien Immédiat</th>
-                                                        <th>Titre Accompagnement</th>
+                                                        <th>Pays_Séjourné</th>
+                                                        <th>Motif_Séjour</th>
+                                                        <th>Expér._Professionnelle</th>
+                                                        <th>Domaine_Expér._Professionnelle</th>
+                                                        <th>Durée_Expér._Professionnelle</th>
+                                                        <th>Statut_Expér._Professionnelle</th>
+                                                        <th>Région_Expér._Professionnelle</th>
+                                                        <th>Départ._Expér._Professionnelle</th> 
+                                                        <th>Comm._Expér._Professionnelle</th>
+                                                        <th>Quart._Expér._Professionnelle</th>
+                                                        <th>Autre_Quart._Expér._Professionnelle</th>
+                                                        <th>Extérieur</th>
+                                                        <th>Situation_Professionnelle</th>
+                                                        <th>Soutien_Immédiat</th>
+                                                        <th>Titre_Accompagnement</th>
                                                     </tr>
                                                     </tr>
                                                 </thead>
@@ -393,8 +392,8 @@
                                                     <tr>
                                                         <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir%>" onclick="location.href = 'updateInd1.jsp?formulaire_id=<%=formIn3%>&id=<%=idx%>&form=p1ind'"/><input style="background-color: red; color: white" type="button" value="  Effacer " onclick="location.href ='delete.jsp?formulaire_id=<%=formIn3%>&id=<%=idx%>&table=p1demandeurindividuel'"/></td>
                                                                                                            
-                                                        <td><%=formIn2%></td>
-                                                        <td>AER<%=formIn3%></td>
+                                                        <td><%=Prenom%>&nbsp;<%=nom%></td>
+                                                        <td><%=formIn3%></td>
                                                         <td><%=formIn4%></td>
                                                         <td><%=formIn5%></td>
                                                         <td><%=formIn6%></td>
@@ -604,7 +603,7 @@
                         formCon25 = rs1.getString(25);
                         formCon26 = rs1.getString(26);
                         formCon27 = rs1.getString(27);
-                        remplir = " Modifier ";
+                        remplir = " MODIFIER ";
 
                     }
                 } catch (SQLException ex) {
@@ -691,7 +690,7 @@
                         form2Con31 = rs1.getString(31);
                         form2Con32 = rs1.getString(32);
                         form2Con33 = rs1.getString(33);
-                        remplir2 = " Modifier ";
+                        remplir2 = " MODIFIER ";
                         location2 = "updateCol2";
 
                         System.out.println("hey2");
@@ -706,7 +705,7 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Dossier de <%=formCon3%>&nbsp;<%=formCon4%> <br /> Id:<%=formCon2%> </h1>
+                        <h1 style="text-align: center;">Dossier du Collectif :<Strong> &nbsp;<%=formCon11%></Strong>  <br /> Id:<%=formCon2%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -718,43 +717,43 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Option</th>
-                                                        <th>Inscrit_Par</th>
+                                                     <!--   <th>Inscrit_Par</th>   -->
                                                         <th>id Formulaire</th>
-                                                        <th>Prénom Représentant</th>
-                                                        <th>Nom Représentant</th>
-                                                        <th>Sexe Réprésentant</th>
-                                                        <th>Adresse Représentant</th>
-                                                        <th>Contact1 Représentant</th>
-                                                        <th>Contact2 Représentant</th>
+                                                        <th>Prénom_Représentant</th>
+                                                        <th>Nom_Représentant</th>
+                                                        <th>Sexe_Réprésentant</th>
+                                                        <th>Adresse_Représentant</th>
+                                                        <th>Contact1_Représentant</th>
+                                                        <th>Contact2_Représentant</th>
                                                         <th>Titre</th>
-                                                        <th>Nature Juridique</th>
+                                                        <th>Nature_Juridique</th>
                                                         <th>Dénomination</th>
-                                                        <th>Reconnaisance Juridique</th>
-                                                        <th>Lieu Collectif</th>
-                                                        <th>Pays Extérieur</th>
-                                                        <th>Région Extérieure</th>
-                                                        <th>Département Extérieur</th>
-                                                        <th>Commune Extérieure</th>
-                                                        <th>Quartier Village Extérieur</th>
-                                                        <th>Région Intérieure</th>
-                                                        <th>Département Intérieur</th>
-                                                        <th>Commune Intérieure</th>
-                                                        <th>Quartier Village Intérieur</th>                                                        
-                                                        <th>Date Creation</th>
-                                                        <th>Total Membre</th>
-                                                        <th>Total homme</th>
-                                                        <th>Total femme</th>
+                                                        <th>Reconn._Juridique</th>
+                                                        <th>Lieu_Collectif</th>
+                                                        <th>Pays_Extérieur</th>
+                                                        <th>Région_Extérieure</th>
+                                                        <th>Département_Extérieur</th>
+                                                        <th>Commune_Extérieure</th>
+                                                        <th>Quart._Village_Extérieur</th>
+                                                        <th>Région_Intérieure</th>
+                                                        <th>Département_Intérieur</th>
+                                                        <th>Commune_Intérieure</th>
+                                                        <th>Quart._Village_Intérieur</th>                                                        
+                                                        <th>Date_Creation</th>
+                                                        <th>Tot._Membre</th>
+                                                        <th>Tot._homme</th>
+                                                        <th>Tot._femme</th>
                                                     </tr>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
 
                                                     <tr>
-                                                        <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir%>" onclick="location.href = 'updateCol1.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&form=p1col'"/><input style="background-color: red; color: white" type="button" value="  Effacer " onclick="location.href ='delete.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&table=p1demandeurcollectif'"/></td>
-                                                        <td><%=formCon27%></td>                                                       
-                                                        
+                                                        <td><input style="background-color: #09b83e; color: white" type="button" value="<%=remplir%>" onclick="location.href = 'updateCol1.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&form=p1col'"/><input style="background-color: red; color: white" type="button" value="SUPPRIMER" onclick="location.href ='delete.jsp?formulaire_id=<%=formCon2%>&id=<%=idx%>&table=p1demandeurcollectif'"/></td>
+                                                       
+                                         <!--     <td><%=Prenom%>&nbsp;<%=nom%></td> -->
                                                         <td><%=formCon2%></td>
-                                                        <td>AER<%=formCon3%></td>
+                                                        <td><%=formCon3%></td>
                                                         <td><%=formCon4%></td>
                                                         <td><%=formCon5%></td>
                                                         <td><%=formCon6%></td>
@@ -800,7 +799,7 @@
                                                 <thead>
                                                     <tr>
                                                         <th>Option</th>
-                                                        <th>id Formulaire</th>
+                                                        <th>id_Formulaire</th>
                                                         <th>Activités_ou_Equipements</th>
                                                         <th>Région</th>
                                                         <th>Département</th>
@@ -891,8 +890,8 @@
             %>            
             <form  action="Principal.jsp" method="post">
                 <input type="hidden" value="<%=id%>" name="id">  
-                <center><button style="width: 320px; height: 70px; background-color: #09b83e" type="submit" class="at-btn" >Retour au Menu Principal</button></center>
-            </form>   
+                <center><button style="width: 320px; height: 70px; border: 2px solid red; background-color: #09b83e" type="submit" class="at-btn" >RETOURNER MENU PRINCIPAL</button></center>
+            </form> 
             <br/>                        
             <!--************************************
                                     Footer Start
@@ -901,7 +900,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
+                          <!--  <div class="at-emailsubscribearea">
                                 <p>Recevez nos dernières informations</p>
                                 <form class="at-formtheme at-formnewsletter">
                                     <fieldset>
@@ -909,19 +908,21 @@
                                         <button class="at-btn" type="submit">Souscrire</button>
                                     </fieldset>
                                 </form>
-                            </div>
-                            <div class="at-threecolumns">
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
                                 <div class="at-fcolumn">
                                     <div class="at-widget at-widgettext">
                                         <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
-                                                 <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                             </div> -->
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
                                         <ul class="at-socialicons">
                                             <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                             <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
                                         </ul>
+                                       
                                     </div>
                                 </div>
                                 <div class="at-fcolumn">
@@ -931,38 +932,38 @@
                                         </div>
                                         <div class="at-widgetcontent">
                                             <ul>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
                                                 <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
                                                 <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                                <li><p>Email: contact@taataan.sn</p></li>
+                                                <li>
+                                                    <p>Email: contact@taataan.sn</p>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="at-fcolumn">
+                                </div> 
+                              <div class="at-fcolumn">
                                     <div class="at-widget">
                                         <div class="at-fwidgettitle">
                                             <h3>Recent News</h3>
                                         </div>
                                         <div class="at-widgetcontent">
-                                            <ul>
+                                          <ul>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2018-01-12">January 28, 2018</time>
                                                 </li>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2020-24-11">Novembre 24, 2020</time>
                                                 </li>
-                                            </ul>
+                                            </ul> 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N?3 4i?me Etage Cit? Socidak 1 en face Brioche Dor?e, Rufisque Ouvert de 08H ? 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                           <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

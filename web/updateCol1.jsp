@@ -96,7 +96,8 @@
             <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -107,26 +108,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -230,7 +231,7 @@
 
                                             <div class="at-sectiontitleborder">
                                                 <br>
-                                                <h2><center>Veuillez remplir ce formulaire : <strong>étape 1</strong> </center></h2>
+                                                <h2><center>Voulez-vous modifier ce formulaire de <strong>Niveau 1 ?</strong> </center></h2>
                                             </div>
 
                                               <fieldset>
@@ -239,17 +240,17 @@
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="prenom_representant" value="<%=formCon3%>" class="form-control" placeholder="1- Prénom du représentant du Collectif ?**" required="Champ Obligatoire"> <!-- Champ ajouté -->
+                                                        <input type="text" name="prenom_representant" style="border:1px solid blue; font-family: sans-serif"  value="<%=formCon3%>" class="form-control" placeholder="1- Prénom du représentant du Collectif ?**" > <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nom_representant" value="<%=formCon4%>" class="form-control" placeholder="2- Nom du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="nom_representant" style="border:1px solid blue;" value="<%=formCon4%>" class="form-control" placeholder="2- Nom du représentant du Collectif ?**" > <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                         <div class="form-group">
-                                                            <select class="form-control" name="sexe_representant" value="<%=formCon5%>" id="demo-category" required> <!-- Champ ajouté -->
+                                                            <select class="form-control" name="sexe_representant" style="border:1px solid blue;" value="<%=formCon5%>" id="demo-category"> <!-- Champ ajouté -->
                                                                 <option value="">3- Sexe :** -</option>                                                     
                                                                 <option value="masculin">Masculin</option>
                                                                 <option value="feminin">Féminin</option>  
@@ -259,17 +260,17 @@
                                                  
                                                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="adresse_representant" class="form-control" value="<%=formCon6%>" placeholder="4- Adresse du représentant du Collectif ?**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="adresse_representant" class="form-control" style="border:1px solid blue;" value="<%=formCon6%>" placeholder="4- Adresse du représentant du Collectif ?**" > <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="contact1_representant" class="form-control" value="<%=formCon7%>" placeholder="5- Téléphone 1 du représentant du Collectif**" required=""> <!-- Champ ajouté -->
+                                                        <input type="text" name="contact1_representant" class="form-control" style="border:1px solid blue;" value="<%=formCon7%>" placeholder="5- Téléphone 1 du représentant du Collectif**" > <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="contact2_representant" class="form-control" value="<%=formCon8%>" placeholder="6- Téléphone 2 du représentant du Collectif ?"> <!-- Champ ajouté -->
+                                                        <input type="text" name="contact2_representant" class="form-control" style="border:1px solid blue;" value="<%=formCon8%>" placeholder="6- Téléphone 2 du représentant du Collectif ?"> <!-- Champ ajouté -->
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -280,7 +281,7 @@
                                             <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="titre" value="<%=formCon9%>" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="titre" style="border:1px solid blue;" value="<%=formCon9%>" id="demo-category" onchange="changementType( this.value);" >
                                                         <option value="">- Quel est votre titre dans le Collectif ?** -</option>
                                                         <option value="responsable_morale">Responsable Moral</option>
                                                         <option value="responsable_delegue">Responsable d&eacute;l&eacute;gu&eacute;</option>
@@ -297,7 +298,7 @@
                                     <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="nat_juridique" value="<%=formCon10%>" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="nat_juridique" style="border:1px solid blue;" value="<%=formCon10%>" id="demo-category" onchange="changementType( this.value);" >
                                                         <option value="">- Nature Juridique** -</option>
                                                         <option value="gpf">GPF</option>
                                                         <option value="association">Association</option>
@@ -314,7 +315,7 @@
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="denomination" value="<%=formCon11%>" class="form-control" placeholder="D&eacute;nomination**" required="Champ Obligatoire">
+                                                        <input type="text" name="denomination" style="border:1px solid blue;" value="<%=formCon11%>" class="form-control" placeholder="D&eacute;nomination**" >
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -324,7 +325,7 @@
                                 <hr/>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="reconnaisance_juridique"  value="<%=formCon12%>" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="reconnaisance_juridique" style="border:1px solid blue;" value="<%=formCon12%>" id="demo-category" onchange="changementType( this.value);" >
                                                         <option value="">- Avez-vous une reconnaissance juridique** -</option>
                                                         <option value="oui">OUI</option>
                                                         <option value="non">NON</option>
@@ -345,7 +346,7 @@
                                 <fieldset>  
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                          <div class="form-group">
-                                                             <select class="form-control" name="lieu_Collectif" value="<%=formCon13%>" onchange="changeStatus00()" id="lieu_Collectif" required> <!-- Champ ajouté -->
+                                                             <select class="form-control" name="lieu_Collectif" style="border:1px solid blue;" value="<%=formCon13%>" onchange="changeStatus00()" id="lieu_Collectif" > <!-- Champ ajouté -->
                                                                 <option value="">1- Le Collectif se situe-t-il au Senegal?** -</option>                                                     
                                                                 <option value="OUI">OUI</option>
                                                                 <option value="NON">NON</option>  
@@ -354,27 +355,27 @@
                                                     </div>
                                               <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="pays_exterieur" id="pe" value="<%=formCon14%>" class="form-control" placeholder="2- Dans quel pays extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="pays_exterieur" id="pe" style="border:1px solid blue;" value="<%=formCon14%>" class="form-control" placeholder="2- Dans quel pays extérieur se trouve le Collectif ?** ">
                                                     </div>
                                               </div> 
                                              <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="region_exterieure"  id="re" value="<%=formCon15%>" class="form-control" placeholder="3- Dans quelle region extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="region_exterieure" style="border:1px solid blue;"  id="re" value="<%=formCon15%>" class="form-control" placeholder="3- Dans quelle region extérieure se trouve le Collectif ?**" >
                                                     </div>
                                               </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="departement_exterieur" id="de" value="<%=formCon16%>" class="form-control" placeholder="4- Dans quelle departement extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="departement_exterieur" style="border:1px solid blue;" id="de" value="<%=formCon16%>" class="form-control" placeholder="4- Dans quelle departement extérieur se trouve le Collectif ?**" >
                                                     </div>
                                               </div>
-                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="commune_exterieure" id="ce" value="<%=formCon17%>" class="form-control" placeholder="5- Dans quelle commune extérieure se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="commune_exterieure" id="ce" style="border:1px solid blue;" value="<%=formCon17%>" class="form-control" placeholder="5- Dans quelle commune extérieure se trouve le Collectif ?**" >
                                                     </div>
                                               </div>
-                                           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
+                                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="Qtr_Village_exterieur" value="<%=formCon18%>" class="form-control" id="qve" placeholder="6- Dans quel quartier ou village extérieur se trouve le Collectif ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="Qtr_Village_exterieur" style="border:1px solid blue;" value="<%=formCon18%>" class="form-control" id="qve" placeholder="6- Dans quel quartier ou village extérieur se trouve le Collectif ?**" >
                                                     </div>
                                               </div>
                                              
@@ -387,7 +388,7 @@
                                <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="region_interieure" value="<%=formCon19%>" id="region" required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="region_interieure" style="border:1px solid blue;" value="<%=formCon19%>" id="region" > 
                                                         <option value="">- 1- Dans quelle r&eacute;gion se trouve le Collectif ?** -</option>
                                                
                                                         </select>
@@ -396,7 +397,7 @@
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="departement_interieur" value="<%=formCon20%>" id="departement"  required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="departement_interieur" style="border:1px solid blue;" value="<%=formCon20%>" id="departement"  > 
                                                         <option value="">- 2- Dans quel d&eacute;partement se trouve le Collectif ?** -</option>
                                                                                                           
                                                         </select>
@@ -405,7 +406,7 @@
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="commune_interieure" value="<%=formCon21%>" id="commune" required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="commune_interieure" style="border:1px solid blue;" value="<%=formCon21%>" id="commune" > 
                                                         <option value="">- 3- Dans quelle commune se trouve le Collectif ?** -</option>
                                                                    </select>
                                                     </div>
@@ -413,7 +414,7 @@
                                       <script>
                        var Localite = {
         "Dakar" :  { 
-              "Dakar" : ["Gorée", "Dakar Plateau", "Gueule Tapée", "Fass", "Colobane", "Fann-Point E-Amitié", "Médina", "Grand-Dakar", "Biscuiterie", "Dieuppeul-Derklé", "Hann-Bel-Air", "Sicap-Liberté", "HLM", "Mermoz-Sacré Coeur", "Ouakam", "Ngor", "Yoff", "Grand-Yoff", "Patte d?oie", "Parcelles Assainies", "Cambérène" ], "Pikine" : ["Pikine- Est", "Pikine-Nord", "Pikine-Ouest", "Dalifort-Foirail", "Djeddha Thiaroye Kao", "Guinaw Rail-Nord", "Guinaw Rail-Sud", "Tivaoune-Diacksao", "Diamagueune-Sicap Mbao", "Mbao", "Keur Massar", "Malika", "Yeumbeul-Sud", "Yeumbeul-Nord"], "Guédiawaye" : ["Golf-Sud", "Sam-Notaire", "Ndiarème-Limamoulaye", "Wakhinane", "Médina Gounass"], "Rufisque" : ["Bargny","Sébikotane","Sendou","Rufisque-Est","Rufisque-Nord","Rufisque-Ouest","Bambylor","Yène","Tivaouane Peulh-Niaga","Diamniadio","Sangalkam","Jaxaay-Parcelles-Niakoul Rap"]
+              "Dakar" : ["Gorée", "Dakar Plateau", "Gueule Tapée", "Fass", "Colobane", "Fann-Point E-Amitié", "Médina", "Grand-Dakar", "Biscuiterie", "Dieuppeul-Derklé", "Hann-Bel-Air", "Sicap-Liberté", "HLM", "Mermoz-Sacré Coeur", "Ouakam", "Ngor", "Yoff", "Grand-Yoff", "Patte d?oie", "Parcelles Assainies", "Cambérène" ], "Pikine" : ["Pikine- Est", "Pikine-Nord", "Pikine-Ouest", "Dalifort-Foirail", "Djeddha Thiaroye Kao", "Guinaw Rail-Nord", "Guinaw Rail-Sud", "Tivaoune-Diacksao", "Diamagueune-Sicap Mbao", "Mbao", "Keur Massar", "Malika", "Yeumbeul-Sud", "Yeumbeul-Nord"], "Guédiawaye" : ["Golf-Sud", "Sam-Notaire", "Ndiarème-Limamoulaye", "Wakhinane", "Médina Gounass"], "Rufisque" : ["Bargny","Sébikotane","Sendou","Rufisque-Est","Rufisque-Nord","Rufisque-Ouest","Bambylor","Yène","Tivaouane Peulh-Niaga","Diamniadio","Sangalkam","Niakoul Rap"], "Keur Massar" : ["Jaxaay-Parcelles", "Keur Massar Nord", "Keur Massar Sud"]
           },                                                          
         "Thies" :  { 
              "Thies" : ["Khombole", "Pout", "Thiès-Ouest", "Thiès-Est","Thiès-Nord","Thiénaba","Ngoudiane","Ndiéyène Sirakh","Touba Toul","Keur Moussa","Diender","Fandène","Kayar","Notto","Tassète"], "Tivaouane" : ["Tivaouane", "Mékhé", "Mboro", "Méouane", "Darou Khoudoss", "Taïba Ndiaye", "Mérina Dakhar", "Koul", "Pékèsse", "Niakhène", "Mbayène", "Thilmakha", "Ngandiouf", "Notto Gouye Diama", "Mont Rolland", "Pire Goureye", "Chérif Lo", "Pambal"], "Mbour" : ["Mbour", "Joal Fadiouth", "Fissel", "Ndiaganiao", "Sessene", "Sandiara", "Nguéniène", "Thiadiaye", "Sindia", "Malicounda", "Diass", "Nguékhokh", "Saly Portudal", "Ngaparou", "Somone", "Popenguine-Ndayane"]
@@ -493,7 +494,7 @@
 </script>        
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="Qtr_Village_interieur" value="<%=formCon22%>" class="form-control" id="qtr_village" placeholder="5- Dans quel quartier ou village se trouve le Collectif ?**" required>
+                                                            <input type="text" name="Qtr_Village_interieur"  value="<%=formCon22%>" style="border:1px solid blue;" class="form-control" id="qtr_village" placeholder="5- Dans quel quartier ou village se trouve le Collectif ?**" >
                                                         </div>
                                                     </div>
                                                <script>
@@ -529,36 +530,43 @@
                                 <hr/>   
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <input type="date" name="date_creation" value="<%=formCon23%>" class="form-control" placeholder="Date de cr&eacute;ation du Collectif. (JJ/MM/AAAA)**" required="Champ Obligatoire" pattern=(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}>
+                                                        <input type="date" name="date_creation" value="<%=formCon23%>" x class="form-control" style="border:1px solid blue;" placeholder="Date de cr&eacute;ation du Collectif. (JJ/MM/AAAA)**"  pattern=(0[1-9]|1[0-9]|2[0-9]|3[01])/(0[1-9]|1[012])/[0-9]{4}>
                                                     </div>
                                                 </div>
                                             </fieldset>
                                             <fieldset>
-                                <hr/>
+                               <hr/>
                                     <h3><center>Combien de membres compte le Collectif ? </center></h3>  
                                 <hr/>
-                                
-                                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                    <div class="form-group">
-                                                        <input type="text" name="total_membre"  value="<%=formCon24%>" id="total_membre" class="form-control" placeholder="1- Combien de membres compte le Collectif ?**" required="Champ Obligatoire">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                    <div class="form-group">
-                                                        <input type="text" name="total_homme" value="<%=formCon25%>" id="total_homme" class="form-control" placeholder="2- Combien d'hommes dans le Collectif ?" required="">
-                                                    </div>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                    <div class="form-group">
-                                                        <input type="text" name="total_femme" value="<%=formCon26%>"  id="tf" onchange="calc()" class="form-control" placeholder="3- Combien de femmes dans le Collectif ?">
-                                                    </div>
-                                                </div>
+                                <div><center>
+                                            Total: <input type="text" id="total" value="<%=formCon24%>"  style="border:2px solid black; font-family: sans-serif" name="total_membre" value=""> &nbsp;&nbsp;&nbsp;
+                                            Homme: <input type="text" id="homme" value="<%=formCon25%>" style="border:2px solid black; font-family: sans-serif" name="total_homme"  value="" onblur="myFunction1()">&nbsp;&nbsp;&nbsp;
+                                            Femme: <input type="text" id="femme" value="<%=formCon26%>"  style="border:2px solid black; font-family: sans-serif" name="total_femme"  value="" onblur="myFunction2()">
+                                       </center> </div> <br/> <hr/>  <br/>
+                                       <script>
+                                           function myFunction1() {
+                                               var total = document.getElementById("total").value;
+                                               var homme = document.getElementById("homme").value;
+                                               var femme = document.getElementById("femme").value;
+                                               femme = total - homme;
+                                               document.getElementById("femme").value = femme;
+                                               document.getElementById("homme").value = homme;
+                                           }
+
+                                           function myFunction2() {
+                                               var total = document.getElementById("total").value;
+                                               var homme = document.getElementById("homme").value;
+                                               var femme = document.getElementById("femme").value;
+                                               homme = total - femme;
+                                               document.getElementById("femme").value = femme;
+                                               document.getElementById("homme").value = homme;
+                                           }
+                                       </script>
                                             </fieldset>
-                                            <fieldset>  
                                                 <input type="hidden" value="<%=idx%>" name="id">  
                                                 <input type="hidden" value="<%=idform%>" name="formulaire_id">  
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                    <center><button type="submit" name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
+                                                    <center><button type="submit" style="border:2px solid red;"  name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
                                                 </div>
                                                 </div>
                                         </form>
@@ -576,76 +584,76 @@
                                     Footer Start
                     *************************************-->
             <footer id="at-footer" class="at-footer at-haslayout">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
-                                <p>Recevez nos derniéres informations</p>
-                                <form class="at-formtheme at-formnewsletter">
-                                    <fieldset>
-                                        <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
-                                        <button class="at-btn" type="submit">Souscrire</button>
-                                    </fieldset>
-                                </form>
+            <div class="container">
+                <div class="row">
+                  <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="at-emailsubscribearea">
+                            <p>Recevez nos derniéres informations</p>
+                            <form class="at-formtheme at-formnewsletter">
+                                <fieldset>
+                                    <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
+                                    <button class="at-btn" type="submit">Souscrire</button>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="at-threecolumns">
+                            <div class="at-fcolumn">
+                                <div class="at-widget at-widgettext">
+                                    <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
+                                   <div class="at-description">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                    </div> 
+                                    <ul class="at-socialicons">
+                                        <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="at-threecolumns">
-                                <div class="at-fcolumn">
-                                    <div class="at-widget at-widgettext">
-                                        <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
-                                                 <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                             </div> -->
-                                        <ul class="at-socialicons">
-                                            <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
-                                            <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
+                            <div class="at-fcolumn">
+                                <div class="at-widget at-widgetusefullinks">
+                                    <div class="at-fwidgettitle">
+                                        <h3>Liens Utiles</h3>
+                                    </div>
+                                    <div class="at-widgetcontent">
+                                        <ul>
+                                            <li><a href="index.html">Accueil</a></li>
+                                            <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
+                                            <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
+                                            <li><a href="https://www.taataan.sn">Taataan</a></li>
+                                            <li><p>Email: contact@taataan.sn</p></li>
                                         </ul>
                                     </div>
                                 </div>
-                                <div class="at-fcolumn">
-                                    <div class="at-widget at-widgetusefullinks">
-                                        <div class="at-fwidgettitle">
-                                            <h3>Liens Utiles</h3>
-                                        </div>
-                                        <div class="at-widgetcontent">
-                                            <ul>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
-                                                <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
-                                                <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                                <li><p>Email: contact@taataan.sn</p></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="at-fcolumn">
+                                <div class="at-widget">
+                                    <div class="at-fwidgettitle">
+                                        <h3>Recent News</h3>
+                                    </div>
+                                    <div class="at-widgetcontent">
+                                        <ul>
+                                            <li>
+                                                <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                <time datetime="2018-01-12">January 28, 2018</time>
+                                            </li>
+                                            <li>
+                                              <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                <time datetime="2020-24-11">Novembre 24, 2020</time>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="at-fcolumn">
-                                    <div class="at-widget">
-                                        <div class="at-fwidgettitle">
-                                            <h3>Recent News</h3>
-                                        </div>
-                                        <div class="at-widgetcontent">
-                                            <ul>
-                                                <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                    <time datetime="2018-01-12">January 28, 2018</time>
-                                                </li>
-                                                <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                    <time datetime="2020-24-11">Novembre 24, 2020</time>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa Né3 4iéme Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H é 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
-                            </div>
+                            </div>  -->
                         </div>
+                       <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H à 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
+                            </div>
                     </div>
                 </div>
-            </footer>
+            </div>
+        </footer>
             <!--************************************
                                     Footer End
                     *************************************-->

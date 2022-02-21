@@ -82,7 +82,7 @@
                     String Prenom = rs.getString(2);
                     String nom = rs.getString(3);
                     String Civilite = rs.getString(4);
-                    int Role = rs.getInt(7);
+                    int Role = rs.getInt(11);
         %>    <!--************************************
                             Loader Start
             *************************************-->
@@ -106,10 +106,11 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+           <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -120,26 +121,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -158,50 +159,50 @@
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
                                     <h3>Rechercher par :</h3> <br/>
-                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="Agent"  type="text" name="" value="" />
-                                    <input id="myInput" onkeyup="myFunction()" placeholder="Id Formulaire"  type="text" name="" value="" />
-                                    <input id="myInput1" onkeyup="myFunction1()" placeholder="Prenom" type="text" name="" value="" />
-                                    <input id="myInput2" onkeyup="myFunction2()" placeholder="Nom" type="text" name="" value="" />
+                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="Id Formulaire"  type="text" name="" value="" />
+                                   <input id="myInput" onkeyup="myFunction()" placeholder="Télephone1"  type="text" name="" value="" /> 
+                                   <!--  <input id="myInput1" onkeyup="myFunction1()" placeholder="Prenom" type="text" name="" value="" />
+                                    <input id="myInput2" onkeyup="myFunction2()" placeholder="Nom" type="text" name="" value="" /> -->
 
                                     <br/> <br/>
                                     <div class="at-contactusvone">
                                         <div style="overflow-x:auto;">
-                                            <table id="myTable">
+                                            <table id="myTable" >
                                                 <thead>
                                                     <tr>
                                                         <th>Option</th>
                                                         <th>N°</th>
-                                                        <th>Inscrit_Par</th>
+                                                      <!--  <th>Inscrit_Par</th> -->
                                                         <th>Id_Formulaire</th>
                                                         <th>Prenom</th>
                                                         <th>Nom</th>
                                                         <th>Téléphone_1</th>
                                                         <th>Téléphone_2</th>
-                                                        <th>Commune de Rattachement</th>
-                                                        <th>Quarier de Rattachement</th>
-                                                        <th>Commune Actuelle</th>
-                                                        <th>Quartier Actuel</th>
+                                                        <th>Commune_de_Rattachement</th>
+                                                        <th>Quartier_de_Rattachement</th>
+                                                        <th>Commune_Actuelle</th>
+                                                        <th>Quartier_Actuel</th>
                                                         <th>Sexe</th>
-                                                        <th>Tranche d'Age</th>
+                                                        <th>Tranche_d'Age</th>
                                                         <th>Etude</th>
-                                                        <th>Niveau d'Etude</th>
-                                                        <th>Formation Professionnelle</th>
+                                                        <th>Niveau_d'Etude</th>
+                                                        <th>Format._Professionnelle</th>
                                                         <th>Séjour</th>
-                                                        <th>Pays Séjourné</th>
-                                                        <th>Motif Séjour</th>
-                                                        <th>Expérience Professionnelle</th>
-                                                        <th>Domaine Expérience Professionnelle</th>
-                                                        <th>Durée Expérience Professionnelle</th>
-                                                        <th>Statut Expérience Professionnelle</th>
-                                                        <th>Région Expérience Professionnelle</th>
-                                                        <th>Département Expérience Professionnelle</th> 
-                                                        <th>Commune Expérience Professionnelle</th>
-                                                        <th>Quartier Expérience Professionnelle</th>
-                                                        <th>Autre Quartier Expérience Professionnelle</th>
-                                                        <th>Hors Sénégal</th>
-                                                        <th>Situation Professionnelle</th>
-                                                        <th>Soutien Immédiat</th>
-                                                        <th>Titre Accompagnement</th>
+                                                        <th>Pays_Séjourné</th>
+                                                        <th>Motif_Séjour</th>
+                                                        <th>Expér._Professionnelle</th>
+                                                        <th>Domaine_Expér._Professionnelle</th>
+                                                        <th>Durée_Expér._Professionnelle</th>
+                                                        <th>Statut_Expér._Professionnelle</th>
+                                                        <th>Région_Expér._Professionnelle</th>
+                                                        <th>Départ._Expér._Professionnelle</th> 
+                                                        <th>Commune_Expér._Professionnelle</th>
+                                                        <th>Quartier_Expér._Professionnelle</th>
+                                                        <th>Autre_Quart_Expér_Professionnelle</th>
+                                                        <th>Extérieur</th>
+                                                        <th>Situation_Professionnelle</th>
+                                                        <th>Soutien_Immédiat</th>
+                                                        <th>Titre_Accompagnement</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -225,11 +226,11 @@
                                                             while (rs1.next()) {
                                                     %>         
                                                     <tr>
-                                                        <td><input style="background-color: #09b83e; color: white" type="button" value=" Ouvrir Dossier " onclick="location.href = 'dossierComplet.jsp?idform=<%=rs1.getString(3)%>&type=ind&id=<%=ix%>'"/> </td>
+                                                        <td><input style="background-color: #09b83e; color: white" type="button" value=" DETAILS" onclick="location.href = 'dossierComplet.jsp?idform=<%=rs1.getString(3)%>&type=ind&id=<%=ix%>'"/> </td>
                                                         <td><%=compte%> </td>
                                                         
-                                                        <td>AER <%=rs1.getString(2)%></td>
-                                                 <!--<td>User <%=rs1.getString(2)%></td> -->
+                                                     <!--   <td><%=Prenom%>&nbsp;<%=nom%></td>
+                                                 <td>User <%=rs1.getString(2)%></td> -->
                                                         <td><%=rs1.getString(3)%></td>
                                                         <td><%=rs1.getString(4)%></td>
                                                         <td><%=rs1.getString(5)%></td>
@@ -282,18 +283,56 @@
                             <!--************************************
                                                     Footer Start
                                     *************************************-->
-                            <footer id="at-footer" class="at-footer at-haslayout">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                                                                                   
-                                            <div class="at-copyright">
-                                                <p>Adresse: ZAC MBAO villa N?3 4i?me Etage Cit? Socidak 1 en face Brioche Dor?e, Rufisque Ouvert de 08H ? 18H</p>
-                                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
-                                            </div>
+              <footer id="at-footer" class="at-footer at-haslayout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                         <!--   <div class="at-emailsubscribearea">
+                                <p>Recevez nos dernières informations</p>
+                                <form class="at-formtheme at-formnewsletter">
+                                    <fieldset>
+                                        <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
+                                        <button class="at-btn" type="submit">Souscrire</button>
+                                    </fieldset>
+                                </form>
+                            </div> -->
+                         <!--   <div class="at-threecolumns">
+                                <div class="at-fcolumn">
+                                    <div class="at-widget at-widgetusefullinks">
+                                        <div class="at-fwidgettitle">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="at-fcolumn">
+                                    <div class="at-widget">
+                                        <div class="at-fwidgettitle">
+                                            <h3>Recent News</h3>
+                                        </div> 
+                                        <div class="at-widgetcontent">
+                                            <ul>
+                                                <li>
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2018-01-12">January 28, 2018</time>
+                                                </li>
+                                                <li>
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2020-24-11">Novembre 24, 2020</time>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </footer>
+                            </div> -->
+                          <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
                             <!--************************************
                                                     Footer End
                                     *************************************-->
@@ -353,7 +392,7 @@
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[6];
+                                    td = tr[i].getElementsByTagName("td")[5];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";
@@ -363,6 +402,7 @@
                                     }
                                 }
                             }
+                            
                               function myFunction1() {
                                 var input, filter, table, tr, td, i;
                                 input = document.getElementById("myInput1");

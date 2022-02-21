@@ -160,42 +160,44 @@
                                 <div class="at-content">
                                     <h3>Rechercher par :</h3> <br/>
                                     <input id="myInput" onkeyup="myFunction()" placeholder="Id Formulaire"  type="text" name="" value="" />
-                                    <input id="myInput0" onkeyup="myFunction0()" placeholder="NOM DU COLLECTIF"  type="text" name="" value="" />
-                                    <input id="myInput1" onkeyup="myFunction1()" placeholder="TEL. DU REPRESENTANT"  type="text" name="" value="" />
+                                 <!--   <input id="myInput0" onkeyup="myFunction0()" placeholder="Agent"  type="text" name="" value="" /> 
+                                        <input id="myInput2" onkeyup="myFunction2()" placeholder="Nom" type="text" name="" value="" /> -->
+                                    <input id="myInput1" onkeyup="myFunction1()" placeholder="DENOMINATION" type="text" name="" value="" />
                                     
                                     </br> </br>
                                     <div class="at-contactusvone">
                                         <div style="overflow-x:auto;">
-                                            <table id="myTable">
+                                            <table>
                                                 <thead>
                                                     <tr>
                                                        <th>Option</th>
                                                         <th>N°</th>
+                                                       <th>Animateur</th>
                                                         <th>Id_Formulaire</th>
-                                                        <th>Prénom_Représentant</th>
-                                                        <th>Nom_Représentant</th>
-                                                        <th>Sexe_Réprésentant</th>
-                                                        <th>Adresse_Représentant</th>
-                                                        <th>Contact1_Représentant</th>
-                                                        <th>Contact2_Représentant</th>
+                                                        <th>Prénom Représentant</th>
+                                                        <th>Nom Représentant</th>
+                                                        <th>Sexe Réprésentant</th>
+                                                        <th>Adresse Représentant</th>
+                                                        <th>Contact1 Représentant</th>
+                                                        <th>Contact2 Représentant</th>
                                                         <th>Titre</th>
-                                                        <th>Nature_Juridique</th>
+                                                        <th>Nature Juridique</th>
                                                         <th>Dénomination_:__Nom_du_Collectif</th>
-                                                        <th>Reconn._Juridique</th>
+                                                        <th>Reconn. Juridique</th>
                                                         <th>Lieu_Collectif</th>
                                                         <th>Pays_Extérieur</th>
                                                         <th>Région_Extérieure</th>
-                                                        <th>Départ._Extérieur</th>
+                                                        <th>Département_Extérieur</th>
                                                         <th>Commune_Extérieure</th>
-                                                        <th>Quart._Village_Extérieur</th>
+                                                        <th>Quartier_Village_Extérieur</th>
                                                         <th>Région_Intérieure</th>
-                                                        <th>Départ._Intérieur</th>
+                                                        <th>Département_Intérieur</th>
                                                         <th>Commune_Intérieure</th>
                                                         <th>Quartier_Village_Intérieur</th>                                                        
                                                         <th>Date_Creation</th>
-                                                        <th>Tot._Membre</th>
-                                                        <th>Tot._Homme</th>
-                                                        <th>Tot._Femme</th>
+                                                        <th>Total Membre</th>
+                                                        <th>Total Homme</th>
+                                                        <th>Total Femme</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -222,7 +224,7 @@
                                                         <td><%=compte%> </td>
                                                         
                                                        
-                                                        <!-- <td>User <%=rs1.getString(27)%></td> -->
+                                                        <td>User <%=rs1.getString(27)%></td> 
                                                         <td><%=rs1.getString(2)%></td>
                                                         <td><%=rs1.getString(3)%></td>
                                                         <td><%=rs1.getString(4)%></td>
@@ -354,27 +356,9 @@
                         <!--************************************
                                             Wrapper End
                             *************************************-->
-                   
-                           <script>
+                        <script>
 
-                            function myFunction0() {
-                                var input, filter, table, tr, td, i;
-                                input = document.getElementById("myInput0");
-                                filter = input.value.toUpperCase();
-                                table = document.getElementById("myTable");
-                                tr = table.getElementsByTagName("tr");
-                                for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[11];
-                                    if (td) {
-                                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-                                            tr[i].style.display = "";
-                                        } else {
-                                            tr[i].style.display = "none";
-                                        }
-                                    }
-                                }
-                            }
-                             function myFunction() {
+                            function myFunction() {
                                 var input, filter, table, tr, td, i;
                                 input = document.getElementById("myInput");
                                 filter = input.value.toUpperCase();
@@ -392,14 +376,14 @@
                                 }
                             }
                             
-                              function myFunction1() {
+                            function myFunction0() {
                                 var input, filter, table, tr, td, i;
-                                input = document.getElementById("myInput1");
+                                input = document.getElementById("myInput0");
                                 filter = input.value.toUpperCase();
                                 table = document.getElementById("myTable");
                                 tr = table.getElementsByTagName("tr");
                                 for (i = 0; i < tr.length; i++) {
-                                    td = tr[i].getElementsByTagName("td")[6];
+                                    td = tr[i].getElementsByTagName("td")[2];
                                     if (td) {
                                         if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
                                             tr[i].style.display = "";
@@ -409,6 +393,24 @@
                                     }
                                 }
                             }
+                            function myFunction1() {
+                                var input, filter, table, tr, td, i;
+                                input = document.getElementById("myInput1");
+                                filter = input.value.toUpperCase();
+                                table = document.getElementById("myTable");
+                                tr = table.getElementsByTagName("tr");
+                                for (i = 0; i < tr.length; i++) {
+                                    td = tr[i].getElementsByTagName("td")[3];
+                                    if (td) {
+                                        if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                            tr[i].style.display = "";
+                                        } else {
+                                            tr[i].style.display = "none";
+                                        }
+                                    }
+                                }
+                            }
+                               
                               function myFunction2() {
                                 var input, filter, table, tr, td, i;
                                 input = document.getElementById("myInput2");
@@ -427,7 +429,6 @@
                                 }
                             }
                         </script>
-                        
                         <script src="js/vendor/jquery-library.js"></script>
                         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcvAXp35fi4q7HXm7vcG9JMtzQbMzjRe8"></script>
                         <script src="js/vendor/jquery-migrate.js"></script>

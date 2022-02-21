@@ -94,44 +94,45 @@
 				Header Start
 		*************************************-->
         <header id="at-header" class="at-header at-headervthree">
-            <div class="container-fluid">
-                <div class="row">
-                    <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
-                    <div class="at-navigationarea">
-                        <nav id="at-nav" class="at-nav">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-                            </div>
-                            <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                              <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Accueil</a>
-                                    </li>
+                <div class="container-fluid">
+                    <div class="row">
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
+                        <div class="at-navigationarea">
+                            <nav id="at-nav" class="at-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                                    <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="connection.html">Se déconnecter</a>
-                                    </li>
+                                       
+                                    </ul>
+                                </div>
+                            </nav>
+                          <!--   <div class="at-contactsocial">
+                                <span class="at-contactnumber">
+                                    <i class="icon-telephone114"></i>
+                                    <em>+00221 33 837 80 09</em>
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
-                        </nav>
-                        <div class="at-contactsocial">
-                            <span class="at-contactnumber">
-								<i class="icon-telephone114"></i>
-								<em>+00221 33 837 80 09</em>
-							</span>
-                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <!--************************************
 				Header End
 		*************************************-->
@@ -150,7 +151,7 @@
             <div class="clearfix"></div>
             <section class="at-sectionspace at-haslayout">
                 <div class="container">
-                    <h1 style="text-align: center;">Inscription Individuelle 2 form = <%=formulaire_id%></h1>
+                    <h1 style="text-align: center;">Inscription Individuelle  Id Formulaire = <%=formulaire_id%></h1>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="at-content">
@@ -174,7 +175,7 @@
                                         <div class="at-sectiontitleborder">
                                             <br/>
                                         <hr/>
-                                            <h2><center>Veuillez remplir ce formulaire : <strong>Étape 2</strong> </center></h2>
+                                            <h2><center>Veuillez remplir ce formulaire de <strong>Niveau 2 ?</strong> </center></h2>
                                          <hr/>
                                          <br/>
                                          <hr/>
@@ -182,10 +183,10 @@
                                             <hr/>
                                         </div> 
                                         <fieldset>
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="categories" id="categories" onchange="changeStatus01()" required="">
-                                                        <option value="">- CATEGORIES :** -</option>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="categories" id="categories" onchange="changeStatus01()" required="">
+                                                        <option value="">- 1 - CATEGORIES :** -</option>
                                                         <option value="Insertion_emploi" id="c1" >Insertion à l'emploi</option>
                                                         <option value="Insertion_ou_Reconversion_par_autoemploi" id="c2" >Insertion ou Reconversion par l'auto-emploi</option>
                                                         <option value="Renforcement_ou_Extension_Activite" id="c3">Renforcement ou Extension Activité</option>
@@ -193,12 +194,11 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                        </fieldset>
-                                        <fieldset>
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                      
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="sous_categories" id="sous_categories"required=""  >
-                                                        <option value="">- SOUS-CATEGORIES :** -</option>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="sous_categories" id="sous_categories"required=""  >
+                                                        <option value="">- 2 - SOUS-CATEGORIES :** -</option>
                                                         <option value="Recherche_de_Qualification_Professionnelle" id="sc1">Recherche de Qualification Professionnelle</option>
                                                         <option value="Qualifié_à_la_recherche_d'un_emploi" id="sc2">Qualifié à la recherche d'un emploi</option>
                                                         <option value="Primo_demandeur_auto_emploi" id="sc3">Primo demandeur auto emploi</option>
@@ -214,10 +214,10 @@
                                             </div>            
                                         </fieldset>
                                         <fieldset>
-                                        <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="parcours" id="parcours" required="" >
-                                                    <option value="">- PARCOURS :** -</option>
+                                                <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="parcours" id="parcours" required="" >
+                                                    <option value="">- 3 - PARCOURS :** -</option>
                                                     <option value="parcours1" id="p1">Parcours-1</option>
                                                     <option value="parcours2" id="p2">Parcours-2</option>
                                                     <option value="parcours3" id="p3">Parcours-3</option>
@@ -238,12 +238,11 @@
                                                 </select>   
                                             </div>
                                         </div>     
-                                        </fieldset>
-                                        <fieldset>
-                                        <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                        
+                                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="marqueurs" id="marqueurs"  required="">
-                                                    <option value="">- MARQUEURS :** -</option>
+                                                <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="marqueurs" id="marqueurs"  required="">
+                                                    <option value="">- 4 - MARQUEURS :** -</option>
                                                     <option value="Définition_et_accompagnement_du_projet_personnel" id="m1">Définition et accompagnement du projet personnel</option>
                                                     <option value="Accompagnement_le_recherche_d'emploi/stage" id="m2">Accompagnement le recherche d'emploi/stage</option>
                                                     <option value="Accompagnement_de_Groupe" id="m3">Accompagnement de Groupe</option>
@@ -337,7 +336,7 @@
                                                     
                                         
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" name="type2" class="at-btn">ENREGISTRER & RETOURNER</button>&nbsp;<button type="submit" name="type1" class="at-btn">ENREGISTRER & POURSUIVRE...</button></center>
+                                                <center><button type="submit" style="width: 490px; height: 80px; border:3px solid purple; font-size: 25px" name="type2" class="at-btn">ENREGISTRER & RETOURNER</button>&nbsp;&nbsp;<button type="submit" style="width: 490px; height: 80px; border:3px solid red; font-size: 25px" name="type1" class="at-btn">ENREGISTRER & POURSUIVRE...</button></center>
                                             </div>
                                     
                                     </form>
@@ -354,77 +353,79 @@
         <!--************************************
 				Footer Start
 		*************************************-->
-        <footer id="at-footer" class="at-footer at-haslayout">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="at-emailsubscribearea">
-                            <p>Recevez nos dernières informations</p>
-                            <form class="at-formtheme at-formnewsletter">
-                                <fieldset>
-                                    <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
-                                    <button class="at-btn" type="submit">Souscrire</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div class="at-threecolumns">
-                            <div class="at-fcolumn">
-                                <div class="at-widget at-widgettext">
-                                    <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                               <!--     <div class="at-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+         <footer id="at-footer" class="at-footer at-haslayout">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <!--  <div class="at-emailsubscribearea">
+                                <p>Recevez nos dernières informations</p>
+                                <form class="at-formtheme at-formnewsletter">
+                                    <fieldset>
+                                        <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
+                                        <button class="at-btn" type="submit">Souscrire</button>
+                                    </fieldset>
+                                </form>
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
+                                <div class="at-fcolumn">
+                                    <div class="at-widget at-widgettext">
+                                        <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
+                                        <ul class="at-socialicons">
+                                            <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
+                                        </ul>
+                                       
+                                    </div>
+                                </div>
+                                <div class="at-fcolumn">
+                                    <div class="at-widget at-widgetusefullinks">
+                                        <div class="at-fwidgettitle">
+                                            <h3>Liens Utiles</h3>
+                                        </div>
+                                        <div class="at-widgetcontent">
+                                            <ul>
+                                                <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
+                                                <li><a href="https://www.taataan.sn">Taataan</a></li>
+                                                <li>
+                                                    <p>Email: contact@taataan.sn</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                              <div class="at-fcolumn">
+                                    <div class="at-widget">
+                                        <div class="at-fwidgettitle">
+                                            <h3>Recent News</h3>
+                                        </div>
+                                        <div class="at-widgetcontent">
+                                          <ul>
+                                                <li>
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2018-01-12">January 28, 2018</time>
+                                                </li>
+                                                <li>
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2020-24-11">Novembre 24, 2020</time>
+                                                </li>
+                                            </ul> 
+                                        </div>
                                     </div> -->
-                                    <ul class="at-socialicons">
-                                        <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
-                            <div class="at-fcolumn">
-                                <div class="at-widget at-widgetusefullinks">
-                                    <div class="at-fwidgettitle">
-                                        <h3>Liens Utiles</h3>
-                                    </div>
-                                    <div class="at-widgetcontent">
-                                        <ul>
-                                            <li><a href="index.html">Accueil</a></li>
-                                            <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
-                                            <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
-                                            <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                            <li><p>Email: contact@taataan.sn</p></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                           <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
-                            <div class="at-fcolumn">
-                                <div class="at-widget">
-                                    <div class="at-fwidgettitle">
-                                        <h3>Recent News</h3>
-                                    </div>
-                                    <div class="at-widgetcontent">
-                                        <ul>
-                                            <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                <time datetime="2018-01-12">January 28, 2018</time>
-                                            </li>
-                                            <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                <time datetime="2020-24-11">Novembre 24, 2020</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="at-copyright">
-                            <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                            <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         <!--************************************
 				Footer End
 		*************************************-->

@@ -96,44 +96,44 @@
 				Header Start
 		*************************************-->
         <header id="at-header" class="at-header at-headervthree">
-            <div class="container-fluid">
-                <div class="row">
-                    <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
-                    <div class="at-navigationarea">
-                        <nav id="at-nav" class="at-nav">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-                            </div>
-                            <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                            <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Accueil</a>
-                                    </li>
+                <div class="container-fluid">
+                    <div class="row">
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
+                        <div class="at-navigationarea">
+                            <nav id="at-nav" class="at-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                                    <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="connection.html">Se déconnecter</a>
-                                    </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                          <!--   <div class="at-contactsocial">
+                                <span class="at-contactnumber">
+                                    <i class="icon-telephone114"></i>
+                                    <em>+00221 33 837 80 09</em>
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
-                        </nav>
-                        <div class="at-contactsocial">
-                            <span class="at-contactnumber">
-								<i class="icon-telephone114"></i>
-								<em>+00221 33 837 80 09</em>
-							</span>
-                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <!--************************************
 				Header End
 		*************************************-->
@@ -152,7 +152,7 @@
             <div class="clearfix"></div>
             <section class="at-sectionspace at-haslayout">
                 <div class="container">
-                   <h1 style="text-align: center;">Inscription Individuelle 3 form = <%=formulaire_id%></h1>
+                   <h1 style="text-align: center;">Inscription Individuelle  Id Formulaire = <%=formulaire_id%></h1>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="at-content">
@@ -176,7 +176,7 @@
                                         <div class="at-sectiontitleborder">
                                             <br/>
                                         <hr/>
-                                            <h2><center>Veuillez remplir ce formulaire : <strong>Étape 3</strong> </center></h2>
+                                            <h2><center>Veuillez remplir ce formulaire de <strong>Niveau 3 ?</strong> </center></h2>
                                          <hr/>
                                         </div>
                                         <br/>
@@ -189,18 +189,18 @@
                                                 </div>
                                             </div>
                                   -->
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="regi_commerce" id="regi_commerce" onchange="changeStatus0()" required>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="regi_commerce" id="regi_commerce" onchange="changeStatus0()" required>
                                                         <option value="">- Avez-vous un Régi de Commerce ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
                                                     </select> 
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="numero_regi_comm" id="numero_regi_comm" class="form-control" placeholder=" Et quelle est le numéro du REGI DE COMMERCE ?">
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="numero_regi_comm" id="numero_regi_comm" class="form-control" placeholder=" Et quelle est le numéro du REGI DE COMMERCE ?">
                                                 </div>
                                             </div>
                                                      <script>
@@ -215,18 +215,18 @@
                                                         }
                                                     </script>
                                             
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="ninea" id="ninea" onchange=" changeStatus1()" required>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="ninea" id="ninea" onchange=" changeStatus1()" required>
                                                         <option value="">- Avez-vous votre NINEA ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
                                                     </select>   
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="numero_ninea" id="numero_ninea" class="form-control" placeholder=" Et quelle est le numéro du NINEA ?">
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="numero_ninea" id="numero_ninea" class="form-control" placeholder=" Et quelle est le numéro du NINEA ?">
                                                 </div>
                                             </div>
                                             
@@ -242,9 +242,9 @@
                                                         }
                                                     </script>
                                             
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="reference_prof" onchange=" changeStatus2();" id="Ref_Prof" required>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="reference_prof" onchange=" changeStatus2();" id="Ref_Prof" required>
                                                         <option value="">- Avez-vous d'autres références professionnelles ?** -</option>
                                                         <option value="carte_artisanat">Carte Artisanat</option>
                                                         <option value="agrement">Agrément</option>
@@ -255,9 +255,9 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="numero_reference_prof" id="num_ref_prof" class="form-control" placeholder=" Et quelle est le numéro du Référence ?">
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="numero_reference_prof" id="num_ref_prof" class="form-control" placeholder=" Et quelle est le numéro du Référence ?">
                                                 </div>
                                             </div>
                                                     
@@ -272,9 +272,9 @@
                                                             }
                                                         }
                                                     </script>
-                                        <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                 <div class="form-group">
-                                                    <select class="form-control" name="compte_bancaire_sfd" onchange="changeStatus3();"  id="compte_bancaire_sfd" required>
+                                                    <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="compte_bancaire_sfd" onchange="changeStatus3();"  id="compte_bancaire_sfd" required>
                                                         <option value="">- Disposez-vous d'un compte ?** -</option>
                                                         <option value="oui_banque">OUI dans une Banque</option>
                                                         <option value="oui_sfd">OUI dans une SFD</option>
@@ -282,14 +282,14 @@
                                                     </select>
                                                 </div>
                                         </div>
-                                       <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="nom_banque_sfd" id="nom_banque_sfd" class="form-control" placeholder="Si OUI dans quelle banque ou SFD ? ( - Ne pas remplir si NON - )">
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="nom_banque_sfd" id="nom_banque_sfd" class="form-control" placeholder="Si OUI dans quelle banque ou SFD ? ( - Ne pas remplir si NON - )">
                                                 </div>
                                        </div>
-                                        <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                 <div class="form-group">
-                                                    <input type="text" name="numero_compte_banque_sfd" id="numero_compte_banque_sfd" class="form-control" placeholder=" Et quelle est le numéro du Compte ? ( - Ne pas remplir si NON - )">
+                                                    <input type="text" style="border:2px solid black; font-family: sans-serif" name="numero_compte_banque_sfd" id="numero_compte_banque_sfd" class="form-control" placeholder=" Et quelle est le numéro du Compte ? ( - Ne pas remplir si NON - )">
                                                 </div>
                                             </div>  
                                                 <script>
@@ -307,9 +307,9 @@
                                                         }
                                                     </script>     
                                                     
-                                       <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                         <div class="form-group">
-                                            <select class="form-control" name="soutien_partenaire" onchange="changeStatus4();" id="soutien_partenaire"> <!--Ici parent a ete remplacé par Partenaire...-->
+                                            <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="soutien_partenaire" onchange="changeStatus4();" id="soutien_partenaire"> <!--Ici parent a ete remplacé par Partenaire...-->
                                                 <option value="">- Pour mener à bien votre projet avez-vous le soutien d'un partenaire ? -</option>
                                                 <option value="OUI">OUI</option>
                                                 <option value="NON">NON</option>
@@ -345,14 +345,14 @@
                                                             }
                                                         }
                                                     </script>    
-                                     <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                         <div class="form-group">
-                                            <input type="text" name="ville_partenaire" id="ville_partenaire" class="form-control" placeholder="Si OUI dans quelle ville réside-t-il ? ">
+                                            <input type="text" style="border:2px solid black; font-family: sans-serif" name="ville_partenaire" id="ville_partenaire" class="form-control" placeholder="Si OUI dans quelle ville réside-t-il ? ">
                                         </div>
                                    </div>
-                                   <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
+                                   <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                     <div class="form-group">
-                                        <input type="text" name="pays_partenaire" id="pays_partenaire" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ? ">
+                                        <input type="text" style="border:2px solid black; font-family: sans-serif" name="pays_partenaire" id="pays_partenaire" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ? ">
                                     </div>
                                </div>
                               </fieldset> 
@@ -363,7 +363,7 @@
                                             <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">           
                                                                               
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button onclick="window.open('FileUploadIndiv.jsp')" class="at-btn">AJOUTER PIECES JOINTES</button><br/><button type="submit" class="at-btn">ENREGISTRER & RETOURNER</button></center>
+                                                <center><br/><button type="submit" style="width: 490px; height: 80px; border:3px solid purple; font-size: 25px" class="at-btn">ENREGISTRER & RETOURNER</button></center> <!-- <button onclick="window.open('FileUploadIndiv.jsp')" class="at-btn">AJOUTER PIECES JOINTES</button> -->
                                             </div>
                                     
                                     </form>
@@ -381,76 +381,78 @@
 				Footer Start
 		*************************************-->
         <footer id="at-footer" class="at-footer at-haslayout">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div class="at-emailsubscribearea">
-                            <p>Recevez nos dernières informations</p>
-                            <form class="at-formtheme at-formnewsletter">
-                                <fieldset>
-                                    <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
-                                    <button class="at-btn" type="submit">Souscrire</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                        <div class="at-threecolumns">
-                            <div class="at-fcolumn">
-                                <div class="at-widget at-widgettext">
-                                    <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                               <!--     <div class="at-description">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <!--  <div class="at-emailsubscribearea">
+                                <p>Recevez nos dernières informations</p>
+                                <form class="at-formtheme at-formnewsletter">
+                                    <fieldset>
+                                        <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
+                                        <button class="at-btn" type="submit">Souscrire</button>
+                                    </fieldset>
+                                </form>
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
+                                <div class="at-fcolumn">
+                                    <div class="at-widget at-widgettext">
+                                        <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
+                                        <ul class="at-socialicons">
+                                            <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
+                                        </ul>
+                                       
+                                    </div>
+                                </div>
+                                <div class="at-fcolumn">
+                                    <div class="at-widget at-widgetusefullinks">
+                                        <div class="at-fwidgettitle">
+                                            <h3>Liens Utiles</h3>
+                                        </div>
+                                        <div class="at-widgetcontent">
+                                            <ul>
+                                                <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
+                                                <li><a href="https://www.taataan.sn">Taataan</a></li>
+                                                <li>
+                                                    <p>Email: contact@taataan.sn</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div> 
+                              <div class="at-fcolumn">
+                                    <div class="at-widget">
+                                        <div class="at-fwidgettitle">
+                                            <h3>Recent News</h3>
+                                        </div>
+                                        <div class="at-widgetcontent">
+                                          <ul>
+                                                <li>
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2018-01-12">January 28, 2018</time>
+                                                </li>
+                                                <li>
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
+                                                    <time datetime="2020-24-11">Novembre 24, 2020</time>
+                                                </li>
+                                            </ul> 
+                                        </div>
                                     </div> -->
-                                    <ul class="at-socialicons">
-                                        <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
-                                        <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
-                            <div class="at-fcolumn">
-                                <div class="at-widget at-widgetusefullinks">
-                                    <div class="at-fwidgettitle">
-                                        <h3>Liens Utiles</h3>
-                                    </div>
-                                    <div class="at-widgetcontent">
-                                        <ul>
-                                            <li><a href="index.html">Accueil</a></li>
-                                            <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
-                                            <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
-                                            <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                            <li><p>Email: contact@taataan.sn</p></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                           <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
-                            <div class="at-fcolumn">
-                                <div class="at-widget">
-                                    <div class="at-fwidgettitle">
-                                        <h3>Recent News</h3>
-                                    </div>
-                                    <div class="at-widgetcontent">
-                                        <ul>
-                                            <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                <time datetime="2018-01-12">January 28, 2018</time>
-                                            </li>
-                                            <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
-                                                <time datetime="2020-24-11">Novembre 24, 2020</time>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="at-copyright">
-                            <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                            <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
         <!--************************************
 				Footer End
 		*************************************-->

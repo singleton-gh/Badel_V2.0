@@ -93,10 +93,11 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+           <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -107,30 +108,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="at-instagram"><a href="https://www.instagram.com/badel"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -181,11 +178,11 @@
                 }
             %>
             <main id="at-main" class="at-main at-haslayout">
-
-                <div class="clearfix"></div>
+ 
+              <div class="clearfix"></div> 
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Inscription Individuelle 2 form = <%=formulaire_id%></h1>
+                        <h1 style="text-align: center;">Inscription Individuelle </br> Id Formulaire = <%=formulaire_id%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -205,20 +202,20 @@
                                                            </div>
                                                        </div>
                                                    </div>
-                                               </fieldset>  -->
-                                            <div class="at-sectiontitleborder">
+                                               </fieldset>  
+                                            <div class="at-sectiontitleborder"> -->
                                                 <br/>
                                                 <hr/>
-                                                <h2><center>Veuillez remplir ce formulaire : <strong>Étape 2</strong> </center></h2>
+                                                <h2><center>Veuillez-vous modifier ce formulaire de <strong>Niveau 2 ?</strong> </center></h2>
                                                 <hr/>
                                                 <br/>
                                                 <hr/>
                                                 <h3><center>ORIENTATION PROFESSIONNELLE :<strong>OPTION INITIALE DEMANDEUR</strong> </center></h3>
                                                 <hr/>
-                                            </div> 
+                                  <!--          </div>  -->
                                             <fieldset>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="categories" id="demo-category">
                                                             <option value="<%=form2In3%>">- CATEGORIES : -</option>
                                                             <option value="Insertion à l'emploi">Insertion à l'emploi</option>
@@ -231,7 +228,7 @@
                                             </fieldset>
                                             <fieldset>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="sous_categories" id="demo-category">
                                                             <option value="<%=form2In4%>">- SOUS-CATEGORIES : -</option>
                                                             <option value="Recherche de Qualification Professionnelle">Recherche de Qualification Professionnelle</option>
@@ -250,7 +247,7 @@
                                             </fieldset>
                                             <fieldset>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="parcours" id="demo-category">
                                                             <option value="<%=form2In5%>">- PARCOURS : -</option>
                                                             <option value="parcours1">Parcours-1</option>
@@ -275,7 +272,7 @@
                                             </fieldset>
                                             <fieldset>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="marqueurs" id="demo-category">
                                                             <option value="<%=form2In6%>">- MARQUEURS : -</option>
                                                             <option value="Définition et accompagnement du projet personnel">Définition et accompagnement du projet personnel</option>
@@ -291,7 +288,7 @@
                                                 <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">
                                             </fieldset>                                      
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
+                                                <center><button type="submit" style="border:2px solid red;" name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
                                             </div>
 
                                         </form>
@@ -312,7 +309,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
+                          <!--  <div class="at-emailsubscribearea">
                                 <p>Recevez nos dernières informations</p>
                                 <form class="at-formtheme at-formnewsletter">
                                     <fieldset>
@@ -320,19 +317,21 @@
                                         <button class="at-btn" type="submit">Souscrire</button>
                                     </fieldset>
                                 </form>
-                            </div>
-                            <div class="at-threecolumns">
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
                                 <div class="at-fcolumn">
                                     <div class="at-widget at-widgettext">
                                         <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
-                                                 <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                             </div> -->
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
                                         <ul class="at-socialicons">
                                             <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                             <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
                                         </ul>
+                                       
                                     </div>
                                 </div>
                                 <div class="at-fcolumn">
@@ -342,38 +341,38 @@
                                         </div>
                                         <div class="at-widgetcontent">
                                             <ul>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
                                                 <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
                                                 <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                                <li><p>Email: contact@taataan.sn</p></li>
+                                                <li>
+                                                    <p>Email: contact@taataan.sn</p>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="at-fcolumn">
+                                </div> 
+                              <div class="at-fcolumn">
                                     <div class="at-widget">
                                         <div class="at-fwidgettitle">
                                             <h3>Recent News</h3>
                                         </div>
                                         <div class="at-widgetcontent">
-                                            <ul>
+                                          <ul>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2018-01-12">January 28, 2018</time>
                                                 </li>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2020-24-11">Novembre 24, 2020</time>
                                                 </li>
-                                            </ul>
+                                            </ul> 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                           <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H à 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

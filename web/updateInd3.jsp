@@ -94,10 +94,11 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+           <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -108,30 +109,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="at-instagram"><a href="https://www.instagram.com/badel"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -204,7 +201,7 @@
                 <div class="clearfix"></div>
                 <section class="at-sectionspace at-haslayout">
                     <div class="container">
-                        <h1 style="text-align: center;">Inscription Individuelle 3 form = <%=formulaire_id%></h1>
+                        <h1 style="text-align: center;">Inscription Individuelle </br> Id Formulaire = <%=formulaire_id%></h1>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div class="at-content">
@@ -224,19 +221,19 @@
                                                            </div>
                                                        </div>
                                                    </div>
-                                               </fieldset>  -->
-                                            <div class="at-sectiontitleborder">
+                                               </fieldset> 
+                                            <div class="at-sectiontitleborder"> -->
                                                 <br/>
                                                 <hr/>
-                                                <h2><center>Veuillez remplir ce formulaire : <strong>Étape 3</strong> </center></h2>
+                                                <h2><center>Veuillez-vous modifier ce formulaire de <strong>Niveau 3 ?</strong> </center></h2>
                                                 <hr/>
-                                            </div>
+                                       <!--     </div> -->
                                             <br/>
 
                                             <fieldset>
                                                 
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="regi_commerce" onchange="changeStatus0()" id="demo-category">
                                                             <option value="<%=form3In3%>">- Avez-vous un Régi de Commerce : -</option>
                                                             <option value="oui">OUI</option>
@@ -246,7 +243,7 @@
                                                 </div>
                                                             
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="numero_regi_comm" value="<%=form3In4%>" class="form-control" placeholder=" Et quelle est le numéro du REGI DE COMMERCE ?">
                                                     </div>
                                                 </div>
@@ -262,7 +259,7 @@
                                                         }
                                                     </script>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="ninea" onchange="changeStatus1" id="demo-category">
                                                             <option value="<%=form3In5%>">- Avez-vous votre NINEA : -</option>
                                                             <option value="oui">OUI</option>
@@ -272,7 +269,7 @@
                                                 </div>
                                                            
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="numero_ninea" value="<%=form3In6%>" class="form-control" placeholder=" Et quelle est le numéro du NINEA ?">
                                                     </div>
                                                 </div>
@@ -288,7 +285,7 @@
                                                         }
                                                     </script>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="reference_prof" id="demo-category">
                                                             <option value="<%=form3In7%>">- Avez-vous d'autres références professionnelles ? -</option>
                                                             <option value="carte_artisanat">Carte Artisanat</option>
@@ -301,12 +298,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="numero_reference_prof" value="<%=form3In8%>" class="form-control" placeholder=" Et quelle est le numéro du Référence ?">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="compte_bancaire_sfd" id="demo-category">
                                                             <option value="<%=form3In9%>">- Disposez-vous d'un compte ? -</option>
                                                             <option value="oui_banque">OUI dans une Banque</option>
@@ -316,17 +313,17 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="nom_banque_sfd" value="<%=form3In10%>" class="form-control" placeholder="Si OUI dans quelle banque ou SFD ? ">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="numero_compte_banque_sfd" value="<%=form3In11%>" class="form-control" placeholder=" Et quelle est le numéro du Compte ? ">
                                                     </div>
                                                 </div>    
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <select class="form-control" name="soutien_partenaire" id="demo-category">
                                                             <option value="<%=form3In12%>">- Pour mener à bien votre projet avez-vous le soutien d'un partenaire ? -</option>
                                                             <option value="oui">OUI</option>
@@ -335,12 +332,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="ville_partenaire" value="<%=form3In13%>" class="form-control" placeholder="Si OUI dans quelle ville réside-t-il ? ">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-10 col-lg-10 pull-left">
-                                                    <div class="form-group">
+                                                    <div class="form-group" style="border:2px solid blue;">
                                                         <input type="text" name="pays_partenaire" value="<%=form3In14%>" class="form-control" placeholder="Si OUI dans quel pays réside-t-il ? ">
                                                     </div>
                                                 </div>
@@ -348,7 +345,7 @@
                                                 <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">           
                                             </fieldset>                                      
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" name="type1" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
+                                                <center><button type="submit" style="border:2px solid red;" name="type1" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
                                             </div>
 
                                         </form>
@@ -365,11 +362,11 @@
             <!--************************************
                                     Footer Start
                     *************************************-->
-            <footer id="at-footer" class="at-footer at-haslayout">
+             <footer id="at-footer" class="at-footer at-haslayout">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
+                          <!--  <div class="at-emailsubscribearea">
                                 <p>Recevez nos dernières informations</p>
                                 <form class="at-formtheme at-formnewsletter">
                                     <fieldset>
@@ -377,19 +374,21 @@
                                         <button class="at-btn" type="submit">Souscrire</button>
                                     </fieldset>
                                 </form>
-                            </div>
-                            <div class="at-threecolumns">
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
                                 <div class="at-fcolumn">
                                     <div class="at-widget at-widgettext">
                                         <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
-                                                 <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                             </div> -->
+                                          <div class="at-description">
+                                                <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
+                                            </div> 
                                         <ul class="at-socialicons">
                                             <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                             <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
                                         </ul>
+                                       
                                     </div>
                                 </div>
                                 <div class="at-fcolumn">
@@ -399,38 +398,38 @@
                                         </div>
                                         <div class="at-widgetcontent">
                                             <ul>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
                                                 <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
                                                 <li><a href="https://www.taataan.sn">Taataan</a></li>
-                                                <li><p>Email: contact@taataan.sn</p></li>
+                                                <li>
+                                                    <p>Email: contact@taataan.sn</p>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="at-fcolumn">
+                                </div> 
+                              <div class="at-fcolumn">
                                     <div class="at-widget">
                                         <div class="at-fwidgettitle">
                                             <h3>Recent News</h3>
                                         </div>
                                         <div class="at-widgetcontent">
-                                            <ul>
+                                          <ul>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2018-01-12">January 28, 2018</time>
                                                 </li>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2020-24-11">Novembre 24, 2020</time>
                                                 </li>
-                                            </ul>
+                                            </ul> 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H à 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

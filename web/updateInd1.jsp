@@ -94,10 +94,11 @@
             <!--************************************
                                     Header Start
                     *************************************-->
-            <header id="at-header" class="at-header at-headervthree">
+                <header id="at-header" class="at-header at-headervthree">
                 <div class="container-fluid">
                     <div class="row">
-                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
                         <div class="at-navigationarea">
                             <nav id="at-nav" class="at-nav">
                                 <div class="navbar-header">
@@ -108,30 +109,26 @@
                                         <span class="icon-bar"></span>
                                     </button>
                                 </div>
-                                <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
                                     <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="index.html">Accueil</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
-                                        </li>
-                                        <li class="menu-item-has-children">
-                                            <a href="connection.html">Se déconnecter</a>
-                                        </li>
+                                       
                                     </ul>
                                 </div>
                             </nav>
-                            <div class="at-contactsocial">
+                          <!--   <div class="at-contactsocial">
                                 <span class="at-contactnumber">
                                     <i class="icon-telephone114"></i>
                                     <em>+00221 33 837 80 09</em>
-                                </span>
-                                <ul class="at-socialicons">
+                                </span> 
+                              <ul class="at-socialicons">
                                     <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
                                     <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="at-instagram"><a href="https://www.instagram.com/badel"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
                         </div>
                     </div>
@@ -258,15 +255,15 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </fieldset>  -->
-                                            <div class="at-sectiontitleborder">
+                                            </fieldset>  
+                                            <div class="at-sectiontitleborder"> -->
                                                 <br/>
                                                 <hr/>
                                                 <h2>
-                                                    <center>Veuillez remplir ce formulaire : <strong>Étape 1</strong> </center>
+                                                    <center>Veuillez-vous modifier ce formulaire de <strong>Niveau 1 ?</strong> </center>
                                                 </h2>
                                                 <hr/>
-                                            </div>
+                                          <!--  </div> -->
                                             <br/>
 
                                              <fieldset>
@@ -277,44 +274,44 @@
                                                     </h3>
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="prenom" value="<%=formIn4%>" class="form-control" placeholder="1- Prénom**" required>
+                                                        <div class="form-group" >
+                                                            <input type="text"  name="prenom" style="border:2px solid blue;" value="<%=formIn4%>" class="form-control" placeholder="1- Prénom**" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="nom" value="<%=formIn5%>" class="form-control" placeholder="2- Nom**" required>
+                                                        <div class="form-group" >
+                                                            <input type="text" style="border:2px solid blue;" name="nom"  value="<%=formIn5%>" class="form-control" placeholder="2- Nom**" >
                                                         </div>
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="tel1" value="<%=formIn6%>" class="form-control" placeholder="3- Numéro de Téléphone 1**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" name="tel1" value="<%=formIn6%>" class="form-control" placeholder="3- Numéro de Téléphone 1**" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="border:2px solid blue;">
                                                             <input type="text" name="tel2" value="<%=formIn7%>" class="form-control" placeholder="4- Numéro de Téléphone 2" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="commune_rattach" value="<%=formIn8%>" class="form-control" placeholder="5- Commune de Rattachement**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" name="commune_rattach" value="<%=formIn8%>" class="form-control" placeholder="5- Commune de Rattachement**" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left"> <!-- Champ ajouté -->
-                                                        <div class="form-group">
-                                                            <input type="text" name="quartier_rattach" value="<%=formIn9%>" class="form-control" placeholder="6- Quartier de Rattachement**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" name="quartier_rattach" value="<%=formIn9%>" class="form-control" placeholder="6- Quartier de Rattachement**" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="commune_actuelle" value="<%=formIn10%>" class="form-control" placeholder="7- Commune Actuelle**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" name="commune_actuelle" value="<%=formIn10%>" class="form-control" placeholder="7- Commune Actuelle**" >
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                                        <div class="form-group">
-                                                            <input type="text" name="quartier_actuel" value="<%=formIn11%>" class="form-control" placeholder="8- Quartier Actuel**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" name="quartier_actuel" value="<%=formIn11%>" class="form-control" placeholder="8- Quartier Actuel**" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -328,8 +325,8 @@
                                                     </h3>
                                                     <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn12%>" name="sexe" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn12%>" name="sexe" id="demo-category" >
                                                                 <option value="">1- Sexe :** -</option>                                                     
                                                                 <option value="masculin">Masculin</option>
                                                                 <option value="feminin">Féminin</option>  
@@ -338,8 +335,8 @@
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn13%>" name="tranche_age" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn13%>" name="tranche_age" id="demo-category" >
                                                                 <option value="">2- Tranche d'âge:** -</option>
                                                                 <option value="15-25 ans">14 &agrave; 25 ans</option>
                                                                 <option value="26-35 ans">26 &agrave; 35 ans</option>
@@ -351,8 +348,8 @@
                                                     </div>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn14%>" name="etude" id="etude" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn14%>" name="etude" id="etude" >
                                                                 <option value="">3- Avez vous fait des &eacute;tudes ?** -</option>
                                                                 <option value="Ecole_Francaise" id="EF">Ecole Française</option>
                                                                 <option value="Ecole_Arabe" id="EA">Ecole Arabe</option>
@@ -364,7 +361,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group" id="niveau">
+                                                        <div class="form-group" id="niveau" style="border:2px solid blue;">
                                                             <select class="form-control" value="<%=formIn15%>" name="niveau_etude" id="niveau_etude">
                                                                 <option value="">4- Niveau d'&eacute;tudes: -</option>
                                                             </select>
@@ -396,8 +393,8 @@
                                                               });
                                                      </script>
                                                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn16%>" name="formation_prof" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn16%>" name="formation_prof" id="demo-category" >
                                                                 <option value="">5- Avez-vous fait une Formation Technique Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -405,8 +402,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn17%>" name="sejour" onchange="changeStatus();"  id="sejour" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn17%>" name="sejour" onchange="changeStatus();"  id="sejour" >
                                                                 <option value="">6- Avez-vous s&eacute;journé dans un pays &eacute;trangers ?**-</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -414,12 +411,12 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="border:2px solid blue;">
                                                             <input type="text" name="pays_sejourne" value="<%=formIn18%>" id="pays_sejourne"  class="form-control" placeholder="7- SI OUI dans quel pays ?">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="border:2px solid blue;">
                                                             <input type="text" name="motif_sejour" value="<%=formIn19%>" id="motif_sejour" class="form-control" placeholder="8- Et quel est le motif du s&eacute;jour ?">
                                                         </div>
                                                     </div>
@@ -439,8 +436,8 @@
                                                     </script>
 
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn20%>" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn20%>" name="experience_prof" onchange="changeStatus1()" id="Exp_Prof" >
                                                                 <option value="">9- Avez-vous une Exp&eacute;rience Professionnelle ?** -</option>
                                                                 <option value="OUI">OUI</option>                                                       
                                                                 <option value="NON">NON</option>
@@ -448,8 +445,8 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn21%>" name="domaine_exp_prof" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn21%>" name="domaine_exp_prof" id="demo-category" >
                                                                 <option value="">10- Quelle est votre Domaine d'activit&eacute; ?** -</option>
                                                                 <option value="Production">Production</option>                                                       
                                                                 <option value="Transformation">Transformation</option>
@@ -463,8 +460,8 @@
                                                     </div>
                                               <!---->      
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn22%>" name="duree_exp_prof" id="duree_exp_prof" required> 
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn22%>" name="duree_exp_prof" id="duree_exp_prof" > 
                                                                 <option value="">11- Quelle est la Dur&eacute;e d'Exp&eacute;rience Professionnelle ?** -</option> 
                                                                 <option value="3mois-1an">3mois &agrave; 1an</option>                                                       
                                                                 <option value="+1an-3ans">+1an &agrave; 3ans</option>
@@ -488,8 +485,8 @@
                                           
                                                     
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" value="<%=formIn23%>" name="statut_exp_prof" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" value="<%=formIn23%>" name="statut_exp_prof" id="demo-category" >
                                                                 <option value="">12- Quelle est votre Statut ?** -</option>
                                                               <!--  <option value="Chomeur">Ch&ocirc;meur</option>           -->                                                                                                             
                                                                 <option value="Apprenti">Apprenti</option>
@@ -503,8 +500,8 @@
                                                     </div>
                                                      <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                                    <div class="form-group">
-                                                        <select class="form-control" value="<%=formIn24%>" name="region_exp_prof" id="region" required="Champ Obligatoire"> 
+                                                    <div class="form-group" style="border:2px solid blue;">
+                                                        <select class="form-control" value="<%=formIn24%>" name="region_exp_prof" id="region" > 
                                                         <option value="">- 13- Dans quelle r&eacute;gion avez-vous vos activit&eacute;s ?** -</option>
                                                
                                                         </select>
@@ -512,8 +509,8 @@
                                                 </div>
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                                    <div class="form-group">
-                                                        <select class="form-control"  value="<%=formIn25%>" name="departement_exp_prof" id="departement"  required="Champ Obligatoire"> 
+                                                    <div class="form-group" style="border:2px solid blue;">
+                                                        <select class="form-control"  value="<%=formIn25%>" name="departement_exp_prof" id="departement"  > 
                                                         <option value="">- 14- Dans quel d&eacute;partement avez-vous vos activit&eacute;s ?** -</option>
                                                                                                           
                                                         </select>
@@ -521,8 +518,8 @@
                                                 </div>
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
-                                                    <div class="form-group">
-                                                       <select class="form-control" value="<%=formIn26%>" name="commune_exp_prof" id="commune" required="Champ Obligatoire"> 
+                                                    <div class="form-group" style="border:2px solid blue;">
+                                                       <select class="form-control" value="<%=formIn26%>" name="commune_exp_prof" id="commune" > 
                                                         <option value="">- 15- Dans quelle commune avez-vous vos activit&eacute;s ?** -</option>
                                                       </select>
                                                     </div>
@@ -530,7 +527,7 @@
                                       <script>
                        var Localite = {
         "Dakar" :  { 
-              "Dakar" : ["Gorée", "Dakar Plateau", "Gueule Tapée", "Fass", "Colobane", "Fann-Point E-Amitié", "Médina", "Grand-Dakar", "Biscuiterie", "Dieuppeul-Derklé", "Hann-Bel-Air", "Sicap-Liberté", "HLM", "Mermoz-Sacré Coeur", "Ouakam", "Ngor", "Yoff", "Grand-Yoff", "Patte d?oie", "Parcelles Assainies", "Cambérène" ], "Pikine" : ["Pikine- Est", "Pikine-Nord", "Pikine-Ouest", "Dalifort-Foirail", "Djeddha Thiaroye Kao", "Guinaw Rail-Nord", "Guinaw Rail-Sud", "Tivaoune-Diacksao", "Diamagueune-Sicap Mbao", "Mbao", "Keur Massar", "Malika", "Yeumbeul-Sud", "Yeumbeul-Nord"], "Guédiawaye" : ["Golf-Sud", "Sam-Notaire", "Ndiarème-Limamoulaye", "Wakhinane", "Médina Gounass"], "Rufisque" : ["Bargny","Sébikotane","Sendou","Rufisque-Est","Rufisque-Nord","Rufisque-Ouest","Bambylor","Yène","Tivaouane Peulh-Niaga","Diamniadio","Sangalkam","Jaxaay-Parcelles-Niakoul Rap"]
+              "Dakar" : ["Gorée", "Dakar Plateau", "Gueule Tapée", "Fass", "Colobane", "Fann-Point E-Amitié", "Médina", "Grand-Dakar", "Biscuiterie", "Dieuppeul-Derklé", "Hann-Bel-Air", "Sicap-Liberté", "HLM", "Mermoz-Sacré Coeur", "Ouakam", "Ngor", "Yoff", "Grand-Yoff", "Patte d?oie", "Parcelles Assainies", "Cambérène" ], "Pikine" : ["Pikine- Est", "Pikine-Nord", "Pikine-Ouest", "Dalifort-Foirail", "Djeddha Thiaroye Kao", "Guinaw Rail-Nord", "Guinaw Rail-Sud", "Tivaoune-Diacksao", "Diamagueune-Sicap Mbao", "Mbao", "Keur Massar", "Malika", "Yeumbeul-Sud", "Yeumbeul-Nord"], "Guédiawaye" : ["Golf-Sud", "Sam-Notaire", "Ndiarème-Limamoulaye", "Wakhinane", "Médina Gounass"], "Rufisque" : ["Bargny","Sébikotane","Sendou","Rufisque-Est","Rufisque-Nord","Rufisque-Ouest","Bambylor","Yène","Tivaouane Peulh-Niaga","Diamniadio","Sangalkam","Niakoul Rap"], "Keur MAssar" : ["Jaxaay-Parcelles", "Keur Massar Nord", "Keur Massar Sud"]
           },                                                          
         "Thies" :  { 
              "Thies" : ["Khombole", "Pout", "Thiès-Ouest", "Thiès-Est","Thiès-Nord","Thiénaba","Ngoudiane","Ndiéyène Sirakh","Touba Toul","Keur Moussa","Diender","Fandène","Kayar","Notto","Tassète"], "Tivaouane" : ["Tivaouane", "Mékhé", "Mboro", "Méouane", "Darou Khoudoss", "Taïba Ndiaye", "Mérina Dakhar", "Koul", "Pékèsse", "Niakhène", "Mbayène", "Thilmakha", "Ngandiouf", "Notto Gouye Diama", "Mont Rolland", "Pire Goureye", "Chérif Lo", "Pambal"], "Mbour" : ["Mbour", "Joal Fadiouth", "Fissel", "Ndiaganiao", "Sessene", "Sandiara", "Nguéniène", "Thiadiaye", "Sindia", "Malicounda", "Diass", "Nguékhokh", "Saly Portudal", "Ngaparou", "Somone", "Popenguine-Ndayane"]
@@ -611,8 +608,8 @@
                                    
                                               
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
-                                                        <div class="form-group">
-                                                            <input type="text" value="<%=formIn27%>" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <input type="text" value="<%=formIn27%>" name="quartier_exp_prof" class="form-control" id="qtr_village" placeholder="- 16- Dans quel quartier ou village avez-vous des activités ?**" >
                                                         </div>
                                                     </div>
                                                <script>
@@ -640,18 +637,18 @@
                                       </script>
                                             </fieldset>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="border:2px solid blue;">
                                                             <input type="text" name="autre_region_exp_prof" value="<%=formIn28%>" class="form-control" placeholder="17- Autre R&eacute;gion d'activité :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
+                                                        <div class="form-group" style="border:2px solid blue;">
                                                             <input type="text" name="hors_senegal" value="<%=formIn29%>" class="form-control" placeholder="18- Activit&eacute; hors S&eacute;n&eacute;gal :">
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
-                                                        <div class="form-group">
-                                                            <select class="form-control" name="situation_prof" value="<%=formIn30%>" id="demo-category" required>
+                                                        <div class="form-group" style="border:2px solid blue;">
+                                                            <select class="form-control" name="situation_prof" value="<%=formIn30%>" id="demo-category" >
                                                                 <option value="">19- Quelle est votre situation professionnelle actuelle ?** -</option>
                                                                 <option value="Elève - Etudiant">El&egrave;ve/Etudiant</option>                                                       
                                                                 <option value="En Chomage">En Ch&ocirc;mage</option>
@@ -669,8 +666,8 @@
                                                     </h3>
                                                 <hr/>
                                                     <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
-                                                <div class="form-group">
-                                                    <input type="text" name="soutien_immediat" value="<%=formIn31%>" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" required>
+                                                <div class="form-group" style="border:2px solid blue;">
+                                                    <input type="text" name="soutien_immediat" value="<%=formIn31%>" id="soutien_immediat"  class="form-control" placeholder="-20-  Quel soutien désirez-vous disposer dans l'immédiat?**" >
                                                 </div>
                                                     </div>
                                             <fieldset>
@@ -682,8 +679,8 @@
                                                             </h3>
                                                             <hr/>
                                                             <div class="col-xs-12 col-sm-4 col-md-10 col-lg-12 pull-left">
-                                                                <div class="form-group">
-                                                                    <select class="form-control" value="<%=formIn3%>" name="titre_accompagnement" id="demo-category" required>
+                                                                <div class="form-group" style="border:2px solid blue;">
+                                                                    <select class="form-control" value="<%=formIn3%>" name="titre_accompagnement" id="demo-category" >
                                                                         <option value="">- 21- Titre Accompagnement :** -</option>
                                                                         <option value="Personnel">Personnel</option>
                                                                         <option value="Collectif">Collectif</option>
@@ -700,7 +697,7 @@
                                             <input type="hidden" value="<%=idx%>" name="id">  
                                             <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">  
                                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                <center><button type="submit" name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
+                                                <center><button type="submit" style="border:2px solid red;" name="type2" class="at-btn">ENREGISTRER LES MODIFICATIONS</button></center>
                                             </div>
                                     </div>
                                     </fieldset>
@@ -718,11 +715,11 @@
             <!--************************************
                                         Footer Start
                         *************************************-->
-            <footer id="at-footer" class="at-footer at-haslayout">
+           <footer id="at-footer" class="at-footer at-haslayout">
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="at-emailsubscribearea">
+                          <!--  <div class="at-emailsubscribearea">
                                 <p>Recevez nos dernières informations</p>
                                 <form class="at-formtheme at-formnewsletter">
                                     <fieldset>
@@ -730,19 +727,21 @@
                                         <button class="at-btn" type="submit">Souscrire</button>
                                     </fieldset>
                                 </form>
-                            </div>
-                            <div class="at-threecolumns">
+                            </div> 
+                          -->
+                           <!--    <div class="at-threecolumns">
                                 <div class="at-fcolumn">
                                     <div class="at-widget at-widgettext">
                                         <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                                        <!--     <div class="at-description">
+                                          <div class="at-description">
                                                 <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                            </div> -->
+                                            </div> 
                                         <ul class="at-socialicons">
                                             <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                             <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
                                             <li class="at-instagram"><a href="www.youtube.com/taataan"><i class="fa fa-youtube"></i></a></li>
                                         </ul>
+                                       
                                     </div>
                                 </div>
                                 <div class="at-fcolumn">
@@ -752,8 +751,6 @@
                                         </div>
                                         <div class="at-widgetcontent">
                                             <ul>
-                                                <li><a href="index.html">Accueil</a></li>
-                                                <li><a href="javascript:void(0);">S'INSCRIRE</a></li>
                                                 <li><a href="https://www.adel-invest.com">Adel-invest</a></li>
                                                 <li><a href="https://www.taataan.sn">Taataan</a></li>
                                                 <li>
@@ -762,30 +759,30 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="at-fcolumn">
+                                </div> 
+                              <div class="at-fcolumn">
                                     <div class="at-widget">
                                         <div class="at-fwidgettitle">
                                             <h3>Recent News</h3>
                                         </div>
                                         <div class="at-widgetcontent">
-                                            <ul>
+                                          <ul>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                       <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2018-01-12">January 28, 2018</time>
                                                 </li>
                                                 <li>
-                                                    <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                      <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                     <time datetime="2020-24-11">Novembre 24, 2020</time>
                                                 </li>
-                                            </ul>
+                                            </ul> 
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="at-copyright">
-                                <p>Adresse: ZAC MBAO villa N°3 4ième Etage Cité Socidak 1 en face Brioche Dorée, Rufisque Ouvert de 08H à 18H</p>
-                                <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H à 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
                         </div>
                     </div>

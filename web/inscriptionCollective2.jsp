@@ -94,45 +94,46 @@
         <!--************************************
 				Header Start
 		*************************************-->
-        <header id="at-header" class="at-header at-headervthree">
-            <div class="container-fluid">
-                <div class="row">
-                    <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"></a></strong>
-                    <div class="at-navigationarea">
-                        <nav id="at-nav" class="at-nav">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
-									<span class="sr-only">Toggle navigation</span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-									<span class="icon-bar"></span>
-								</button>
-                            </div>
-                            <div id="at-navigation" class="collapse navbar-collapse at-navigation">
-                              <ul>
-                                    <li class="menu-item-has-children">
-                                        <a href="index.html">Accueil</a>
-                                    </li>
+          <header id="at-header" class="at-header at-headervthree">
+                <div class="container-fluid">
+                    <div class="row">
+                        <strong class="at-logo"><a href="index.html"><img src="images/logo2.png" alt="company logo here"><span class="at-contactnumber"> <i class="icon-telephone114"></i> <em>+00221 33 837 80 09</em> </span></a></strong>
+                                      
+                        <div class="at-navigationarea">
+                            <nav id="at-nav" class="at-nav">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#at-navigation" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>
+                               <div id="at-navigation" class="collapse navbar-collapse at-navigation">
+                                    <ul>
                                         <li class="menu-item-has-children">
-                                            <a href="Principal.jsp?id=<%=ix%>">Menu Admin</a>
+                                            <a href="Principal.jsp?id=<%=ix%>" ><em><strong>MENU PRINCIPAL</strong></em></a>
                                         </li>
-                                    <li class="menu-item-has-children">
-                                        <a href="connection.html">Se d&eacute;cnnecter</a>
-                                    </li>
+                                       
+                                    </ul>
+                                </div>
+                            </nav>
+                          <!--   <div class="at-contactsocial">
+                                <span class="at-contactnumber">
+                                    <i class="icon-telephone114"></i>
+                                    <em>+00221 33 837 80 09</em>
+                                </span> 
+                              <ul class="at-socialicons">
+                                    <li class="at-facebook"><a href="https://www.facebook.com/badel"><i class="fa fa-facebook"></i></a></li>
+                                    <li class="at-twitter"><a href="https://www.twitter.com/badel"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="at-instagram"><a href="https://www.youtube.com/badel"><i class="fa fa-youtube"></i></a></li>
                                 </ul>
+                             -->
                             </div>
-                        </nav>
-                        <div class="at-contactsocial">
-                            <span class="at-contactnumber">
-								<i class="icon-telephone114"></i>
-								<em>+00221 33 837 80 09</em>
-							</span>
-                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
+            </header>
         <!--************************************
 				Header End
 		*************************************-->
@@ -151,19 +152,19 @@
             <div class="clearfix"></div>
             <section class="at-sectionspace at-haslayout">
                 <div class="container">
-                    <h1 style="text-align: center;">Inscription Collective form = <%=formulaire_id%></h1>
+                    <h1 style="text-align: center;">Inscription Collective Id Formulaire = <%=formulaire_id%></h1>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="at-content">
                                 <div class="at-contactusvone">
                                     <form class="at-formtheme at-formcontacus"  action="ServCol2" method="post">
                                         
-                                        <div class="at-sectiontitleborder">
+                                       <!-- <div class="at-sectiontitleborder"> -->
                                             <br/>
                                         <hr/>
                                             <h2><center>Veuillez remplir ce formulaire : <strong>&eacute;tape 2</strong> </center></h2>   
                                          <hr/>
-                                        </div>
+                                      <!--  </div> -->
                                         <br/>
                                         <fieldset>
                                             <div class="row">
@@ -174,7 +175,7 @@
                                          
                                          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-12 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="activ1_equip" id="activ_equip_primaire" onchange="changeStatus();" required="Champ Obligatoire">
+                                                <select class="form-control" name="activ1_equip" style="border:2px solid black; font-family: sans-serif" id="activ_equip_primaire" onchange="changeStatus();" required="Champ Obligatoire">
                                                 <option value="">1- Avez-vous des activit&eacute;s ou &eacute;quipements dans le pays ?** -</option>
                                                 <option value="OUI">OUI</option>
                                                 <option value="NON">NON</option>
@@ -184,7 +185,7 @@
                                         <fieldset>
                                                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="activ_equip_region" id="region" required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="activ_equip_region" style="border:2px solid black; font-family: sans-serif" id="region" required="Champ Obligatoire"> 
                                                         <option value="">- 2- Dans quelle r&eacute;gion avez-vous vos activit&eacute;s ?** -</option>
                                                
                                                         </select>
@@ -193,7 +194,7 @@
                                                                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="activ_equip_depart" id="departement"  required="Champ Obligatoire"> 
+                                                        <select class="form-control" name="activ_equip_depart" style="border:2px solid black; font-family: sans-serif" id="departement"  required="Champ Obligatoire"> 
                                                         <option value="">- 3- Dans quel d&eacute;partement avez-vous vos activit&eacute;s ?** -</option>
                                                                                                           
                                                         </select>
@@ -202,7 +203,7 @@
                                                 
                                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                       <select class="form-control" name="activ_equip_commune" id="commune" required="Champ Obligatoire"> 
+                                                       <select class="form-control" name="activ_equip_commune" style="border:2px solid black; font-family: sans-serif" id="commune" required="Champ Obligatoire"> 
                                                         <option value="">- 4- Dans quelle commune avez-vous vos activit&eacute;s ?** -</option>
                                                       </select>
                                                     </div>
@@ -292,7 +293,7 @@
                                               
                                                  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left"> <!-- Champ ajouté -->
                                                         <div class="form-group">
-                                                            <input type="text" name="activ_equip_qtr" class="form-control" id="qtr_village" placeholder="- 5- Dans quel quartier ou village avez-vous des activités ?**" required>
+                                                            <input type="text" name="activ_equip_qtr" class="form-control" style="border:2px solid black; font-family: sans-serif" id="qtr_village" placeholder="- 5- Dans quel quartier ou village avez-vous des activités ?**" required>
                                                         </div>
                                                     </div>
                                                <script>
@@ -343,7 +344,7 @@
                                          </fieldset>
                                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="a_activ_equip" id="activ_equip_secondaire" onchange="changeStatus0();"  required> <!--Champ ajouté-->
+                                                <select class="form-control" name="a_activ_equip" style="border:2px solid black; font-family: sans-serif" id="activ_equip_secondaire" onchange="changeStatus0();"  required> <!--Champ ajouté-->
                                                 <option value="">1- Avez-vous d'autres activit&eacute;s ou &eacute;quipements dans d'autres localités ?** -</option>
                                                 <option value="OUI">OUI</option>
                                                 <option value="NON">NON</option>
@@ -367,12 +368,12 @@
                                                     
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <input type="text" name="a2_activ_equip" id="a2_activ_equip" class="form-control" placeholder="2- Citez les activités secondaires menées par le Collectif ?"> <!--Champ ajouté-->
+                                                <input type="text" name="a2_activ_equip" style="border:2px solid black; font-family: sans-serif" id="a2_activ_equip" class="form-control" placeholder="2- Citez les activités secondaires menées par le Collectif ?"> <!--Champ ajouté-->
                                             </div>
                                         </div>  
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <input type="text" name="a2_activ_equip_lieu" id="a2_activ_equip_lieu" class="form-control" placeholder="3- Citez par ordre les localités secondaires ?" > <!--Champ ajouté-->
+                                                <input type="text" name="a2_activ_equip_lieu" style="border:2px solid black; font-family: sans-serif" id="a2_activ_equip_lieu" class="form-control" placeholder="3- Citez par ordre les localités secondaires ?" > <!--Champ ajouté-->
                                             </div>
                                         </div>  
                                        
@@ -385,7 +386,7 @@
                                          </fieldset>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-12 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="activ_economique" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                <select class="form-control" name="activ_economique" style="border:2px solid black; font-family: sans-serif" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                 <option value="">- Quelles activit&eacute;s &eacute;conomiques sont men&eacute;es par le Collectif ?** -</option>
                                                 <option value="Epargne">Epargne</option>
                                                 <option value="Production">Production</option>
@@ -404,7 +405,7 @@
                                          </fieldset>
                                                      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-12 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="activ_eco_second" id="activ_second" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                <select class="form-control" name="activ_eco_second" style="border:2px solid black; font-family: sans-serif" id="activ_second" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                 <option value="">- Quelles activit&eacute;s &eacute;conomiques secondaires sont men&eacute;es par le Collectif ?** -</option>
                                                 <option value="Epargne">Epargne</option>
                                                 <option value="Production">Production</option>
@@ -424,7 +425,7 @@
                                          </fieldset>
                                           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <select class="form-control" name="activ_equip_etrang" id="activ_equip_secondaire" onchange="changeStatus0();"  required=> <!--Champ ajouté-->
+                                                <select class="form-control" name="activ_equip_etrang" style="border:2px solid black; font-family: sans-serif" id="activ_equip_secondaire" onchange="changeStatus0();"  required=> <!--Champ ajouté-->
                                                 <option value="">1- Avez-vous d'autres activit&eacute;s ou &eacute;quipements dans d'autres pays ?** -</option>
                                                 <option value="OUI">OUI</option>
                                                 <option value="NON">NON</option>
@@ -448,12 +449,12 @@
                                                     
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <input type="text" name="a1_equip_etrang" id="activ_equip_localite1" class="form-control" placeholder="2- Citez les activités secondaires menées par le Collectif dans les pays étrangers ?"> <!--Champ ajouté-->
+                                                <input type="text" name="a1_equip_etrang" style="border:2px solid black; font-family: sans-serif" id="activ_equip_localite1" class="form-control" placeholder="2- Citez les activités secondaires menées par le Collectif dans les pays étrangers ?"> <!--Champ ajouté-->
                                             </div>
                                         </div>  
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                             <div class="form-group">
-                                                <input type="text" name="a1_equip_etrang_lieu" id="activ_equip_localite2" class="form-control" placeholder="3- Citez par ordre les localités secondaires des pays étrangers ?" > <!--Champ ajouté-->
+                                                <input type="text" name="a1_equip_etrang_lieu"  style="border:2px solid black; font-family: sans-serif" id="activ_equip_localite2" class="form-control" placeholder="3- Citez par ordre les localités secondaires des pays étrangers ?" > <!--Champ ajouté-->
                                             </div>
                                         </div>  
                                        
@@ -466,32 +467,32 @@
                                          
                                                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="mont_cap_social" class="form-control" placeholder=" 1- Quel est le montant Capital social ?**" required="Champ Obligatoire">
+                                                        <input type="text" name="mont_cap_social" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 1- Quel est le montant Capital social ?**" required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nbre_empl_perman" class="form-control" placeholder=" 2- Quel est le nombre d'employ&eacute;s permanents actuellement ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="nbre_empl_perman" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 2- Quel est le nombre d'employ&eacute;s permanents actuellement ?** " required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nbre_empl_tempor" class="form-control" placeholder=" 3-  Quel est le nombre d'employ&eacute;s temporaires actuellement ?** " required="Champ Obligatoire">
+                                                        <input type="text" name="nbre_empl_tempor" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 3-  Quel est le nombre d'employ&eacute;s temporaires actuellement ?** " required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="mont_eparg_mob" class="form-control" placeholder=" 4- Quel est le montant &eacute;agn&eacute; mobilis&eacute; ces trois (3ans) derni&egrave;res ann&eacute;es ? ">
+                                                        <input type="text" name="mont_eparg_mob" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 4- Quel est le montant epargne mobilis&eacute; ces trois (3ans) derni&egrave;res ann&eacute;es ? ">
                                                     </div>
                                                 </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="mont_endettement" class="form-control" placeholder=" 5- Quel est le montant endettement ces trois (3ans) derni?res ann&eacute;es ? ">
+                                                        <input type="text" name="mont_endettement" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 5- Quel est le montant endettement ces trois (3ans) derni?res ann&eacute;es ? ">
                                                     </div>
                                                 </div>
                                         <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="mont_sub_recu" class="form-control" placeholder=" 6- Quel est le montant subvention re?u ces trois (3ans) derni?res ann&eacute;es ?">
+                                                        <input type="text" name="mont_sub_recu" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder=" 6- Quel est le montant subvention re&ccedil;u ces trois (3ans) derni?res ann&eacute;es ?">
                                                     </div>
                                                 </div>
                                         
@@ -504,14 +505,14 @@
                                          </fieldset>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="fonctionnalite" class="form-control" placeholder="1- Fonctionnalit&eacute; des organes?**" required="Champ Obligatoire">
+                                                        <input type="text" name="fonctionnalite" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="1- Fonctionnalit&eacute; des organes?**" required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                                 
                                                 
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="prise_decision" class="form-control" placeholder="2- Mode prise de d&eacute;cision?**" required="Champ Obligatoire">
+                                                        <input type="text" name="prise_decision" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="2- Mode prise de d&eacute;cision?**" required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                                
@@ -523,7 +524,7 @@
                                         -->
                                                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="charte_relationnelle" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="charte_relationnelle" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value=""> 3- Disponibilit&eacute; d'une charte des membres ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
@@ -538,7 +539,7 @@
                                            -->
                                          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="plan_developpement" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="plan_developpement" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value=""> 4- Disponibilit&eacute; d'un plan de d&eacute;veloppement ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
@@ -553,7 +554,7 @@
                                               -->
                                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="manuel_procedure" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" style="border:2px solid black; font-family: sans-serif" name="manuel_procedure" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value=""> 5- Disponibilit&eacute; d'un manuel de proc&eacute;dure ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
@@ -574,18 +575,18 @@
                                         
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="part_princ_technique" class="form-control" placeholder="1- Principal Partenaire technique ?** -" required="Champ Obligatoire">
+                                                        <input type="text" name="part_princ_technique" style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="1- Principal Partenaire technique ?** -" required="Champ Obligatoire">
                                                     </div>
                                                 </div>  
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="part_princ_financier" class="form-control" placeholder="2- Principal Partenaire financier ?** -" required="Champ Obligatoire">
+                                                        <input type="text" name="part_princ_financier"  style="border:2px solid black; font-family: sans-serif" class="form-control" placeholder="2- Principal Partenaire financier ?** -" required="Champ Obligatoire">
                                                     </div>
                                                 </div>     
                                                 
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="app_reseau" id="app_reseau" onchange="changeStatus00();">
+                                                        <select class="form-control" name="app_reseau" style="border:2px solid black; font-family: sans-serif" id="app_reseau" onchange="changeStatus00();">
                                                         <option value="">3 - Appartenance &agrave; un r&eacute;seau ?** -</option>
                                                         <option value="OUI">OUI</option>
                                                         <option value="NON">NON</option>
@@ -614,23 +615,23 @@
                                                     
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="nature_reseau" id="nature_reseau" class="form-control" placeholder="4- Nature R&eacute;seau ?** -" required="Champ Obligatoire">
+                                                        <input type="text" name="nature_reseau" style="border:2px solid black; font-family: sans-serif" id="nature_reseau" class="form-control" placeholder="4- Nature R&eacute;seau ?** -" required="Champ Obligatoire">
                                                     </div>
                                                 </div>
                                                  
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="localite_reseau" id="localite_reseau" class="form-control" placeholder="5- Localit&eacute; du R&eacute;seau ? -">
+                                                        <input type="text" name="localite_reseau" style="border:2px solid black; font-family: sans-serif" id="localite_reseau" class="form-control" placeholder="5- Localit&eacute; du R&eacute;seau ? -">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 pull-left">
                                                     <div class="form-group">
-                                                        <input type="text" name="departement_reseau" id="departement_reseau"class="form-control" placeholder="6- Departement R&eacute;seau ? -">
+                                                        <input type="text" name="departement_reseau" style="border:2px solid black; font-family: sans-serif" id="departement_reseau"class="form-control" placeholder="6- Departement R&eacute;seau ? -">
                                                     </div>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
                                                     <div class="form-group">
-                                                        <select class="form-control" name="nat_intern_reseau" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
+                                                        <select class="form-control" name="nat_intern_reseau" style="border:2px solid black; font-family: sans-serif" id="demo-category" onchange="changementType( this.value);" required="Champ Obligatoire">
                                                         <option value="">7- National ou International ?** -</option>
                                                         <option value="national">National</option>
                                                         <option value="international">International</option>
@@ -644,8 +645,8 @@
                                             <input type="hidden" value="<%=formulaire_id%>" name="formulaire_id">  
                                             <input type="hidden" value="<%=idx%>" name="id">  
                                                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-left">
-                                                    <center><button type="submit" class="at-btn">AJOUTER PIECES JOINTES</button>&nbsp;<button type="submit" class="at-btn">ENREGISTRER & RETOURNER...</button></center>
-                                                </div>
+                                                    <center>&nbsp;<button type="submit" style="width: 490px; height: 80px; border:3px solid red; font-size: 25px" class="at-btn">ENREGISTRER & RETOURNER...</button></center>
+                                                </div> <!-- <button type="submit" style="width: 490px; height: 80px; color: yellow; border:3px solid purple;" class="at-btn">AJOUTER PIECES JOINTES</button> -->
                                             </div>
                                             <hr/>
                                         </fieldset>
@@ -666,9 +667,9 @@
         <footer id="at-footer" class="at-footer at-haslayout">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                  <!--  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="at-emailsubscribearea">
-                            <p>Recevez nos derni?res informations</p>
+                            <p>Recevez nos derniéres informations</p>
                             <form class="at-formtheme at-formnewsletter">
                                 <fieldset>
                                     <input type="email" name="email" class="form-control" placeholder="Votre adresse e-mail">
@@ -680,9 +681,9 @@
                             <div class="at-fcolumn">
                                 <div class="at-widget at-widgettext">
                                     <strong class="at-logo"><a href="javascript:void(0);"><img src="images/logof.png" alt="image description"></a></strong>
-                               <!--     <div class="at-description">
+                                   <div class="at-description">
                                         <p>Lorem ipsum dolor sit amet, consectetur adi pisi cing elit, sed do eiusmod tempor Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, the consectetur.</p>
-                                    </div> -->
+                                    </div> 
                                     <ul class="at-socialicons">
                                         <li class="at-facebook"><a href="www.facebook.com/taataan"><i class="fa fa-facebook"></i></a></li>
                                         <li class="at-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -714,22 +715,22 @@
                                     <div class="at-widgetcontent">
                                         <ul>
                                             <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                                <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                 <time datetime="2018-01-12">January 28, 2018</time>
                                             </li>
                                             <li>
-                                            <!--    <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> -->
+                                              <p>Product Design &amp; Branding Innovative Brand Design Concepts</p> 
                                                 <time datetime="2020-24-11">Novembre 24, 2020</time>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
+                            </div>  -->
+                        </div>
+                      <div class="at-copyright">
+                                <p>Adresse: ZAC MBAO villa N°3 4i&egrave;me Etage Cit&eacute; Socidak 1 en face Brioche Dor&eacute;e, Rufisque Ouvert de 09H &agrave; 17H</p>
+                                <p>Copyright @ 2020. <p>Email: bara.wade@taataan.sn</p><a href="https://www.taataan.sn">ASADIC TAATAAN</a> All rights reserved.</p>
                             </div>
-                        </div>
-                        <div class="at-copyright">
-                            <p>Adresse: ZAC MBAO villa N?3 4i?me Etage Cit? Socidak 1 en face Brioche Dor?e, Rufisque Ouvert de 08H ? 18H</p>
-                            <p>Copyright @ 2020. <a href="javascript:void(0);">Badel</a> All rights reserved.</p>
-                        </div>
                     </div>
                 </div>
             </div>

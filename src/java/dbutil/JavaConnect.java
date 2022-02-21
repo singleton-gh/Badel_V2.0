@@ -20,9 +20,9 @@ public class JavaConnect {
         PreparedStatement ps = null;
 
         Class.forName("com.mysql.jdbc.Driver");
-          Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/badel", "root", "");
-          //Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://mysql3000.mochahost.com/badelta2_badel", "badelta2_user", "Work2020");
-        System.out.println("Vous etes connecté a mysql de wampserver");
+        //   Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/badel2.0", "root", "");
+        Connection con = (Connection) DriverManager.getConnection("jdbc:mysql://mysql3000.mochahost.com/badelta2_badel2.0", "badelta2_user", "Work2022");
+        System.out.println("Vous etes connecté a mysql de BADEL-MOCHA");
         ps = con.prepareStatement(sql);
 
         return ps;
@@ -34,9 +34,9 @@ public class JavaConnect {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/badel", "root", "");
-            //con = (Connection) DriverManager.getConnection("jdbc:mysql://mysql3000.mochahost.com/badelta2_badel", "badelta2_user", "Work2020");
-            System.out.println("Vous etes connecté a mysql de wampserver");
+        //   con = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/badel2.0", "root", "");
+               con = (Connection) DriverManager.getConnection("jdbc:mysql://mysql3000.mochahost.com/badelta2_badel2.0", "badelta2_user", "Work2022");
+            System.out.println("Vous etes connecté a mysql de BADEL-MOCHA");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException sqe) {

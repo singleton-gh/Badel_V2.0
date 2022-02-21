@@ -14,9 +14,15 @@ public class ModLogin {
     String prenom;
     String nom;
     String civilite;
+    String tel1;
+    String tel2;
+    String email;
+    String commune;
     String login;
     String pass;
     String role;
+
+   
 
     public String getPrenom() {
         return prenom;
@@ -40,6 +46,38 @@ public class ModLogin {
 
     public void setCivilite(String civilite) {
         this.civilite = civilite;
+    }
+
+    public String getTel1() {
+        return tel1;
+    }
+
+    public void setTel1(String tel1) {
+        this.tel1 = tel1;
+    }
+
+    public String getTel2() {
+        return tel2;
+    }
+
+    public void setTel2(String tel2) {
+        this.tel2 = tel2;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCommune() {
+        return commune;
+    }
+
+    public void setCommune(String commune) {
+        this.commune = commune;
     }
 
     public String getLogin() {
@@ -66,12 +104,18 @@ public class ModLogin {
         this.role = role;
     }
 
-    public ModLogin(String prenom, String nom, String civilite, String login, String pass, String role) {
+    public ModLogin(String prenom, String nom, String civilite, String tel1, String tel2, String email, String commune, String login, String pass, String role) {
         this.prenom = prenom;
         this.nom = nom;
         this.civilite = civilite;
+        this.tel1 = tel1;
+        this.tel2 = tel2;
+        this.email = email;
+        this.commune = commune;
         this.login = login;
         this.pass = pass;
         this.role = role;
     }
+
+    
 }

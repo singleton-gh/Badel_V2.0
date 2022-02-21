@@ -59,9 +59,9 @@ public class IndividVerif extends HttpServlet {
                 adresse, situationMatrim, tel1, tel2, prenomPere, prenomMere, nomMere, etudes, niveau, login, pass);
         dataAccess da = new dataAccess();
         
-        ModLogin n1 = new ModLogin(prenom, nom, civilite, login, pass, role);
+     //   ModLogin n1 = new ModLogin(prenom, nom, civilite, login, pass, role);
         da.addNewInd(n);
-        da.addLogin(n1);
+     //   da.addLogin(n1);
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             RequestDispatcher rd = request.getRequestDispatcher("connection.html");
